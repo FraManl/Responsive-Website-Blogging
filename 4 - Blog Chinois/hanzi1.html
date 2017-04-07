@@ -1,0 +1,1692 @@
+<html>
+	<head>
+			<title>Apprentissage du chinois</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+			<link href="style.css" rel="stylesheet" type="text/css" />
+			<script src="./js/d3.v4.min.js"></script>
+			<link rel="stylesheet" href="stylebouton.css">
+
+			<script src="jquery-3.2.0.min.js"></script>
+			
+			<script type="text/javascript">
+				$(function() {
+						var $colgauche   = $("#colgauche"), 
+							$window    = $(window),
+							offset     = $colgauche.offset(),
+							topPadding = 2;
+
+						$window.scroll(function() {
+							if ($window.scrollTop() > offset.top) {
+								$colgauche.stop().animate({
+									marginTop: $window.scrollTop() - offset.top + topPadding
+								});
+							} else {
+								$colgauche.stop().animate({
+									marginTop: 0
+								});
+							}
+						});
+					});
+			</script>
+			
+			<script type="text/javascript">
+				$(function() {
+						var $coldroite   = $("#coldroite"), 
+							$window    = $(window),
+							offset     = $coldroite.offset(),
+							topPadding = 2;
+
+						$window.scroll(function() {
+							if ($window.scrollTop() > offset.top) {
+								$coldroite.stop().animate({
+									marginTop: $window.scrollTop() - offset.top + topPadding
+								});
+							} else {
+								$coldroite.stop().animate({
+									marginTop: 0
+								});
+							}
+						});
+					});
+			</script>
+			
+		<div id="header">
+			<link href="style.css" rel="stylesheet" type="text/css" />
+			<div id="logocontain">
+                <a href="http://www.chine-nouvelle.com/" target="_blank" title=""><div id="logo"></div></a>
+			</div>
+
+			<div id="topicons">
+                <div class="topico">
+					<a href="http://www.chine-nouvelle.com/outils/editeur.html" target="_blank" title="Editeur de texte"><img src="files/editeur.png"/></a>
+				</div>
+				<div class="topico">
+					<a href="https://www.ifreesite.com/pinyin/" target="_blank" title="Convertisseur Pinyin"><img src="files/ifreesite.png"/></a>
+				</div>
+				<div class="topico">
+					<a href="" target="_blank" title=""><img src="files/bonhomme.png"/></a>
+				</div>
+			</div>
+		</div>
+	</head>
+	<body>	
+		<div id="colgauche">
+				<div class="menu">
+
+					<div class="boutontop" style="font-size:100%;font-weight:bold"><a href="accueil.html" target="_top" style="text-decoration:none">Accueil</a></div>
+                    </br>
+                    </br>
+					<div class="title" style="font-size:100%;font-weight:bold;text-decoration:none">Lexique</div>
+					<div class="bouton1">
+							<a href="hanzi1.html" target="_top" style="font-size:80%;text-decoration:none">Finales et consonnes</a>
+					</div>
+					<div class="bouton1">
+							<a href="hanzi2.html" target="_top" style="font-size:80%;text-decoration:none">Chiffres et nombres</a>
+					</div>
+					<div class="bouton1">
+							<a href="hanzi3.html" target="_top" style="font-size:80%;text-decoration:none">Date, heure, temps</a>
+					</div>
+					<div class="bouton1">
+							<a href="hanzi4.html" target="_top" style="font-size:80%;text-decoration:none">Date, heure, temps</a>
+					</div>
+					<div class="bouton1">
+							<a href="<expressions.html" target="_top" style="font-size:80%;text-decoration:none">Expressions courantes</a>
+					</div>
+					<div class="bouton1">
+							<a href="<vocab.html" target="_top" style="font-size:80%;text-decoration:none">Vocabulaire à apprendre</a>
+					</div>
+                    </br>
+					</br>
+					<div class="title" style="font-size:100%;font-weight:bold;text-decoration:none">Grammaire chinoise</div>
+					<div class="bouton1">
+							<a href="cadrage.html" target="_top" style="font-size:80%;text-decoration:none">Autour du noms</a>
+					</div>
+					<div class="bouton1">
+							<a href="scoringp.html" target="_top" style="font-size:80%;text-decoration:none">Autour du verbe</a>
+					</div>
+                    <div class="bouton1">
+							<a href="scoring.html" target="_top" style="font-size:80%;text-decoration:none">Autour de la phrase</a>
+					</div>
+					<div class="bouton1">
+							<a href="cadrage.html" target="_top" style="font-size:80%;text-decoration:none">Structures types de phrases</a>
+					</div>
+					</br>
+                    </br>
+					<div class="title" style="font-size:100%;font-weight:bold;text-decoration:none">Exercices oraux</div>
+					<div class="bouton1">
+							<a href="dialapp.html" target="_top" style="font-size:80%;text-decoration:none">Dialogues libres</a>
+					</div>
+					<div class="bouton1">
+							<a href="diallivre.html" target="_top" style="font-size:80%;text-decoration:none">Dialogues ouvrages</a>
+					</div>
+				</div>
+		</div>
+		<div id="coldroite">
+            <div class="title" style="font-size:1.18vw;font-size:100%;font-weight:bold;margin-top:55px;text-align:center;margin-auto">Ressources</div></br>
+						<div class="listcoldroite">
+                            <p style="font-size:1.18vw;font-size:80%;margin:auto;margin-left:10px;color:lightred;font-weight:bold">Exports au format...</p>
+							<div class="container"><a href="#" class="button button-pink">.DOCX</a><a href="#" class="button button-blue">.PDF</a></br></div>
+						</div>
+							
+		</div>
+		<div id="centre">
+            <h1 class="h1" style="text-align:center;margin-top:50px">Apprentissage du chinois</h1></br>
+						<h2 class="h1" style="text-align:center;color:darkblue">Rappel de règles de prononciation : finales et consonnes</h2>
+												</br>
+												</br>
+												<h2 class="h1" style="text-align:left;color:darkblue;margin-left:45px">Descriptif</h2>
+												</br>
+												<p align="justify" style="margin-left:80px">Le support web suivant est un espace destiné à favoriser l'apprentissage et la capitalisation des connaissances en chinois mandarin.</br>Il fait état de lexiques et leçons réalisés à partir de deux ouvrages principaux :
+												
+													<ul align="justify" style="margin-left:100px">
+																<li>Niveau A2 CECRL - <strong>Méthode d'initiation à la langue et à l'écriture chinoises</strong> (Joël Bellassen, édition LaCompagnie).</li>
+																<li>Niveau A2-B1 CECR - <strong>Bescherelle, le chinois pour tous</strong> (édition Hatier).</li>
+													</ul>
+												</p>
+												<br>
+                                                <h2 class="h1" style="text-align:left;color:darkblue;margin-left:45px">Objectif</h2>
+												</br>
+												<p align="justify" style="margin-left:80px">Favoriser l'assimilation des caractères, la pratique d'exercices courant et la mémorisation essentiels des sinogrammes et expressions; produire un accès rapide et au moindre clique à l'ensemble des règles de grammaire.</p>
+												<div style='clear:both'></div>
+												</p>
+												<div class="divsquarescoring_wrap">
+														<div class="divSquarescoringp">
+																<h3 style="font-size:16px;font-weight:bold;text-align:center"><strong>Le son des consonnes</strong></h3>
+																<img src="./files/sons.png" style="padding-top:10px">
+														</div>
+                                                        <div class="divSquarescoringp">
+																<h3 style="font-size:16px;font-weight:bold;text-align:center"><strong>Position de la langue</strong></h3>
+																<img src="./files/bouche.png" style="padding-top:10px">
+														</div>
+                                                    </div>
+                                                    <div style='clear:both'></div>
+                                                <div class="consonnewrapper">
+                                                	<h2 class="h1" style="text-align:center;color:darkblue;margin-left:45px">Les consonnes</h2></br></br>
+														<div align="center">
+														    <table cellspacing="10" cellpadding="10" border="30">
+														        <tbody>
+														            <tr>
+														                <td width="141">
+														                    <p align="center">
+														                        B = bo
+														                    </p>
+														                </td>
+														                <td width="168">
+														                    <p align="center">
+														                        P = po (aspiré)
+														                    </p>
+														                </td>
+														                <td width="161">
+														                    <p align="center">
+														                        M = mo
+														                    </p>
+														                </td>
+														                <td width="161">
+														                    <p align="center">
+														                        F = fo
+														                    </p>
+														                </td>
+														                <td width="76">
+														                    <p align="center">
+														                        D = de
+														                    </p>
+														                </td>
+														            </tr>
+														            <tr>
+														                <td width="141">
+														                    <p align="center">
+														                        T = te (aspiré)
+														                    </p>
+														                </td>
+														                <td width="168">
+														                    <p align="center">
+														                        N = ne
+														                    </p>
+														                </td>
+														                <td width="161">
+														                    <p align="center">
+														                        L = le
+														                    </p>
+														                </td>
+														                <td width="161">
+														                    <p align="center">
+														                        G = ge
+														                    </p>
+														                </td>
+														                <td width="76">
+														                    <p align="center">
+														                        K = ke
+														                    </p>
+														                </td>
+														            </tr>
+														            <tr>
+														                <td width="141">
+														                    <p align="center">
+														                        H = he
+														                    </p>
+														                </td>
+														                <td width="168">
+														                    <p align="center">
+														                        J = ji (dji doux sur bout langue et début palais, comme
+														                        /<strong>d+jeep</strong>/ j presque silencieux)
+														                    </p>
+														                </td>
+														                <td width="161">
+														                    <p align="center">
+														                        Q = qi (tschi, bout langue début palais ou dent du bas
+														                        c’est xi mais avec un T avant)
+														                    </p>
+														                </td>
+														                <td width="161">
+														                    <p align="center">
+														                        X = xi
+														                    </p>
+														                    <p align="center">
+														                        (schi, sur les dents du bas, mélange s et ch ensemble)
+														                    </p>
+														                </td>
+														                <td width="76">
+														                </td>
+														            </tr>
+														            <tr>
+														                <td width="141">
+														                    <p align="center">
+														ZH = zhi (djeu plus lourd, sur fond palais, comme /                        <strong>j</strong>ob/a<strong>dj</strong>ectif)
+														                    </p>
+														                </td>
+														                <td width="168">
+														                    <p align="center">
+														CH = chī (tcheu, lourd, sur fond palais, comme /                        <strong>ch</strong>allenge/)
+														                    </p>
+														                </td>
+														                <td width="161">
+														                    <p align="center">
+														                        SH = shi (sur fond palais, comme /<strong>ch</strong>
+														                        enapan/)
+														                    </p>
+														                </td>
+														                <td width="161">
+														                    <p align="center">
+														                        R = ri (je, sur fond palais, comme /<strong>je</strong>
+														                        u/)
+														                    </p>
+														                </td>
+														                <td width="76">
+														                </td>
+														            </tr>
+														            <tr>
+														                <td width="141">
+														                    <p align="center">
+														Z = zì (dze, sur les dents, comme /ki                        <strong>ds</strong>/
+														                    </p>
+														                </td>
+														                <td width="168">
+														                    <p align="center">
+														                        C = cì (tse, sur les dents, comme /<strong>ts</strong>
+														                        ar/)
+														                    </p>
+														                </td>
+														                <td width="161">
+														                    <p align="center">
+														                        S = sī (se, sur les dents, comme /serve/)
+														                    </p>
+														                </td>
+														                <td width="161">
+														                    <p align="center">
+														                        Y = yī
+														                    </p>
+														                </td>
+														                <td width="76">
+														                    <p align="center">
+														                        W = wū
+														                    </p>
+														                </td>
+														            </tr>
+														        </tbody>
+														    </table>
+														</div>
+														</div>
+														</br>
+														</br>
+												<div class="finalewrapper">			
+													<h2 class="h1" style="text-align:center;color:darkblue;margin-left:45px">Les finales</h2></br></br>
+														<div align="center">
+														    <table cellspacing="0" cellpadding="0" border="1">
+														        <tbody>
+														            <tr>
+														                <td>
+														                    <p align="center">
+														                        <strong>Pinyin</strong>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <a
+														                            href="https://fr.wikipedia.org/wiki/International_Phonetic_Alphabet"
+														                            target="_blank"
+														                            title="w:International Phonetic Alphabet"
+														                        >
+														                            <strong>API</strong>
+														                        </a>
+														                        <strong></strong>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <strong>Finale-formes</strong>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <strong>Explication</strong>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <strong>Exemples</strong>
+														                    </p>
+														                </td>
+														            </tr>
+														            <tr>
+														                <td>
+														                    <p align="center">
+														                        <em>a</em>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <a
+														                            href="https://fr.wiktionary.org/wiki/Annexe:Prononciation"
+														                            target="_blank"
+														                            title="wikt:Annexe:Prononciation"
+														                        >
+														                            /ɑ/
+														                        </a>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <strong>a</strong>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														comme P<strong>a</strong>p<strong>a</strong>, J                        <strong>a</strong>cques
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        爸爸, baba, papa
+														                    </p>
+														                </td>
+														            </tr>
+														            <tr>
+														                <td>
+														                    <p align="center">
+														                        <em>o</em>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <a
+														                            href="https://fr.wiktionary.org/wiki/Annexe:Prononciation"
+														                            target="_blank"
+														                            title="wikt:Annexe:Prononciation"
+														                        >
+														                            /uɔ/
+														                        </a>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <strong>o</strong>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        comme "o" dans "S<strong>o</strong>mmes")
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        我, Wo, moi
+														                    </p>
+														                </td>
+														            </tr>
+														            <tr>
+														                <td>
+														                    <p align="center">
+														                        <em>e</em>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <a
+														                            href="https://fr.wiktionary.org/wiki/Annexe:Prononciation"
+														                            target="_blank"
+														                            title="wikt:Annexe:Prononciation"
+														                        >
+														                            /ɤ/
+														                        </a>
+														                        ,
+														                        <a
+														                            href="https://fr.wiktionary.org/wiki/Annexe:Prononciation"
+														                            target="_blank"
+														                            title="wikt:Annexe:Prononciation"
+														                        >
+														                            /ə/
+														                        </a>
+														                        Généralement prononcé comme dans "heure". Quand le
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <strong>e</strong>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        se trouve tout seul avec une consonne devant ou pas, il
+														                        se prononce comme le son final du mot "le". Pourtant
+														                        dans une combinaison de sorte "ie", "üe", when
+														                        occurring at the end of a syllable and not in the
+														                        combinations of ie, üe, ue, then a backward, unrounded
+														                        vowel, which can be formed by first pronouncing a plain
+														                        continental "o" (
+														                        <a
+														                            href="https://fr.wikipedia.org/wiki/Australian_English"
+														                            target="_blank"
+														                            title="w:Australian English"
+														                        >
+														                            AuE
+														                        </a>
+														                        and
+														                        <a
+														                            href="https://fr.wikipedia.org/wiki/New_Zealand_English"
+														                            target="_blank"
+														                            title="w:New Zealand English"
+														                        >
+														                            NZE
+														                        </a>
+														                        l<strong>aw</strong>) and then spreading the lips
+														                        without changing the position of the tongue. That same
+														                        sound is also similar to English "d<strong>uh</strong>
+														                        ", but not as open. Many unstressed syllables in
+														                        Chinese use the
+														                        <a
+														                            href="https://fr.wikipedia.org/wiki/schwa"
+														                            target="_blank"
+														                            title="w:schwa"
+														                        >
+														                            schwa
+														                        </a>
+														(ide<strong>a</strong>), and this is also written as                        <em>e</em>.
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        快乐
+														                    </p>
+														                </td>
+														            </tr>
+														            <tr>
+														                <td>
+														                    <p align="center">
+														                        <em>ê</em>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <a
+														                            href="https://fr.wiktionary.org/wiki/Annexe:Prononciation"
+														                            target="_blank"
+														                            title="wikt:Annexe:Prononciation"
+														                        >
+														                            /ɛ/
+														                        </a>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        (n/a)
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        comme dans "Temp<strong>ê</strong>te". Seulement
+														                        utilisé dans certaines interjections.
+														                    </p>
+														                </td>
+														                <td>
+														                    <br/>
+														                </td>
+														            </tr>
+														            <tr>
+														                <td>
+														                    <p align="center">
+														                        <em>ai</em>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <a
+														                            href="https://fr.wiktionary.org/wiki/Annexe:Prononciation"
+														                            target="_blank"
+														                            title="wikt:Annexe:Prononciation"
+														                        >
+														                            /aɪ/
+														                        </a>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <strong>ai</strong>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        Prononcé "aï"
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        爱情
+														                    </p>
+														                </td>
+														            </tr>
+														            <tr>
+														                <td>
+														                    <p align="center">
+														                        <em>ei</em>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <a
+														                            href="https://fr.wiktionary.org/wiki/Annexe:Prononciation"
+														                            target="_blank"
+														                            title="wikt:Annexe:Prononciation"
+														                        >
+														                            /ei/
+														                        </a>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <strong>ei</strong>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        Prononcé "eï"
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        累了
+														                    </p>
+														                </td>
+														            </tr>
+														            <tr>
+														                <td>
+														                    <p align="center">
+														                        <em>ao</em>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <a
+														                            href="https://fr.wiktionary.org/wiki/Annexe:Prononciation"
+														                            target="_blank"
+														                            title="wikt:Annexe:Prononciation"
+														                        >
+														                            /ɑʊ/
+														                        </a>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <strong>ao</strong>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														approximativement comme dans l'anglais "c                        <strong>ow</strong>"; le a est plus audible que le o
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        大小
+														                    </p>
+														                </td>
+														            </tr>
+														            <tr>
+														                <td>
+														                    <p align="center">
+														                        <em>ou</em>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <a
+														                            href="https://fr.wiktionary.org/wiki/Annexe:Prononciation"
+														                            target="_blank"
+														                            title="wikt:Annexe:Prononciation"
+														                        >
+														                            /ou̯/
+														                        </a>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <strong>ou</strong>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        comme dans l'anglais "so" ; un o tenu
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        欧洲
+														                    </p>
+														                </td>
+														            </tr>
+														            <tr>
+														                <td>
+														                    <p align="center">
+														                        <em>an</em>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <a
+														                            href="https://fr.wiktionary.org/wiki/Annexe:Prononciation"
+														                            target="_blank"
+														                            title="wikt:Annexe:Prononciation"
+														                        >
+														                            /an/
+														                        </a>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <strong>an</strong>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        se prononce comme "âne" avec une fin plus nasale
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        安全
+														                    </p>
+														                </td>
+														            </tr>
+														            <tr>
+														                <td>
+														                    <p align="center">
+														                        <em>en</em>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <a
+														                            href="https://fr.wiktionary.org/wiki/Annexe:Prononciation"
+														                            target="_blank"
+														                            title="wikt:Annexe:Prononciation"
+														                        >
+														                            /ən/
+														                        </a>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <strong>en</strong>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        comme dans l'anglais "tak<strong>en</strong>"
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        很好
+														                    </p>
+														                </td>
+														            </tr>
+														            <tr>
+														                <td>
+														                    <p align="center">
+														                        <em>ang</em>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <a
+														                            href="https://fr.wiktionary.org/wiki/Annexe:Prononciation"
+														                            target="_blank"
+														                            title="wikt:Annexe:Prononciation"
+														                        >
+														                            /ɑŋ/
+														                        </a>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <strong>ang</strong>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        as in German <em>Angst</em>, including the English loan
+														word <em>angst</em> (starts with the vowel sound in f                        <strong>a</strong>ther and ends in the
+														                        <a
+														                            href="https://fr.wikipedia.org/wiki/velar_nasal"
+														                            target="_blank"
+														                            title="w:velar nasal"
+														                        >
+														                            velar nasal
+														                        </a>
+														                        ; like s<strong>ong</strong> in American English)
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        波浪
+														                    </p>
+														                </td>
+														            </tr>
+														            <tr>
+														                <td>
+														                    <p align="center">
+														                        <em>eng</em>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <a
+														                            href="https://fr.wiktionary.org/wiki/Annexe:Prononciation"
+														                            target="_blank"
+														                            title="wikt:Annexe:Prononciation"
+														                        >
+														                            /ɤŋ/
+														                        </a>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <strong>eng</strong>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        like <em>e</em> above but with ng added to it at the
+														                        back
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        冷热
+														                    </p>
+														                </td>
+														            </tr>
+														            <tr>
+														                <td>
+														                    <p align="center">
+														                        <em>er</em>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <a
+														                            href="https://fr.wiktionary.org/wiki/Annexe:Prononciation"
+														                            target="_blank"
+														                            title="wikt:Annexe:Prononciation"
+														                        >
+														                            /aɻ/
+														                        </a>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <strong>er</strong>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        Comme dans "sist<strong>er</strong>" (à l'américaine)
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        耳朵，花儿
+														                    </p>
+														                </td>
+														            </tr>
+														            <tr>
+														                <td>
+														                    <p align="center">
+														                        <em>i</em>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <a
+														                            href="https://fr.wiktionary.org/wiki/Annexe:Prononciation"
+														                            target="_blank"
+														                            title="wikt:Annexe:Prononciation"
+														                        >
+														                            /i/
+														                        </a>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <strong>yi</strong>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        prononcé comme un long "i", sauf lorsqu'il est précédé
+														                        par "c", "ch", "r", "s", "sh", "z" or "zh"; dans ces
+														                        cas-ci, "yi" doit être prononcé comme une extension
+														                        naturelle de ces sons dans la même position, mais
+														                        légèrement plus ouvert pour laisser passer le son clair
+														                        d'une voyelle.
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        笔记
+														                    </p>
+														                </td>
+														            </tr>
+														            <tr>
+														                <td>
+														                    <p align="center">
+														                        <em>ia</em>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <a
+														                            href="https://fr.wiktionary.org/wiki/Annexe:Prononciation"
+														                            target="_blank"
+														                            title="wikt:Annexe:Prononciation"
+														                        >
+														                            /iɑ/
+														                        </a>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <strong>ya</strong>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        comme <strong>i</strong> + <strong>a</strong>; comme
+														                        "un <strong>ya</strong>k"
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        亚洲
+														                    </p>
+														                </td>
+														            </tr>
+														            <tr>
+														                <td>
+														                    <p align="center">
+														                        <em>io</em>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <a
+														                            href="https://fr.wiktionary.org/wiki/Annexe:Prononciation"
+														                            target="_blank"
+														                            title="wikt:Annexe:Prononciation"
+														                        >
+														                            /iou̯/
+														                        </a>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <strong>yo</strong>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        comme <strong>i</strong> + <strong>o</strong> prononcé
+														                        "<strong>yo</strong>"; on le retrouve seulement dans
+														                        les formes finales
+														                    </p>
+														                </td>
+														                <td>
+														                    <br/>
+														                </td>
+														            </tr>
+														            <tr>
+														                <td>
+														                    <p align="center">
+														                        <em>ie</em>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <a
+														                            href="https://fr.wiktionary.org/wiki/Annexe:Prononciation"
+														                            target="_blank"
+														                            title="wikt:Annexe:Prononciation"
+														                        >
+														                            /iɛ/
+														                        </a>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <strong>ye</strong>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        comme <strong>i</strong> + <strong>e</strong> prononcé
+														                        "<strong>yé</strong>"
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        树叶
+														                    </p>
+														                </td>
+														            </tr>
+														            <tr>
+														                <td>
+														                    <p align="center">
+														                        <em>iai</em>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <a
+														                            href="https://fr.wiktionary.org/wiki/Annexe:Prononciation"
+														                            target="_blank"
+														                            title="wikt:Annexe:Prononciation"
+														                        >
+														                            /iɑ/
+														                        </a>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <strong>yai</strong>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        comme <strong>i</strong> + <strong>ai</strong> ; on le
+														                        retrouve seulement dans les formes finales
+														                    </p>
+														                </td>
+														                <td>
+														                    <br/>
+														                </td>
+														            </tr>
+														            <tr>
+														                <td>
+														                    <p align="center">
+														                        <em>iao</em>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <a
+														                            href="https://fr.wiktionary.org/wiki/Annexe:Prononciation"
+														                            target="_blank"
+														                            title="wikt:Annexe:Prononciation"
+														                        >
+														                            /iɑʊ/
+														                        </a>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <strong>yao</strong>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        comme <strong>i</strong> + <strong>ao</strong>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        要
+														                    </p>
+														                </td>
+														            </tr>
+														            <tr>
+														                <td>
+														                    <p align="center">
+														                        <em>i</em>
+														                        <em>（</em>
+														                        <em>o</em>
+														                        <em>）</em>
+														                        <em>u</em>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <a
+														                            href="https://fr.wiktionary.org/wiki/Annexe:Prononciation"
+														                            target="_blank"
+														                            title="wikt:Annexe:Prononciation"
+														                        >
+														                            /iou̯/
+														                        </a>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <strong>yuo</strong>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        comme <strong>i</strong> + <strong>ou</strong>
+														                    </p>
+														                </td>
+														                <td>
+														                    <br/>
+														                </td>
+														            </tr>
+														            <tr>
+														                <td>
+														                    <p align="center">
+														                        <em>ian</em>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <a
+														                            href="https://fr.wiktionary.org/wiki/Annexe:Prononciation"
+														                            target="_blank"
+														                            title="wikt:Annexe:Prononciation"
+														                        >
+														                            /iɛn/
+														                        </a>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <strong>yian</strong>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        comme <strong>i</strong> + <strong>an</strong>; proche
+														                        du prénom "<strong>yann</strong>"
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        抽烟
+														                    </p>
+														                </td>
+														            </tr>
+														            <tr>
+														                <td>
+														                    <p align="center">
+														                        <em>in</em>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <a
+														                            href="https://fr.wiktionary.org/wiki/Annexe:Prononciation"
+														                            target="_blank"
+														                            title="wikt:Annexe:Prononciation"
+														                        >
+														                            /̯iən/
+														                        </a>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <strong>yin</strong>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        comme <strong>i</strong> + <strong>en</strong>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        森林
+														                    </p>
+														                </td>
+														            </tr>
+														            <tr>
+														                <td>
+														                    <p align="center">
+														                        <em>iang</em>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <a
+														                            href="https://fr.wiktionary.org/wiki/Annexe:Prononciation"
+														                            target="_blank"
+														                            title="wikt:Annexe:Prononciation"
+														                        >
+														                            /iɑŋ/
+														                        </a>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <strong>yang</strong>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														comme <strong>i</strong> + <strong>ang</strong> ; le "                        <strong>g</strong>" ne se prononce pas et indique qu'il
+														                        faut arrondir la fin du son en bloquant l'air qui sort
+														                        de la bouche avec la langue
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        明亮
+														                    </p>
+														                </td>
+														            </tr>
+														            <tr>
+														                <td>
+														                    <p align="center">
+														                        <em>ing</em>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <a
+														                            href="https://fr.wiktionary.org/wiki/Annexe:Prononciation"
+														                            target="_blank"
+														                            title="wikt:Annexe:Prononciation"
+														                        >
+														                            /iɤŋ/
+														                        </a>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <strong>ying</strong>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        comme <strong>i</strong> + <strong>eng</strong>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        安静
+														                    </p>
+														                </td>
+														            </tr>
+														            <tr>
+														                <td>
+														                    <p align="center">
+														                        <em>u</em>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <a
+														                            href="https://fr.wiktionary.org/wiki/Annexe:Prononciation"
+														                            target="_blank"
+														                            title="wikt:Annexe:Prononciation"
+														                        >
+														                            /u/
+														                        </a>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <strong>wu</strong>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        comme dans l'anglais "c<strong>oo</strong>l"
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        乌鸦
+														                    </p>
+														                </td>
+														            </tr>
+														            <tr>
+														                <td>
+														                    <p align="center">
+														                        <em>ua</em>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <a
+														                            href="https://fr.wiktionary.org/wiki/Annexe:Prononciation"
+														                            target="_blank"
+														                            title="wikt:Annexe:Prononciation"
+														                        >
+														                            /ua/
+														                        </a>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <strong>wa</strong>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        comme <strong>u</strong> + <strong>a</strong>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        娃娃
+														                    </p>
+														                </td>
+														            </tr>
+														            <tr>
+														                <td>
+														                    <p align="center">
+														                        <em>uo</em>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <a
+														                            href="https://fr.wiktionary.org/wiki/Annexe:Prononciation"
+														                            target="_blank"
+														                            title="wikt:Annexe:Prononciation"
+														                        >
+														                            /uɔ/
+														                        </a>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <strong>wo</strong>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														comme <strong>u</strong> + <strong>o</strong>; le                        <strong>o</strong> est moins prononcé que lorsqu'il est
+														                        seul
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        我
+														                    </p>
+														                </td>
+														            </tr>
+														            <tr>
+														                <td>
+														                    <p align="center">
+														                        <em>uai</em>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <a
+														                            href="https://fr.wiktionary.org/wiki/Annexe:Prononciation"
+														                            target="_blank"
+														                            title="wikt:Annexe:Prononciation"
+														                        >
+														                            /uaɪ/
+														                        </a>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <strong>wai</strong>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        comme <strong>u</strong> + <strong>ai</strong>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        奇怪
+														                    </p>
+														                </td>
+														            </tr>
+														            <tr>
+														                <td>
+														                    <p align="center">
+														                        <em>ui</em>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <a
+														                            href="https://fr.wiktionary.org/wiki/Annexe:Prononciation"
+														                            target="_blank"
+														                            title="wikt:Annexe:Prononciation"
+														                        >
+														                            /ueɪ/
+														                        </a>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <strong>wei</strong>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														comme <strong>u</strong> + <strong>ei</strong>; ici, le                        <strong>i</strong> est prononcé <strong>ei</strong>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        威胁
+														                    </p>
+														                </td>
+														            </tr>
+														            <tr>
+														                <td>
+														                    <p align="center">
+														                        <em>uan</em>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <a
+														                            href="https://fr.wiktionary.org/wiki/Annexe:Prononciation"
+														                            target="_blank"
+														                            title="wikt:Annexe:Prononciation"
+														                        >
+														                            /uan/
+														                        </a>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <strong>wan</strong>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        comme <strong>u</strong> + <strong>an</strong>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        千万
+														                    </p>
+														                </td>
+														            </tr>
+														            <tr>
+														                <td>
+														                    <p align="center">
+														                        <em>un</em>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <a
+														                            href="https://fr.wiktionary.org/wiki/Annexe:Prononciation"
+														                            target="_blank"
+														                            title="wikt:Annexe:Prononciation"
+														                        >
+														                            /uən/
+														                        </a>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <strong>wen</strong>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        comme <strong>u</strong> + <strong>en</strong>; comme
+														                        dans l'anglais "<strong>won</strong>"
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        温暖
+														                    </p>
+														                </td>
+														            </tr>
+														            <tr>
+														                <td>
+														                    <p align="center">
+														                        <em>uang</em>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <a
+														                            href="https://fr.wiktionary.org/wiki/Annexe:Prononciation"
+														                            target="_blank"
+														                            title="wikt:Annexe:Prononciation"
+														                        >
+														                            /uɑŋ/
+														                        </a>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <strong>wang</strong>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        comme <strong>u</strong> + <strong>ang</strong>; comme
+														                        dans l'anglais "<strong>ang</strong>ry"
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        忘记
+														                    </p>
+														                </td>
+														            </tr>
+														            <tr>
+														                <td>
+														                    <p align="center">
+														                        <em>ong</em>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <a
+														                            href="https://fr.wiktionary.org/wiki/Annexe:Prononciation"
+														                            target="_blank"
+														                            title="wikt:Annexe:Prononciation"
+														                        >
+														                            /uɤŋ/
+														                        </a>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <strong>weng</strong>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        comme <strong>u</strong> + <strong>eng</strong>;
+														                        commence avec une voyelle comme "v<strong>ou</strong>s"
+														et finit avec un son nasal comme l'anglais "si                        <strong>ng"</strong>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        龙
+														                    </p>
+														                </td>
+														            </tr>
+														            <tr>
+														                <td>
+														                    <p align="center">
+														                        <em>ü</em>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <a
+														                            href="https://fr.wiktionary.org/wiki/Annexe:Prononciation"
+														                            target="_blank"
+														                            title="wikt:Annexe:Prononciation"
+														                        >
+														                            /y/
+														                        </a>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <strong>yu</strong>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        comme dans "l<strong>u</strong>ne"
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        雨
+														                    </p>
+														                </td>
+														            </tr>
+														            <tr>
+														                <td>
+														                    <p align="center">
+														                        <em>üe</em>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <a
+														                            href="https://fr.wiktionary.org/wiki/Annexe:Prononciation"
+														                            target="_blank"
+														                            title="wikt:Annexe:Prononciation"
+														                        >
+														                            /yɛ/
+														                        </a>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <strong>yue</strong>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														comme <strong>ü</strong> + <strong>ê</strong>; le                        <strong><em>ü</em></strong> est court et discret
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        月亮
+														                    </p>
+														                </td>
+														            </tr>
+														            <tr>
+														                <td>
+														                    <p align="center">
+														                        <em>üan</em>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <a
+														                            href="https://fr.wiktionary.org/wiki/Annexe:Prononciation"
+														                            target="_blank"
+														                            title="wikt:Annexe:Prononciation"
+														                        >
+														                            /yan/
+														                        </a>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <strong>yuan</strong>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        comme <strong>ü</strong> + <strong>an</strong>;
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        圆月
+														                    </p>
+														                </td>
+														            </tr>
+														            <tr>
+														                <td>
+														                    <p align="center">
+														                        <em>ün</em>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <a
+														                            href="https://fr.wiktionary.org/wiki/Annexe:Prononciation"
+														                            target="_blank"
+														                            title="wikt:Annexe:Prononciation"
+														                        >
+														                            /yən/
+														                        </a>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <strong>yun</strong>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        comme <strong>ü</strong> + <strong>en</strong>;
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        云雨
+														                    </p>
+														                </td>
+														            </tr>
+														            <tr>
+														                <td>
+														                    <p align="center">
+														                        <em>iong</em>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <a
+														                            href="https://fr.wiktionary.org/wiki/Annexe:Prononciation"
+														                            target="_blank"
+														                            title="wikt:Annexe:Prononciation"
+														                        >
+														                            /yɤŋ/
+														                        </a>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        <strong>yong</strong>
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        comme <strong>ü</strong> + <strong>eng</strong>;
+														                    </p>
+														                </td>
+														                <td>
+														                    <p align="center">
+														                        永远
+														                    </p>
+														                </td>
+														            </tr>
+														        </tbody>
+														    </table>
+														</div>
+														<p align="center">
+														    <strong> </strong>
+														</p>
+														<p>
+														    <strong>
+														        Note : les finales en « ng » ne se prononcent pas. « g » est muet. Les
+														        voyelles avec ton #1 sont hautes.
+														    </strong>
+														</p>
+													</div>
+
+		</div>										
+		</div>									
+		<div id="footer">
+				<div id="boutontop"><a href="#" target="_top" title="Retour en haut de page"><img src="files/boutontop.png"/></a></div>
+		</div>
+	</body>
+</html>

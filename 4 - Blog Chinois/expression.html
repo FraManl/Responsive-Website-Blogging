@@ -1,0 +1,149 @@
+<html>
+	<head>
+			<title>Apprentissage du chinois</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+			<link href="style.css" rel="stylesheet" type="text/css" />
+			<script src="./js/d3.v4.min.js"></script>
+			<link rel="stylesheet" href="stylebouton.css">
+
+			<script src="jquery-3.2.0.min.js"></script>
+			
+			<script type="text/javascript">
+				$(function() {
+						var $colgauche   = $("#colgauche"), 
+							$window    = $(window),
+							offset     = $colgauche.offset(),
+							topPadding = 2;
+
+						$window.scroll(function() {
+							if ($window.scrollTop() > offset.top) {
+								$colgauche.stop().animate({
+									marginTop: $window.scrollTop() - offset.top + topPadding
+								});
+							} else {
+								$colgauche.stop().animate({
+									marginTop: 0
+								});
+							}
+						});
+					});
+			</script>
+			
+			<script type="text/javascript">
+				$(function() {
+						var $coldroite   = $("#coldroite"), 
+							$window    = $(window),
+							offset     = $coldroite.offset(),
+							topPadding = 2;
+
+						$window.scroll(function() {
+							if ($window.scrollTop() > offset.top) {
+								$coldroite.stop().animate({
+									marginTop: $window.scrollTop() - offset.top + topPadding
+								});
+							} else {
+								$coldroite.stop().animate({
+									marginTop: 0
+								});
+							}
+						});
+					});
+			</script>
+			
+		<div id="header">
+			<link href="style.css" rel="stylesheet" type="text/css" />
+			<div id="logocontain">
+                <a href="http://www.chine-nouvelle.com/" target="_blank" title=""><div id="logo"></div></a>
+			</div>
+
+			<div id="topicons">
+                <div class="topico">
+					<a href="http://www.chine-nouvelle.com/outils/editeur.html" target="_blank" title="Editeur de texte"><img src="files/editeur.png"/></a>
+				</div>
+				<div class="topico">
+					<a href="https://www.ifreesite.com/pinyin/" target="_blank" title="Convertisseur Pinyin"><img src="files/ifreesite.png"/></a>
+				</div>
+				<div class="topico">
+					<a href="" target="_blank" title=""><img src="files/bonhomme.png"/></a>
+				</div>
+			</div>
+		</div>
+	</head>
+	<body>	
+		<div id="colgauche">
+				<div class="menu">
+
+					<div class="boutontop" style="font-size:100%;font-weight:bold"><a href="accueil.html" target="_top" style="text-decoration:none">Accueil</a></div>
+                    </br>
+                    </br>
+					<div class="title" style="font-size:100%;font-weight:bold;text-decoration:none">Lexique</div>
+					<div class="bouton1">
+							<a href="hanzi.html" target="_top" style="font-size:80%;text-decoration:none">Listing de caractères chinois</a>
+					</div>
+					<div class="bouton1">
+							<a href="<expressions.html" target="_top" style="font-size:80%;text-decoration:none">Expressions courantes</a>
+					</div>
+					<div class="bouton1">
+							<a href="<vocab.html" target="_top" style="font-size:80%;text-decoration:none">Vocabulaire à apprendre</a>
+					</div>
+                    </br>
+					</br>
+					<div class="title" style="font-size:100%;font-weight:bold;text-decoration:none">Grammaire chinoise</div>
+					<div class="bouton1">
+							<a href="cadrage.html" target="_top" style="font-size:80%;text-decoration:none">Autour du noms</a>
+					</div>
+					<div class="bouton1">
+							<a href="scoringp.html" target="_top" style="font-size:80%;text-decoration:none">Autour du verbe</a>
+					</div>
+                    <div class="bouton1">
+							<a href="scoring.html" target="_top" style="font-size:80%;text-decoration:none">Autour de la phrase</a>
+					</div>
+					<div class="bouton1">
+							<a href="cadrage.html" target="_top" style="font-size:80%;text-decoration:none">Structures types de phrases</a>
+					</div>
+					</br>
+                    </br>
+					<div class="title" style="font-size:100%;font-weight:bold;text-decoration:none">Exercices oraux</div>
+					<div class="bouton1">
+							<a href="dialapp.html" target="_top" style="font-size:80%;text-decoration:none">Dialogues libres</a>
+					</div>
+					<div class="bouton1">
+							<a href="diallivre.html" target="_top" style="font-size:80%;text-decoration:none">Dialogues issus de l'ouvrage de Bellassen</a>
+					</div>
+				</div>
+		</div>
+		<div id="coldroite">
+            <div class="title" style="font-size:1.18vw;font-size:100%;font-weight:bold;margin-top:55px;text-align:center;margin-auto">Ressources</div></br>
+						<div class="listcoldroite">
+                            <p style="font-size:1.18vw;font-size:80%;margin:auto;margin-left:10px;color:lightred;font-weight:bold">Exports au format...</p>
+							<div class="container"><a href="#" class="button button-pink">.DOCX</a><a href="#" class="button button-blue">.PDF</a></br></div>
+						</div>
+							
+		</div>
+		<div id="centre">
+            <h1 class="h1" style="text-align:center;margin-top:50px">Apprentissage du chinois</h1></br>
+						<h2 class="h1" style="text-align:center;color:darkblue">Blog recensant un ensemble de lexiques, leçons et exercices</br>réalisés pour l'apprentissage du chinois mandarin.</h2>
+												</br>
+												</br>
+												<h2 class="h1" style="text-align:left;color:darkblue;margin-left:45px">Descriptif</h2>
+												</br>
+												<p align="justify" style="margin-left:80px">Le support web suivant est un espace destiné à favoriser l'apprentissage et la capitalisation des connaissances en chinois mandarin.</br>Il fait état de lexiques et leçons réalisés à partir de deux ouvrages principaux :
+												
+													<ul align="justify" style="margin-left:100px">
+																<li>Niveau A2 CECRL - <strong>Méthode d'initiation à la langue et à l'écriture chinoises</strong> (Joël Bellassen, édition LaCompagnie).</li>
+																<li>Niveau A2-B1 CECR - <strong>Bescherelle, le chinois pour tous</strong> (édition Hatier).</li>
+													</ul>
+												</p>
+												<br>
+                                                <h2 class="h1" style="text-align:left;color:darkblue;margin-left:45px">Objectif</h2>
+												</br>
+												<p align="justify" style="margin-left:80px">Favoriser l'assimilation des caractères, la pratique d'exercices courant et la mémorisation essentiels des sinogrammes et expressions; produire un accès rapide et au moindre clique à l'ensemble des règles de grammaire.</p>
+												<div style='clear:both'></div>
+												</p>
+		</div>										
+		</div>									
+		<div id="footer">
+				<div id="boutontop"><a href="#" target="_top" title="Retour en haut de page"><img src="files/boutontop.png"/></a></div>
+		</div>
+	</body>
+</html>

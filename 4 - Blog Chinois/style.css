@@ -1,0 +1,542 @@
+#header {
+	position:absolute;
+    background: -webkit-gradient(linear, left top, right top, from(  #02bafe  ), color-stop(0.25, #6ac), color-stop(0.5,   #02bafe ), color-stop(0.75, #6ac), to(  #02bafe  ));
+    background: -webkit-linear-gradient(left,  #4d8f8f ,    #e8f5f9   , #DDEEFF,    #e8f5f9   , #DDEEFF);
+    background: -moz-linear-gradient(left, #f8f8fa, #f8f8fa, #f8f8fa); 
+	width:100%;
+	min-width:99%;
+    height:98px;
+	min-height:98px;
+	border-bottom:1px solid #69c;
+	box-shadow: 0 6px 6px rgba(20, 30, 15, 2.65);
+	/ Mise en forme du bandeau header /
+}
+
+#topicons {
+	position:absolute;
+	right:75px;
+	top:18px;	
+	transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease; /* Transition de type ease */ 
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+	/ Mise en page logos de droite /
+}
+#topicons:hover {
+	transform: translateY(-20px);
+}
+
+a img {
+    border: 0;
+	/ Mise en page logos headers menus de droite mais en liste cote à cote /
+}
+
+
+.topico {
+	float:left;
+	margin:8px 10px;
+	padding:0 0 0 0;
+	/ Mise en page logos de menus de droite dans le header /
+}
+
+#logocontain {
+	float:left;
+	margin-left:1px;
+	margin-top:7.16px;
+	margin-bottom:3px;
+	width:340px;
+	height:90px;
+	border: 0px dashed #209ac8 ;
+	transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease; /* Transition de type ease */
+}
+#logocontain:hover {
+	transform: translateX(250px);
+}
+
+#logo {
+	background-image: url(files/zhongwen.png);
+	background-repeat: no-repeat;
+	height:99%;
+	width:100%;
+	margin-left:20%;
+    //display: block;//
+	/ Mise en page logo "Home" /
+}
+
+html, body
+{
+	background-color:white;
+	font-family: "Corbel", "Verdana";
+	font-size:14px;
+    font-size: 1.05vw;
+	height:100%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	/** Mise en page globale pour tout le body **/
+}
+
+/** Mise en page de l'espace des menus et sous menus colonne de gauche **/
+.menu {
+	margin-top:35px;
+	margin-left:15%;
+	font-family: "Corbel", "cambria";
+    font-size: 1.08vw;
+    max-height:20%;
+}
+
+
+.menu a:link 
+{ 
+	color:darkblue; 
+}
+
+.menu a:active 
+{
+	color:yellowgreen; 
+}
+.menu a:hover 
+{ 
+	color:cyan; 
+}
+
+/ Mise en page des menus colonne de gauche lorsque parcourus /
+
+
+
+.title
+{
+	font-family:"Corbel";
+	font-size:100%;
+	font-weight:bold;
+    color:darkcyan;
+	/** Mise en page des menu colonne de gauche **/
+}
+
+/** Mise en page des sous menus colonne de gauche lorsque visités **/
+.title a:link, .title a:visited, .title a:active
+{
+	color:darkcyan;
+}
+
+.title a:hover {
+	background-color:;
+}
+
+
+ /* Mise en age bouton accuail */
+.boutontop {
+  color:orange;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 3px transparent;
+  position: relative;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+.boutontop:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: 100%;
+  left: 5%;
+  height: 18px;
+  width: 90%;
+  opacity: 0;
+  background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, transparent 60%);
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, transparent 80%);
+  /* W3C */
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+}
+.boutontop:hover, .boutontop:focus, .boutontop:active {
+  -webkit-transform: translateY(-9px);
+  transform: translateY(-9px);
+  /* move the element up by 5px */
+}
+.boutontop:hover:before, .boutontop:focus:before, .boutontop:active:before {
+  opacity: 10;
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px);
+  /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+}
+
+
+
+/** Mise en page des sous menus colonne de gauche **/
+.bouton1 {
+	margin-top:10px;
+	margin-left:15px;
+	width:75%;
+	text-decoration:none;
+	font-family:Corbel;
+	font-size:100%;
+	font-weight:bold;
+	color:#313;
+	display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    position: relative;
+    overflow: hidden;
+	border:0px solid black;
+}
+
+.bouton1:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  top: 0;
+  background: #2098D1;
+  height: 2.9px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+
+}
+
+.bouton1:hover:before, .bouton1:focus:before, .bouton1:active:before {
+  right: 0;
+}
+
+
+.listcoldroite {
+	margin-top:10px;
+	text-decoration:none;
+	margin-left:0px;
+	font-family:Corbel;
+	font-size:100%;
+	font-weight:bold;
+	text-align:left;
+	padding-left:8px;
+	padding-top:2px;
+	color:#52a7a7;
+
+}
+
+
+#colgauche {
+	position:relative;
+	top:105px;
+	float: left;
+	width:16%;
+	font-family:corbel;
+	margin-top:0px;
+	margin-right: 9px;
+	height:auto;
+	border: 0px solid lightblue;
+	/ Colonne gauche /
+}
+
+#coldroite {
+	position:relative;
+	height:auto;
+	top:105px;
+	float: right;
+	width: 14%;
+	margin-top:0px;
+	margin-left: 9px;
+	margin-right:0px;
+	border: 0px solid orange;
+	/ Colonne droite /
+}
+
+#centre {
+	top:105px;
+	position:relative;
+	overflow:hidden;
+	padding-bottom:50px;
+	padding-right:40px;
+	margin-top:0px;
+	border: 0px solid lightblue;
+	font-family:Corbel;
+	border-left:3px solid #3392ad;
+	border-right:3px solid #3392ad;
+	/ Colonne centre /
+}
+
+h1 
+{ 
+	font-size: 28px; 
+	color:darkblue;
+	font-weight:normal;
+	margin-top:20px;
+	margin-bottom:20px;
+	text-align:left;
+	text-decoration:none;
+	/ Grand titre dans la colonne du centre /
+}
+
+h2
+{ 
+	font-size: 22px; 
+	color:blue;
+	font-weight:normal;
+	margin-top:5px;
+	margin-bottom:2px;
+	text-align:left;
+	text-decoration:none;
+	/ Grand titre dans la colonne du centre /
+}
+
+
+
+.titres {
+	color: black;
+	text-align:left;
+	font-size: 14px;
+	padding-bottom:5px;
+	padding-top:10px;
+	margin-bottom:10px;
+	margin-left:16px;
+	/ Titres principaux centre de la page /
+}
+
+.titrescoldroite {
+	color: black;
+	text-align:center;
+	font-size: 15px;
+	font-weight:bold;
+	padding-bottom:5px;
+	padding-top:10px;
+	font-family:Corbel;
+	/ Le titre de la colonne de droite /
+}
+
+.liencoldroite {
+	text-decoration:none;
+	color: inherit;
+	text-align:center;
+	font-size: 14px;
+	padding-bottom:2px;
+	padding-top:10px;
+	margin-left:10px;
+	font-family: Corbel
+}
+
+
+#content p {
+	padding:1px 1px 3px 1px;
+	width:80%;
+	/ Paragraphes dans le centre /
+}
+
+img {
+	 max-width:100%;
+	 max-height:100%;
+	 width:auto;
+	 height:auto;
+}
+
+.divsquarehisto_wrap {
+	height:675px;
+	margin-left:60px;
+    margin-right:10px;
+	border:0px solid yellow; 
+}
+
+.divsquarescoring_wrap {
+	height:650px;
+	margin-left:60px;
+    margin-right:40px;
+    width:90%;
+	border:0px solid yellow; 
+}
+
+.consonnewrapper {
+	height:400px;
+	margin-left:60px;
+    margin-right:40px;
+    width:90%;
+	border:0px solid yellow; 
+}
+
+.finalewrapper {
+	height:auto;
+	max-height:100%;
+	margin-left:60px;
+    margin-right:40px;
+    width:90%;
+    padding:10px;
+	border:0px solid yellow; 
+}
+
+.chiffrewrapper {
+	height:auto;
+	max-height:100%;
+	margin-left:60px;
+    margin-right:40px;
+    width:90%;
+    padding:10px;
+	border:0px solid yellow; 
+}
+
+.divSquarehisto {
+	 height:98%;
+     width:47%; 
+	 margin:2px;
+	 margin-left:4px;
+	 padding-top:5px;
+	 margin-bottom:5px; 
+	 border:0px solid blue; 
+	 float: left;
+	 padding-bottom:1px;
+	 overflow:auto;
+}
+
+.divSquarehisto2 {
+	 height:98%;
+     width:55%; 
+	 margin:2px;
+	 margin-left:4px;
+	 padding-top:5px;
+	 margin-bottom:5px; 
+	 border:0px solid blue; 
+	 float: left;
+	 padding-bottom:1px;
+	 overflow:auto;
+}
+
+.divSquarehisto3 {
+	 height:98%;
+     width:55%; 
+	 margin:2px;
+	 margin-left:4px;
+	 padding-top:5px;
+	 margin-bottom:5px; 
+	 border:0px solid blue; 
+	 float: left;
+	 padding-bottom:1px;
+	 overflow:auto;
+}
+
+.divSquaretext {
+	 height:98%;
+     width:42%; 
+	 margin:2px;
+	 margin-left:2px;
+	 padding-top:5px;
+	 margin-bottom:5px; 
+	 border:0px solid blue; 
+	 float: right;
+	 padding-bottom:1px;
+	 overflow:auto;
+}
+
+.divSquare2 {
+     width:auto; 
+	 height:auto; 
+     max-width:100%;
+	 max-height:100%;
+	 margin-bottom:5px; 
+	 float: left;
+	 padding-right:1px;
+	 padding-bottom:1px;
+	 border:0px dashed #3392ad
+     
+}
+
+.divSquarescoringp {
+	 text-align:center;
+     width:44%; 
+	 height:75%; 
+	 margin:auto;
+	 margin-left:4%;
+	 border:0px solid lightblue; 
+	 float: left;
+	 padding-right:1px;
+	 padding-bottom:1px;
+
+}
+
+.divimage {
+	 text-align:center;
+     width:70%; 
+	 height:auto; 
+	 margin:auto;
+	 border:0px solid lightblue; 
+	 float: center;
+	 padding-right:1px;
+	 padding-bottom:1px;
+
+}
+
+.divprogramme {
+     width:95%; 
+	 height:auto; 
+	 max-height:100%;
+	 margin:auto;
+	 margin-left:45px;
+	 border:0px dashed grey; 
+	 float: left;
+	 padding-right:1px;
+	 padding-bottom:1px;
+
+}
+
+#myDiv13 {
+	max-width: 99%; 
+	height:660px;
+	margin-right:1px;
+	margin-left:1px;
+    width:auto;
+	border:0px solid green; 
+}
+
+#myDiv14 {
+	max-width: 99%; 
+    width:auto;
+	height:660px;
+	margin-right:1px;
+	margin-left:1px;
+	border:0px solid green; 
+}
+
+#myDiv17 {
+	max-width: 99%; 
+    width:auto;
+	height:660px;
+	margin-right:1px;
+	margin-left:1px;
+	border:0px solid green; 
+}
+
+#footer { 
+	position:fixed;
+	top:90%;
+	left: 51%;
+    transform: translate(-50%, -50%);
+	height:80px;
+	width:4%;
+	border:0px solid #369;
+	display:inline-block;
+	/ bas de page /
+}
+
+#boutontop { 
+	font-weight: bold;
+	margin:auto;
+	font:10pt Corbel;
+	margin-top:4px;
+	position:absolute;
+    / le texte dans le footer /  
+}
+

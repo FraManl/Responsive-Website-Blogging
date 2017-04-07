@@ -1,0 +1,783 @@
+<html>
+	<head>
+			<title>Apprentissage du chinois</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+			<link href="style.css" rel="stylesheet" type="text/css" />
+			<script src="./js/d3.v4.min.js"></script>
+			<link rel="stylesheet" href="stylebouton.css">
+
+			<script src="jquery-3.2.0.min.js"></script>
+			
+			<script type="text/javascript">
+				$(function() {
+						var $colgauche   = $("#colgauche"), 
+							$window    = $(window),
+							offset     = $colgauche.offset(),
+							topPadding = 2;
+
+						$window.scroll(function() {
+							if ($window.scrollTop() > offset.top) {
+								$colgauche.stop().animate({
+									marginTop: $window.scrollTop() - offset.top + topPadding
+								});
+							} else {
+								$colgauche.stop().animate({
+									marginTop: 0
+								});
+							}
+						});
+					});
+			</script>
+			
+			<script type="text/javascript">
+				$(function() {
+						var $coldroite   = $("#coldroite"), 
+							$window    = $(window),
+							offset     = $coldroite.offset(),
+							topPadding = 2;
+
+						$window.scroll(function() {
+							if ($window.scrollTop() > offset.top) {
+								$coldroite.stop().animate({
+									marginTop: $window.scrollTop() - offset.top + topPadding
+								});
+							} else {
+								$coldroite.stop().animate({
+									marginTop: 0
+								});
+							}
+						});
+					});
+			</script>
+			
+		<div id="header">
+			<link href="style.css" rel="stylesheet" type="text/css" />
+			<div id="logocontain">
+                <a href="http://www.chine-nouvelle.com/" target="_blank" title=""><div id="logo"></div></a>
+			</div>
+
+			<div id="topicons">
+                <div class="topico">
+					<a href="http://www.chine-nouvelle.com/outils/editeur.html" target="_blank" title="Editeur de texte"><img src="files/editeur.png"/></a>
+				</div>
+				<div class="topico">
+					<a href="https://www.ifreesite.com/pinyin/" target="_blank" title="Convertisseur Pinyin"><img src="files/ifreesite.png"/></a>
+				</div>
+				<div class="topico">
+					<a href="" target="_blank" title=""><img src="files/bonhomme.png"/></a>
+				</div>
+			</div>
+		</div>
+	</head>
+	<body>	
+		<div id="colgauche">
+				<div class="menu">
+
+					<div class="boutontop" style="font-size:100%;font-weight:bold"><a href="accueil.html" target="_top" style="text-decoration:none">Accueil</a></div>
+                    </br>
+                    </br>
+					<div class="title" style="font-size:100%;font-weight:bold;text-decoration:none">Lexique</div>
+					<div class="bouton1">
+							<a href="hanzi1.html" target="_top" style="font-size:80%;text-decoration:none">Finales et consonnes</a>
+					</div>
+					<div class="bouton1">
+							<a href="hanzi2.html" target="_top" style="font-size:80%;text-decoration:none">Chiffres et nombres</a>
+					</div>
+					<div class="bouton1">
+							<a href="hanzi3.html" target="_top" style="font-size:80%;text-decoration:none">Date, heure, temps</a>
+					</div>
+					<div class="bouton1">
+							<a href="hanzi4.html" target="_top" style="font-size:80%;text-decoration:none">Date, heure, temps</a>
+					</div>
+					<div class="bouton1">
+							<a href="<expressions.html" target="_top" style="font-size:80%;text-decoration:none">Expressions courantes</a>
+					</div>
+					<div class="bouton1">
+							<a href="<vocab.html" target="_top" style="font-size:80%;text-decoration:none">Vocabulaire à apprendre</a>
+					</div>
+                    </br>
+					</br>
+					<div class="title" style="font-size:100%;font-weight:bold;text-decoration:none">Grammaire chinoise</div>
+					<div class="bouton1">
+							<a href="cadrage.html" target="_top" style="font-size:80%;text-decoration:none">Autour du noms</a>
+					</div>
+					<div class="bouton1">
+							<a href="scoringp.html" target="_top" style="font-size:80%;text-decoration:none">Autour du verbe</a>
+					</div>
+                    <div class="bouton1">
+							<a href="scoring.html" target="_top" style="font-size:80%;text-decoration:none">Autour de la phrase</a>
+					</div>
+					<div class="bouton1">
+							<a href="cadrage.html" target="_top" style="font-size:80%;text-decoration:none">Structures types de phrases</a>
+					</div>
+					</br>
+                    </br>
+					<div class="title" style="font-size:100%;font-weight:bold;text-decoration:none">Exercices oraux</div>
+					<div class="bouton1">
+							<a href="dialapp.html" target="_top" style="font-size:80%;text-decoration:none">Dialogues libres</a>
+					</div>
+					<div class="bouton1">
+							<a href="diallivre.html" target="_top" style="font-size:80%;text-decoration:none">Dialogues ouvrages</a>
+					</div>
+				</div>
+		</div>
+		<div id="coldroite">
+            <div class="title" style="font-size:1.18vw;font-size:100%;font-weight:bold;margin-top:55px;text-align:center;margin-auto">Ressources</div></br>
+						<div class="listcoldroite">
+                            <p style="font-size:1.18vw;font-size:80%;margin:auto;margin-left:10px;color:lightred;font-weight:bold">Exports au format...</p>
+							<div class="container"><a href="#" class="button button-pink">.DOCX</a><a href="#" class="button button-blue">.PDF</a></br></div>
+						</div>
+							
+		</div>
+		<div id="centre">
+            <h1 class="h1" style="text-align:center;margin-top:50px">Apprentissage du chinois</h1></br>
+						<h2 class="h1" style="text-align:center;color:darkblue">Rappel de règles de prononciation : finales et consonnes</h2>
+												</br>
+												</br>
+												<h2 class="h1" style="text-align:left;color:darkblue;margin-left:45px">Descriptif</h2>
+												</br>
+												<p align="justify" style="margin-left:80px">Le support web suivant est un espace destiné à favoriser l'apprentissage et la capitalisation des connaissances en chinois mandarin.</br>Il fait état de lexiques et leçons réalisés à partir de deux ouvrages principaux :
+												
+													<ul align="justify" style="margin-left:100px">
+																<li>Niveau A2 CECRL - <strong>Méthode d'initiation à la langue et à l'écriture chinoises</strong> (Joël Bellassen, édition LaCompagnie).</li>
+																<li>Niveau A2-B1 CECR - <strong>Bescherelle, le chinois pour tous</strong> (édition Hatier).</li>
+													</ul>
+												</p>
+												<br>
+                                                <h2 class="h1" style="text-align:left;color:darkblue;margin-left:45px">Objectif</h2>
+												</br>
+												<p align="justify" style="margin-left:80px">Favoriser l'assimilation des caractères, la pratique d'exercices courant et la mémorisation essentiels des sinogrammes et expressions; produire un accès rapide et au moindre clique à l'ensemble des règles de grammaire.</p>
+												<div style='clear:both'></div>
+												</p>
+												</br></br>
+                                                <div class="chiffrewrapper">
+                                                	<h2 class="h1" style="text-align:center;color:darkblue;margin-left:45px">Chiffres et nombres</h2></br></br>
+														<div align="center">
+															<table cellspacing="0" cellpadding="0" width="683" border="1">
+															        <tbody>
+															            <tr>
+															                <td width="78">
+															                    <p align="center">
+															                        第
+															                    </p>
+															                </td>
+															                <td width="97">
+															                    <p align="center">
+															                        dì
+															                    </p>
+															                </td>
+															                <td width="129">
+															                    <p align="center">
+															                        -ème
+															                    </p>
+															                </td>
+															                <td width="147">
+															                    <p align="center">
+															                        千
+															                    </p>
+															                </td>
+															                <td width="151">
+															                    <p align="center">
+															                        qiān
+															                    </p>
+															                </td>
+															                <td width="81">
+															                    <p align="center">
+															                        milliers / thousands
+															                    </p>
+															                </td>
+															            </tr>
+															            <tr>
+															                <td width="78">
+															                    <p align="center">
+															                        0
+															                    </p>
+															                </td>
+															                <td width="97">
+															                    <p align="center">
+															                        líng
+															                    </p>
+															                </td>
+															                <td width="129">
+															                    <p align="center">
+															                        zéro / zero
+															                    </p>
+															                </td>
+															                <td width="147">
+															                    <p align="center">
+															                        万
+															                    </p>
+															                </td>
+															                <td width="151">
+															                    <p align="center">
+															                        wàn
+															                    </p>
+															                </td>
+															                <td width="81">
+															                    <p align="center">
+															                        dix mille / ten thousand
+															                    </p>
+															                </td>
+															            </tr>
+															            <tr>
+															                <td width="78">
+															                    <p align="center">
+															                        零
+															                    </p>
+															                </td>
+															                <td width="97">
+															                    <p align="center">
+															                        líng
+															                    </p>
+															                </td>
+															                <td width="129">
+															                    <p align="center">
+															                        zéro / zero
+															                    </p>
+															                </td>
+															                <td width="147">
+															                    <p align="center">
+															                        十
+															                    </p>
+															                </td>
+															                <td width="151">
+															                    <p align="center">
+															                        shí
+															                    </p>
+															                </td>
+															                <td width="81">
+															                    <p align="center">
+															                        10
+															                    </p>
+															                </td>
+															            </tr>
+															            <tr>
+															                <td width="78">
+															                    <p align="center">
+															                        一
+															                    </p>
+															                </td>
+															                <td width="97">
+															                    <p align="center">
+															                        yī
+															                    </p>
+															                </td>
+															                <td width="129">
+															                    <p align="center">
+															                        un / one
+															                    </p>
+															                </td>
+															                <td width="147">
+															                    <p align="center">
+															                        十一
+															                    </p>
+															                </td>
+															                <td width="151">
+															                    <p align="center">
+															                        shí yī
+															                    </p>
+															                </td>
+															                <td width="81">
+															                    <p align="center">
+															                        11
+															                    </p>
+															                </td>
+															            </tr>
+															            <tr>
+															                <td width="78">
+															                    <p align="center">
+															                        二
+															                    </p>
+															                </td>
+															                <td width="97">
+															                    <p align="center">
+															                        èr
+															                    </p>
+															                </td>
+															                <td width="129">
+															                    <p align="center">
+															                        deux / two (chiffre)
+															                    </p>
+															                </td>
+															                <td width="147">
+															                    <p align="center">
+															                        十二
+															                    </p>
+															                </td>
+															                <td width="151">
+															                    <p align="center">
+															                        shí èr
+															                    </p>
+															                </td>
+															                <td width="81">
+															                    <p align="center">
+															                        12
+															                    </p>
+															                </td>
+															            </tr>
+															            <tr>
+															                <td width="78">
+															                    <p align="center">
+															                        两
+															                    </p>
+															                </td>
+															                <td width="97">
+															                    <p align="center">
+															                        liǎng
+															                    </p>
+															                </td>
+															                <td width="129">
+															                    <p align="center">
+															                        deux / two (choses / personnes)
+															                    </p>
+															                </td>
+															                <td width="147">
+															                    <p align="center">
+															                        十八
+															                    </p>
+															                </td>
+															                <td width="151">
+															                    <p align="center">
+															                        shí bā
+															                    </p>
+															                </td>
+															                <td width="81">
+															                    <p align="center">
+															                        18
+															                    </p>
+															                </td>
+															            </tr>
+															            <tr>
+															                <td width="78">
+															                    <p align="center">
+															                        三
+															                    </p>
+															                </td>
+															                <td width="97">
+															                    <p align="center">
+															                        sān
+															                    </p>
+															                </td>
+															                <td width="129">
+															                    <p align="center">
+															                        trois / three
+															                    </p>
+															                </td>
+															                <td width="147">
+															                    <p align="center">
+															                        二十一
+															                    </p>
+															                </td>
+															                <td width="151">
+															                    <p align="center">
+															                        èr shí yī
+															                    </p>
+															                </td>
+															                <td width="81">
+															                    <p align="center">
+															                        20
+															                    </p>
+															                </td>
+															            </tr>
+															            <tr>
+															                <td width="78">
+															                    <p align="center">
+															                        四
+															                    </p>
+															                </td>
+															                <td width="97">
+															                    <p align="center">
+															                        sì
+															                    </p>
+															                </td>
+															                <td width="129">
+															                    <p align="center">
+															                        quatre / four
+															                    </p>
+															                </td>
+															                <td width="147">
+															                    <p align="center">
+															                        二十五
+															                    </p>
+															                </td>
+															                <td width="151">
+															                    <p align="center">
+															                        èr shí wǔ
+															                    </p>
+															                </td>
+															                <td width="81">
+															                    <p align="center">
+															                        25
+															                    </p>
+															                </td>
+															            </tr>
+															            <tr>
+															                <td width="78">
+															                    <p align="center">
+															                        五
+															                    </p>
+															                </td>
+															                <td width="97">
+															                    <p align="center">
+															                        wǔ
+															                    </p>
+															                </td>
+															                <td width="129">
+															                    <p align="center">
+															                        cinq / five
+															                    </p>
+															                </td>
+															                <td width="147">
+															                    <p align="center">
+															                        三十
+															                    </p>
+															                </td>
+															                <td width="151">
+															                    <p align="center">
+															                        sān shí
+															                    </p>
+															                </td>
+															                <td width="81">
+															                    <p align="center">
+															                        30
+															                    </p>
+															                </td>
+															            </tr>
+															            <tr>
+															                <td width="78">
+															                    <p align="center">
+															                        六
+															                    </p>
+															                </td>
+															                <td width="97">
+															                    <p align="center">
+															                        liù
+															                    </p>
+															                </td>
+															                <td width="129">
+															                    <p align="center">
+															                        six / six
+															                    </p>
+															                </td>
+															                <td width="147">
+															                    <p align="center">
+															                        五十
+															                    </p>
+															                </td>
+															                <td width="151">
+															                    <p align="center">
+															                        wǔ shí
+															                    </p>
+															                </td>
+															                <td width="81">
+															                    <p align="center">
+															                        50
+															                    </p>
+															                </td>
+															            </tr>
+															            <tr>
+															                <td width="78">
+															                    <p align="center">
+															                        七
+															                    </p>
+															                </td>
+															                <td width="97">
+															                    <p align="center">
+															                        qī (tsi)
+															                    </p>
+															                </td>
+															                <td width="129">
+															                    <p align="center">
+															                        sept / seven
+															                    </p>
+															                </td>
+															                <td width="147">
+															                    <p align="center">
+															                        一百
+															                    </p>
+															                </td>
+															                <td width="151">
+															                    <p align="center">
+															                        yī bǎi
+															                    </p>
+															                </td>
+															                <td width="81">
+															                    <p align="center">
+															                        100
+															                    </p>
+															                </td>
+															            </tr>
+															            <tr>
+															                <td width="78">
+															                    <p align="center">
+															                        八
+															                    </p>
+															                </td>
+															                <td width="97">
+															                    <p align="center">
+															                        bā
+															                    </p>
+															                </td>
+															                <td width="129">
+															                    <p align="center">
+															                        huit / eight
+															                    </p>
+															                </td>
+															                <td width="147">
+															                    <p align="center">
+															                        一百五十
+															                    </p>
+															                </td>
+															                <td width="151">
+															                    <p align="center">
+															                        yī bǎi wǔ shí
+															                    </p>
+															                </td>
+															                <td width="81">
+															                    <p align="center">
+															                        150
+															                    </p>
+															                </td>
+															            </tr>
+															            <tr>
+															                <td width="78">
+															                    <p align="center">
+															                        九
+															                    </p>
+															                </td>
+															                <td width="97">
+															                    <p align="center">
+															                        jiǔ
+															                    </p>
+															                </td>
+															                <td width="129">
+															                    <p align="center">
+															                        neuf / nine
+															                    </p>
+															                </td>
+															                <td width="147">
+															                    <p align="center">
+															                        二百二十三
+															                    </p>
+															                </td>
+															                <td width="151">
+															                    <p align="center">
+															                        èr bǎi èr shí sān
+															                    </p>
+															                </td>
+															                <td width="81">
+															                    <p align="center">
+															                        223
+															                    </p>
+															                </td>
+															            </tr>
+															            <tr>
+															                <td width="78">
+															                    <p align="center">
+															                        十
+															                    </p>
+															                </td>
+															                <td width="97">
+															                    <p align="center">
+															                        shí
+															                    </p>
+															                </td>
+															                <td width="129">
+															                    <p align="center">
+															                        dix / ten
+															                    </p>
+															                </td>
+															                <td width="147">
+															                    <p align="center">
+															                        九百九十九
+															                    </p>
+															                </td>
+															                <td width="151">
+															                    <p align="center">
+															                        jiǔ bǎi jiǔ shí jiǔ
+															                    </p>
+															                </td>
+															                <td width="81">
+															                    <p align="center">
+															                        999
+															                    </p>
+															                </td>
+															            </tr>
+															            <tr>
+															                <td width="78">
+															                    <p align="center">
+															                        百
+															                    </p>
+															                </td>
+															                <td width="97">
+															                    <p align="center">
+															                        bǎi
+															                    </p>
+															                </td>
+															                <td width="129">
+															                    <p align="center">
+															                        centaines / undreds
+															                    </p>
+															                </td>
+															                <td width="147">
+															                    <p align="center">
+															                        一千
+															                    </p>
+															                </td>
+															                <td width="151">
+															                    <p align="center">
+															                        yī qiān
+															                    </p>
+															                </td>
+															                <td width="81">
+															                    <p align="center">
+															                        1000
+															                    </p>
+															                </td>
+															            </tr>
+															            <tr>
+															                <td width="78">
+															                    <p align="center">
+															                        一千零一
+															                    </p>
+															                </td>
+															                <td width="97">
+															                    <p align="center">
+															                        yī qiān líng yī
+															                    </p>
+															                </td>
+															                <td width="129">
+															                    <p align="center">
+															                        1001
+															                    </p>
+															                </td>
+															                <td width="147">
+															                    <p align="center">
+															                        ou aussi两千二百三十二
+															                    </p>
+															                </td>
+															                <td width="151">
+															                    <p align="center">
+															                        liǎng qiān èr bǎi shí èr
+															                    </p>
+															                </td>
+															                <td width="81">
+															                    <p align="center">
+															                        2232
+															                    </p>
+															                </td>
+															            </tr>
+															            <tr>
+															                <td width="78">
+															                    <p align="center">
+															                        一千二百零三
+															                    </p>
+															                </td>
+															                <td width="97">
+															                    <p align="center">
+															                        yī qiān èr bǎi líng sān
+															                    </p>
+															                </td>
+															                <td width="129">
+															                    <p align="center">
+															                        1203
+															                    </p>
+															                </td>
+															                <td width="147">
+															                    <p align="center">
+															                        三百
+															                    </p>
+															                </td>
+															                <td width="151">
+															                    <p align="center">
+															                        sān qiān
+															                    </p>
+															                </td>
+															                <td width="81">
+															                    <p align="center">
+															                        3000
+															                    </p>
+															                </td>
+															            </tr>
+															            <tr>
+															                <td width="78">
+															                    <p align="center">
+															                        二千
+															                    </p>
+															                </td>
+															                <td width="97">
+															                    <p align="center">
+															                        èr qiān
+															                    </p>
+															                </td>
+															                <td width="129">
+															                    <p align="center">
+															                        2000
+															                    </p>
+															                </td>
+															                <td width="147">
+															                    <p align="center">
+															                        九百九百九十九
+															                    </p>
+															                </td>
+															                <td width="151">
+															                    <p align="center">
+															                        jiǔ qiān jiǔ bǎi jiǔ shí jiǔ
+															                    </p>
+															                </td>
+															                <td width="81">
+															                    <p align="center">
+															                        9999
+															                    </p>
+															                </td>
+															            </tr>
+															            <tr>
+															                <td width="78">
+															                    <p align="center">
+															                        一万
+															                    </p>
+															                </td>
+															                <td width="97">
+															                    <p align="center">
+															                        yī wàn
+															                    </p>
+															                </td>
+															                <td width="129">
+															                    <p align="center">
+															                        10 000
+															                    </p>
+															                </td>
+															                <td width="147">
+															                </td>
+															                <td width="151">
+															                </td>
+															                <td width="81">
+															                </td>
+															            </tr>
+															            <tr>
+															                <td width="78">
+															                </td>
+															                <td width="97">
+															                </td>
+															                <td width="129">
+															                </td>
+															                <td width="147">
+															                </td>
+															                <td width="151">
+															                </td>
+															                <td width="81">
+															                </td>
+															            </tr>
+															        </tbody>
+															    </table>
+
+														</div>
+															    
+
+		</div>										
+		</div>									
+		<div id="footer">
+				<div id="boutontop"><a href="#" target="_top" title="Retour en haut de page"><img src="files/boutontop.png"/></a></div>
+		</div>
+	</body>
+</html>
