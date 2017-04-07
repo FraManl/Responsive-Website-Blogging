@@ -70,9 +70,9 @@ a img {
 html, body
 {
 	background-color:white;
-	font-family: "Corbel", "Verdana";
+	font-family: "Corbel", Verdana;
 	font-size:14px;
-    font-size: 1.05vw;
+	/*font-size: 1.05vw;*/
 	height:100%;
 	margin: 0;
 	padding: 0;
@@ -85,8 +85,10 @@ html, body
 	margin-top:35px;
 	margin-left:15%;
 	font-family: "Corbel", "cambria";
-    font-size: 1.08vw;
-    max-height:20%;
+	/*font-size: 1.08vw;*/
+	height:auto;
+    max-height:100%;
+    border:0px solid orange;
 }
 
 
@@ -97,7 +99,7 @@ html, body
 
 .menu a:active 
 {
-	color:yellowgreen; 
+	color:darkblue; 
 }
 .menu a:hover 
 { 
@@ -107,35 +109,26 @@ html, body
 / Mise en page des menus colonne de gauche lorsque parcourus /
 
 
-
-.title
-{
-	font-family:"Corbel";
-	font-size:100%;
-	font-weight:bold;
-    color:darkcyan;
+.title b:link {
 	/** Mise en page des menu colonne de gauche **/
 }
 
 /** Mise en page des sous menus colonne de gauche lorsque visités **/
-.title a:link, .title a:visited, .title a:active
-{
-	color:darkcyan;
-}
-
-.title a:hover {
-	background-color:;
+.title b:hover {
 }
 
 
  /* Mise en age bouton accuail */
 .boutontop {
-  color:orange;
+  border:0px solid grey;
+  height:4.5vh;
+  font-size:1.4vw;
+  font-weight:bold;
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 3px transparent;
+  box-shadow: 0 0 1px transparent;
   position: relative;
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
@@ -146,12 +139,12 @@ html, body
 .boutontop:before {
   pointer-events: none;
   position: absolute;
-  z-index: -1;
+  z-index: .5;
   content: '';
   top: 100%;
   left: 5%;
-  height: 18px;
-  width: 90%;
+  height: 20px;
+  width: 120%;
   opacity: 0;
   background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, transparent 60%);
   background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, transparent 80%);
@@ -162,14 +155,14 @@ html, body
   transition-property: transform, opacity;
 }
 .boutontop:hover, .boutontop:focus, .boutontop:active {
-  -webkit-transform: translateY(-9px);
-  transform: translateY(-9px);
+  -webkit-transform: translateY(-7px);
+  transform: translateY(-7px);
   /* move the element up by 5px */
 }
 .boutontop:hover:before, .boutontop:focus:before, .boutontop:active:before {
   opacity: 10;
-  -webkit-transform: translateY(5px);
-  transform: translateY(5px);
+  -webkit-transform: translateY(-10px);
+  transform: translateY(-10px);
   /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
 }
 
@@ -177,12 +170,14 @@ html, body
 
 /** Mise en page des sous menus colonne de gauche **/
 .bouton1 {
-	margin-top:10px;
-	margin-left:15px;
+	margin-top:1px;
+	margin-left:11px;
 	width:75%;
+	height:4vh;
+	max-height:20%;
 	text-decoration:none;
-	font-family:Corbel;
-	font-size:100%;
+	font-family:"Corbel";
+	font-size:1vw;
 	font-weight:bold;
 	color:#313;
 	display: inline-block;
@@ -237,7 +232,7 @@ html, body
 	position:relative;
 	top:105px;
 	float: left;
-	width:16%;
+	width:18%;
 	font-family:corbel;
 	margin-top:0px;
 	margin-right: 9px;
@@ -253,8 +248,8 @@ html, body
 	float: right;
 	width: 14%;
 	margin-top:0px;
-	margin-left: 9px;
-	margin-right:0px;
+	margin-left: 1%;
+	margin-right:1%;
 	border: 0px solid orange;
 	/ Colonne droite /
 }
@@ -363,8 +358,8 @@ img {
 
 .consonnewrapper {
 	height:400px;
-	margin-left:60px;
-    margin-right:40px;
+	margin-left:5%;
+    margin-right:5%;
     width:90%;
 	border:0px solid yellow; 
 }
@@ -372,8 +367,8 @@ img {
 .finalewrapper {
 	height:auto;
 	max-height:100%;
-	margin-left:60px;
-    margin-right:40px;
+	margin-left:5%;
+    margin-right:5%;
     width:90%;
     padding:10px;
 	border:0px solid yellow; 
@@ -382,10 +377,12 @@ img {
 .chiffrewrapper {
 	height:auto;
 	max-height:100%;
-	margin-left:60px;
-    margin-right:40px;
+	margin-left:5%;
+    margin-right:5%;
     width:90%;
+    max-width:100%;
     padding:10px;
+    font-size:1.5vw;
 	border:0px solid yellow; 
 }
 
