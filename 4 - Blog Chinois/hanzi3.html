@@ -1,0 +1,1180 @@
+<html>
+	<head>
+			<title>Apprentissage du chinois</title>
+			<meta http-equiv="Content-Type" content="text/html; meta-charset=UTF-8" />
+			<link href="style.css" rel="stylesheet" type="text/css" />
+			<script src="./js/d3.v4.min.js"></script>
+			<link rel="stylesheet" href="stylebouton.css">
+
+			<script src="jquery-3.2.0.min.js"></script>
+			
+			<script type="text/javascript">
+				$(function() {
+						var $colgauche   = $("#colgauche"), 
+							$window    = $(window),
+							offset     = $colgauche.offset(),
+							topPadding = 2;
+
+						$window.scroll(function() {
+							if ($window.scrollTop() > offset.top) {
+								$colgauche.stop().animate({
+									marginTop: $window.scrollTop() - offset.top + topPadding
+								});
+							} else {
+								$colgauche.stop().animate({
+									marginTop: 0
+								});
+							}
+						});
+					});
+			</script>
+			
+			<script type="text/javascript">
+				$(function() {
+						var $coldroite   = $("#coldroite"), 
+							$window    = $(window),
+							offset     = $coldroite.offset(),
+							topPadding = 2;
+
+						$window.scroll(function() {
+							if ($window.scrollTop() > offset.top) {
+								$coldroite.stop().animate({
+									marginTop: $window.scrollTop() - offset.top + topPadding
+								});
+							} else {
+								$coldroite.stop().animate({
+									marginTop: 0
+								});
+							}
+						});
+					});
+			</script>
+			
+		<div id="header">
+			<link href="style.css" rel="stylesheet" type="text/css" />
+			<div id="logocontain">
+                <a href="http://www.chine-nouvelle.com/" target="_blank" title=""><div id="logo"></div></a>
+			</div>
+
+			<div id="topicons">
+                <div class="topico">
+					<a href="http://www.chine-nouvelle.com/outils/editeur.html" target="_blank" title="Editeur de texte"><img src="files/editeur.png"/></a>
+				</div>
+				<div class="topico">
+					<a href="https://www.ifreesite.com/pinyin/" target="_blank" title="Convertisseur Pinyin"><img src="files/ifreesite.png"/></a>
+				</div>
+				<div class="topico">
+					<a href="" target="_blank" title=""><img src="files/bonhomme.png"/></a>
+				</div>
+			</div>
+		</div>
+	</head>
+	<body>	
+		<div id="colgauche">
+				<div class="menu">
+
+					<div class="boutontop"><a href="accueil.html" target="_top" style="text-decoration:none">Accueil</a></div>
+					<div class="title" style="font-size:1.4vw;margin-bottom:8.5px"><b>Lexique</b></div>
+					<div class="bouton1">
+							<a href="hanzi1.html" target="_top" style="text-decoration:none">Finales et consonnes</a>
+					</div>
+					<div class="bouton1">
+							<a href="hanzi2.html" target="_top" style="text-decoration:none">Chiffres et nombres</a>
+					</div>
+					<div class="bouton1">
+							<a href="hanzi3.html" target="_top" style="text-decoration:none">Date, heure, temps</a>
+					</div>
+					<div class="bouton1">
+							<a href="hanzi4.html" target="_top" style="text-decoration:none">Pronoms & locatifs</a>
+					</div>
+					<div class="bouton1">
+							<a href="hanzi5.html" target="_top" style="text-decoration:none">xxx</a>
+					</div>
+					<div class="bouton1">
+							<a href="<expressions.html" target="_top" style="text-decoration:none">Expressions courantes</a>
+					</div>
+					<div class="bouton1">
+							<a href="<vocab.html" target="_top" style="text-decoration:none">Vocabulaire à apprendre</a>
+					</div>
+                    </br>
+					</br>
+					<div class="title" style="font-size:1.4vw;margin-bottom:8.5px"><b>Grammaire chinoise</b></div>
+					<div class="bouton1">
+							<a href="cadrage.html" target="_top" style="text-decoration:none">Autour du noms</a>
+					</div>
+					<div class="bouton1">
+							<a href="scoringp.html" target="_top" style="text-decoration:none">Autour du verbe</a>
+					</div>
+                    <div class="bouton1">
+							<a href="scoring.html" target="_top" style="text-decoration:none">Autour de la phrase</a>
+					</div>
+					<div class="bouton1">
+							<a href="cadrage.html" target="_top" style="text-decoration:none">Phrases types</a>
+					</div>
+					</br>
+                    </br>
+					<div class="title" style="font-size:1.4vw;margin-bottom:8.5px"><b>Exercices oraux</b></div>
+					<div class="bouton1">
+							<a href="dialapp.html" target="_top" style="text-decoration:none">Dialogues libres</a>
+					</div>
+					<div class="bouton1">
+							<a href="diallivre.html" target="_top" style="text-decoration:none">Dialogues ouvrages</a>
+					</div>
+				</div>
+		</div>
+		<div id="coldroite">
+            <div class="title" style="font-size:1.18vw;font-size:100%;font-weight:bold;margin-top:55px;text-align:center;margin-auto">Ressources</div></br>
+						<div class="listcoldroite">
+                            <p style="font-size:1.18vw;font-size:80%;margin:auto;margin-left:10px;color:lightred;font-weight:bold">Exports au format...</p>
+							<div class="container"><a href="#" class="button button-pink">.DOCX</a><a href="#" class="button button-blue">.PDF</a></br></div>
+						</div>
+							
+		</div>
+		<div id="centre">
+            <h1 class="h1" style="text-align:center;margin-top:50px">Apprentissage du chinois</h1></br>
+						<h2 class="h1" style="text-align:center;color:darkblue">Rappel de règles de prononciation : finales et consonnes</h2>
+												</br>
+												</br>
+												<h2 class="h1" style="text-align:left;color:darkblue;margin-left:45px">Descriptif</h2>
+												</br>
+												<p align="justify" style="margin-left:80px">Le support web suivant est un espace destiné à favoriser l'apprentissage et la capitalisation des connaissances en chinois mandarin.</br>Il fait état de lexiques et leçons réalisés à partir de deux ouvrages principaux :
+												
+													<ul align="justify" style="margin-left:100px">
+																<li>Niveau A2 CECRL - <strong>Méthode d'initiation à la langue et à l'écriture chinoises</strong> (Joël Bellassen, édition LaCompagnie).</li>
+																<li>Niveau A2-B1 CECR - <strong>Bescherelle, le chinois pour tous</strong> (édition Hatier).</li>
+													</ul>
+												</p>
+												<br>
+                                                <h2 class="h1" style="text-align:left;color:darkblue;margin-left:45px">Objectif</h2>
+												</br>
+												<p align="justify" style="margin-left:80px">Favoriser l'assimilation des caractères, la pratique d'exercices courant et la mémorisation essentiels des sinogrammes et expressions; produire un accès rapide et au moindre clique à l'ensemble des règles de grammaire.</p>
+												<div style='clear:both'></div>
+												</p>
+												</br>
+                                                <div class="datewrapper">
+                                                	<h2 class="h1" style="text-align:center;color:darkblue;margin-left:45px">Date, heure, temps</h2></br></br>
+														<div align="center">
+
+<table width=95%>
+<tbody>
+<tr>
+<td width="143">
+<p>号</p>
+</td>
+<td width="123">
+<p>h&agrave;o</p>
+</td>
+<td width="125">
+<p>date</p>
+</td>
+<td width="137">
+<p>去年</p>
+</td>
+<td width="84">
+<p>q&ugrave;ni&aacute;n</p>
+</td>
+<td width="101">
+<p>ann&eacute;e derni&egrave;re</p>
+</td>
+</tr>
+<tr>
+<td width="143">
+<p>今天几号</p>
+</td>
+<td width="123">
+<p>jīntiān&nbsp;jĭ h&agrave;o&nbsp;?</p>
+</td>
+<td width="125">
+<p>quelle est la date aujourd&rsquo;hui ?</p>
+</td>
+<td width="137">
+<p>今年</p>
+</td>
+<td width="84">
+<p>jīnni&aacute;n</p>
+</td>
+<td width="101">
+<p>cette ann&eacute;e</p>
+</td>
+</tr>
+<tr>
+<td width="143">
+<p>天就</p>
+</td>
+<td width="123">
+<p>tiān ji&ugrave;</p>
+</td>
+<td width="125">
+<p>jour</p>
+</td>
+<td width="137">
+<p>现在几点了&nbsp;?</p>
+</td>
+<td width="84">
+<p>xi&agrave;n z&agrave;i jǐ diǎn le</p>
+</td>
+<td width="101">
+<p>quelle heure est&mdash;il&nbsp;?</p>
+</td>
+</tr>
+<tr>
+<td width="143">
+<p>三天就</p>
+</td>
+<td width="123">
+<p>sān tiān ji&ugrave;</p>
+</td>
+<td width="125">
+<p>3 jours</p>
+</td>
+<td width="137">
+<p>几点到几点？</p>
+</td>
+<td width="84">
+<p>jǐ diǎn d&agrave;o jǐ diǎn</p>
+</td>
+<td width="101">
+<p>de quelle heure &agrave; quelle heure&nbsp;?</p>
+</td>
+</tr>
+<tr>
+<td width="143">
+<p>岁大</p>
+</td>
+<td width="123">
+<p>su&igrave; d&agrave;</p>
+</td>
+<td width="125">
+<p>&laquo;&nbsp;ager&nbsp;&raquo;, &laquo;&nbsp;avoir x ann&eacute;e&nbsp;&raquo;</p>
+</td>
+<td width="137">明年</td>
+<td width="84">m&iacute;ngni&aacute;n</td>
+<td width="101">
+<p>ann&eacute;e prochaine</p>
+</td>
+</tr>
+<tr>
+<td width="143">
+<h1>点</h1>
+</td>
+<td width="123">
+<h1>diăn</h1>
+</td>
+<td width="125">
+<p>horloge&nbsp;clock</p>
+</td>
+<td width="137">
+<p>一月</p>
+</td>
+<td width="84">
+<p>yī yu&egrave;</p>
+</td>
+<td width="101">
+<p>janvier</p>
+</td>
+</tr>
+<tr>
+<td width="143">
+<p>钟</p>
+</td>
+<td width="123">
+<p>zhōng</p>
+</td>
+<td width="125">
+<p>horloge clock</p>
+</td>
+<td width="137">
+<p>二月</p>
+</td>
+<td width="84">
+<p>&egrave;r yu&egrave;</p>
+</td>
+<td width="101">
+<p>f&eacute;vrier</p>
+</td>
+</tr>
+<tr>
+<td width="143">上午</td>
+<td width="123">sh&agrave;ngwǔ</td>
+<td width="125">
+<p>matin</p>
+</td>
+<td width="137">
+<p>三月</p>
+</td>
+<td width="84">
+<p>sān yu&egrave;</p>
+</td>
+<td width="101">
+<p>mars</p>
+</td>
+</tr>
+<tr>
+<td width="143">
+<h1>早晨</h1>
+</td>
+<td width="123">
+<h1>zāoch&eacute;n</h1>
+</td>
+<td width="125">
+<p>matin</p>
+</td>
+<td width="137">
+<p>四月</p>
+</td>
+<td width="84">
+<p>s&igrave; yu&egrave;</p>
+</td>
+<td width="101">
+<p>avril</p>
+</td>
+</tr>
+<tr>
+<td width="143">
+<h1>早上</h1>
+</td>
+<td width="123">
+<h1>zăoshang</h1>
+</td>
+<td width="125">
+<p>matin (time)</p>
+</td>
+<td width="137">
+<p>&nbsp;</p>
+</td>
+<td width="84">
+<p>&nbsp;</p>
+</td>
+<td width="101">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="143">
+<h1>中午</h1>
+</td>
+<td width="123">
+<h1>zhong wǔ</h1>
+</td>
+<td width="125">
+<p>midi</p>
+</td>
+<td width="137">
+<p>五月</p>
+</td>
+<td width="84">
+<p>wǔ yu&egrave;</p>
+</td>
+<td width="101">
+<p>mai</p>
+</td>
+</tr>
+<tr>
+<td width="143">
+<h1>正午</h1>
+</td>
+<td width="123">
+<h1>&nbsp;</h1>
+</td>
+<td width="125">
+<p>midi o&rsquo;clock</p>
+</td>
+<td width="137">
+<p>&nbsp;</p>
+</td>
+<td width="84">
+<p>&nbsp;</p>
+</td>
+<td width="101">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="143">下午</td>
+<td width="123">
+<p>xi&agrave;wǔ</p>
+</td>
+<td width="125">
+<p>apr&egrave;s-midi</p>
+<p>&nbsp;</p>
+<p>on peut utiliser 下个午 -下午</p>
+<p>on peut utiliser上个午 -上午</p>
+<p>&nbsp;</p>
+</td>
+<td width="137">
+<p>六月</p>
+</td>
+<td width="84">
+<p>li&ugrave; yu&egrave;</p>
+</td>
+<td width="101">
+<p>juin</p>
+</td>
+</tr>
+<tr>
+<td width="143">晚上</td>
+<td width="123">
+<p>wǎn sh&agrave;ng</p>
+</td>
+<td width="125">
+<p>soir</p>
+</td>
+<td width="137">
+<p>七月</p>
+</td>
+<td width="84">
+<p>qī yu&egrave;</p>
+</td>
+<td width="101">
+<p>juillet</p>
+</td>
+</tr>
+<tr>
+<td width="143">
+<h1>昨天</h1>
+</td>
+<td width="123">
+<h1>zu&oacute;&nbsp;tiān</h1>
+</td>
+<td width="125">
+<p>hier</p>
+</td>
+<td width="137">
+<p>&nbsp;</p>
+</td>
+<td width="84">
+<p>&nbsp;</p>
+</td>
+<td width="101">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="143">
+<h1>昨天下午</h1>
+</td>
+<td width="123">
+<h1>zu&oacute;tiān xi&agrave;wǔ</h1>
+</td>
+<td width="125">
+<p>hier apr&egrave;s-midi</p>
+</td>
+<td width="137">
+<p>八月</p>
+</td>
+<td width="84">
+<p>bā yu&egrave;</p>
+</td>
+<td width="101">
+<p>ao&ucirc;t</p>
+</td>
+</tr>
+<tr>
+<td width="143">昨天晚</td>
+<td width="123">zu&oacute; tiān wǎn</td>
+<td width="125">
+<p>hier soir</p>
+</td>
+<td width="137">
+<p>九月</p>
+</td>
+<td width="84">
+<p>jiǔ yu&egrave;</p>
+</td>
+<td width="101">
+<p>septembre</p>
+</td>
+</tr>
+<tr>
+<td width="143">
+<p>今</p>
+</td>
+<td width="123">
+<p>jīn</p>
+</td>
+<td width="125">
+<p>aujourd&rsquo;hui</p>
+</td>
+<td width="137">
+<p>十月</p>
+</td>
+<td width="84">
+<p>sh&iacute; yu&egrave;</p>
+</td>
+<td width="101">
+<p>octobre</p>
+</td>
+</tr>
+<tr>
+<td width="143">
+<p>今天</p>
+</td>
+<td width="123">
+<p>jīntiān</p>
+</td>
+<td width="125">
+<p>aujourd&rsquo;hui</p>
+</td>
+<td width="137">
+<p>十一月</p>
+</td>
+<td width="84">
+<p>sh&iacute; yī yu&egrave;</p>
+</td>
+<td width="101">
+<p>novembre</p>
+</td>
+</tr>
+<tr>
+<td width="143">
+<p>今天晚上</p>
+</td>
+<td width="123">
+<p>jīn&nbsp;tiān&nbsp;wǎn sh&agrave;ng</p>
+</td>
+<td width="125">
+<p>ce soir</p>
+</td>
+<td width="137">
+<p>十二月</p>
+</td>
+<td width="84">
+<p>sh&iacute; &egrave;r yu&egrave;</p>
+</td>
+<td width="101">
+<p>d&eacute;cembre</p>
+</td>
+</tr>
+<tr>
+<td width="143">
+<h1>天</h1>
+</td>
+<td width="123">
+<h1>tiān</h1>
+</td>
+<td width="125">
+<p>maintenant</p>
+</td>
+<td width="137">
+<p>星期一</p>
+</td>
+<td width="84">
+<p>xīng qī yī</p>
+</td>
+<td width="101">
+<p>lundi</p>
+</td>
+</tr>
+<tr>
+<td width="143">
+<h1>明天</h1>
+</td>
+<td width="123">
+<h1>m&iacute;ng&nbsp;tiān</h1>
+</td>
+<td width="125">
+<p>demain</p>
+</td>
+<td width="137">
+<p>星期二</p>
+</td>
+<td width="84">
+<p>xīng qī &egrave;r</p>
+</td>
+<td width="101">
+<p>mardi</p>
+</td>
+</tr>
+<tr>
+<td width="143">
+<p>明天早晨</p>
+</td>
+<td width="123">
+<p>m&iacute;ngtiān zāoch&eacute;n</p>
+</td>
+<td width="125">
+<p>demain matin</p>
+</td>
+<td width="137">
+<p>星期三</p>
+</td>
+<td width="84">
+<p>xīng qī sān</p>
+</td>
+<td width="101">
+<p>mercredi</p>
+</td>
+</tr>
+<tr>
+<td width="143">明天晚</td>
+<td width="123">m&iacute;ng&nbsp; tiān&nbsp;wǎn&nbsp;&nbsp;&nbsp;</td>
+<td width="125">
+<p>demain soir</p>
+</td>
+<td width="137">
+<p>星期四</p>
+</td>
+<td width="84">
+<p>xīng qī s&igrave;</p>
+</td>
+<td width="101">
+<p>jeudi</p>
+</td>
+</tr>
+<tr>
+<td width="143">
+<h1>星期</h1>
+</td>
+<td width="123">
+<h1>xīngqī</h1>
+</td>
+<td width="125">
+<p>semaine / week</p>
+</td>
+<td width="137">
+<p>星期五</p>
+</td>
+<td width="84">
+<p>xīng qī wǔ</p>
+</td>
+<td width="101">
+<p>vendredi</p>
+</td>
+</tr>
+<tr>
+<td width="143">
+<p>上个星期</p>
+</td>
+<td width="123">
+<p>sh&agrave;ng g&egrave; xīngqī</p>
+</td>
+<td width="125">
+<p>semaine derni&egrave;re (&agrave; utiliser ge dans phrase courte</p>
+</td>
+<td width="137">
+<p>星期六</p>
+</td>
+<td width="84">
+<p>xīng qī li&ugrave;</p>
+</td>
+<td width="101">
+<p>samedi</p>
+</td>
+</tr>
+<tr>
+<td width="143">
+<p>&nbsp;</p>
+</td>
+<td width="123">
+<p>&nbsp;</p>
+</td>
+<td width="125">
+<p>&nbsp;</p>
+</td>
+<td width="137">
+<p>星期日</p>
+</td>
+<td width="84">
+<p>xīng qī r&igrave;</p>
+</td>
+<td width="101">
+<p>dimanche</p>
+</td>
+</tr>
+<tr>
+<td width="143">
+<p>上星期</p>
+</td>
+<td width="123">
+<p>sh&agrave;ng xīngqī</p>
+</td>
+<td width="125">
+<p>a utiliser dans phrase longue</p>
+</td>
+<td width="137">
+<p>星期天</p>
+</td>
+<td width="84">
+<p>xīng qī tiān</p>
+</td>
+<td width="101">
+<p>dimanche</p>
+</td>
+</tr>
+<tr>
+<td width="143">
+<p>下星期</p>
+</td>
+<td width="123">
+<p>xi&agrave; xīngqī</p>
+</td>
+<td width="125">
+<p>semaine prochaine</p>
+</td>
+<td width="137">
+<p>小时</p>
+</td>
+<td width="84">
+<p>xiăosh&iacute;</p>
+</td>
+<td width="101">
+<p>heures, (de cours etc)</p>
+</td>
+</tr>
+<tr>
+<td width="143">
+<p>下个星期</p>
+</td>
+<td width="123">
+<p>xi&agrave; g&egrave; xīngqī</p>
+</td>
+<td width="125">
+<p>dans phrase courte</p>
+</td>
+<td width="137">
+<p>现在差一刻八点</p>
+</td>
+<td width="84">
+<p>xi&agrave;n z&agrave;i ch&agrave; yī k&egrave; bā diǎn</p>
+</td>
+<td width="101">
+<p>il est 8 heures- le quart</p>
+</td>
+</tr>
+<tr>
+<td width="143">
+<p>月</p>
+</td>
+<td width="123">
+<p>yu&egrave;</p>
+</td>
+<td width="125">
+<p>lune, mois</p>
+</td>
+<td width="137">
+<p>每天</p>
+</td>
+<td width="84">
+<p>měi tiān</p>
+</td>
+<td width="101">
+<p>tous les jours</p>
+</td>
+</tr>
+<tr>
+<td width="143">
+<p>上个月</p>
+</td>
+<td width="123">
+<p>sh&agrave;ng g&egrave; yu&egrave;</p>
+</td>
+<td width="125">
+<p>mois dernier</p>
+</td>
+<td width="137">
+<p>刻</p>
+</td>
+<td width="84">
+<p>k&egrave;</p>
+</td>
+<td width="101">
+<p>quart</p>
+</td>
+</tr>
+<tr>
+<td width="143">这个月</td>
+<td width="123">zh&egrave; g&egrave; yu&egrave;</td>
+<td width="125">
+<p>ce mois-ci</p>
+</td>
+<td width="137">
+<p>八点</p>
+</td>
+<td width="84">
+<p>bā diǎn</p>
+</td>
+<td width="101">
+<p>8 heures</p>
+</td>
+</tr>
+<tr>
+<td width="143">下个月</td>
+<td width="123">
+<p>xi&agrave; g&egrave; yu&egrave;</p>
+</td>
+<td width="125">
+<p>mois prochain</p>
+</td>
+<td width="137">
+<p>&nbsp;半</p>
+</td>
+<td width="84">
+<p>b&agrave;n</p>
+</td>
+<td width="101">
+<p>moiti&eacute;, demi</p>
+</td>
+</tr>
+<tr>
+<td width="143">年</td>
+<td width="123">ni&aacute;n</td>
+<td width="125">
+<p>ann&eacute;e</p>
+</td>
+<td width="137">
+<p>分</p>
+</td>
+<td width="84">
+<p>fēn</p>
+</td>
+<td width="101">
+<p>diviser, s&eacute;parer, minute</p>
+</td>
+</tr>
+<tr>
+<td width="143">
+<p>岁</p>
+</td>
+<td width="123">
+<p>su&igrave;</p>
+</td>
+<td width="125">
+<p>an, ann&eacute;e d&rsquo;&acirc;ge</p>
+</td>
+<td width="137">
+<p>差</p>
+</td>
+<td width="84">
+<p>ch&agrave;</p>
+</td>
+<td width="101">
+<p>manquer, fautif, diff&eacute;rence, moins</p>
+</td>
+</tr>
+<tr>
+<td width="143">
+<p>周</p>
+</td>
+<td width="123">
+<p>zhōu</p>
+</td>
+<td width="125">
+<p>semaine (interchangeable星期)</p>
+</td>
+<td width="137">
+<p>下午一点</p>
+</td>
+<td width="84">
+<p>xi&agrave; wǔ yī diǎn</p>
+</td>
+<td width="101">
+<p>1h de l&rsquo;apr&egrave;s-midi</p>
+</td>
+</tr>
+<tr>
+<td width="143">
+<h1>周一见</h1>
+</td>
+<td width="123">
+<p>zhōu yī ji&agrave;n</p>
+</td>
+<td width="125">
+<p>on se revoit lundi</p>
+</td>
+<td width="137">
+<p>周一</p>
+</td>
+<td width="84">
+<p>zhōu yī</p>
+</td>
+<td width="101">
+<p>lundi</p>
+</td>
+</tr>
+<tr>
+<td width="143">
+<p>一个小时</p>
+</td>
+<td width="123">
+<p>yī g&egrave; xiǎo sh&iacute;</p>
+</td>
+<td width="125">
+<p>1 heure (dur&eacute;e)</p>
+</td>
+<td width="137">
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 下周一下午1点见</p>
+</td>
+<td width="84">
+<p>xi&agrave; zhōu yī xi&agrave; wǔ 1diǎn ji&agrave;n</p>
+</td>
+<td width="101">
+<p>on se revoit lundi prochain &agrave; 1h de l&rsquo;apr&egrave;s-midi</p>
+</td>
+</tr>
+<tr>
+<td width="143">
+<p>周三上午8点见</p>
+</td>
+<td width="123">
+<p>zhōu sān sh&agrave;ng wǔ 8diǎn ji&agrave;n</p>
+</td>
+<td width="125">
+<p>on se revoit mercredi (calendrier lunaire)&nbsp; &agrave; 8h du matin</p>
+</td>
+<td width="137">
+<p>一分钟</p>
+</td>
+<td width="84">
+<p>yī fēn zhōng</p>
+</td>
+<td width="101">
+<p>1 minute (dur&eacute;e)</p>
+</td>
+</tr>
+<tr>
+<td width="143">
+<p>分钟</p>
+</td>
+<td width="123">
+<p>&nbsp;</p>
+</td>
+<td width="125">
+<p>minute</p>
+</td>
+<td width="137">
+<p>周三见</p>
+</td>
+<td width="84">
+<p>zhōu sān ji&agrave;n</p>
+</td>
+<td width="101">
+<p>mercredi</p>
+</td>
+</tr>
+<tr>
+<td width="143">
+<p>分</p>
+</td>
+<td width="123">
+<p>&nbsp;</p>
+</td>
+<td width="125">
+<p>(useable aswell)</p>
+</td>
+<td width="137">
+<p>周日</p>
+</td>
+<td width="84">
+<p>zhōu r&igrave;</p>
+</td>
+<td width="101">
+<p>dimanche</p>
+</td>
+</tr>
+<tr>
+<td width="143">
+<p>第十九个</p>
+</td>
+<td width="123">
+<p>d&igrave; sh&iacute; jiǔ g&egrave;</p>
+</td>
+<td width="125">
+<p>le 19&egrave;me</p>
+</td>
+<td width="137">
+<p>初一</p>
+</td>
+<td width="84">
+<p>chū yī</p>
+</td>
+<td width="101">
+<p>lundi (mais calendrier lunaire)</p>
+</td>
+</tr>
+<tr>
+<td width="143">八点三十四八点三十四分.
+<p>现在八点三十四分.</p>
+</td>
+<td width="123">
+<p>bā diǎn sān sh&iacute; s&igrave;</p>
+<p>bā diǎn sān sh&iacute; s&igrave; f&egrave;n .</p>
+<p>xi&agrave;n z&agrave;i bā diǎn sān sh&iacute; s&igrave; f&egrave;n .</p>
+</td>
+<td width="125">
+<p>8 heures 34</p>
+</td>
+<td width="137">
+<p>中午十二点</p>
+</td>
+<td width="84">
+<p>&nbsp;</p>
+</td>
+<td width="101">
+<p>midi, 12 heures</p>
+</td>
+</tr>
+<tr>
+<td width="143">八点钟.八点.现在八点钟.现在八点.</td>
+<td width="123">
+<p>bā diǎn zhōng .</p>
+<p>bā diǎn .</p>
+<p>xi&agrave;n z&agrave;i bā diǎn zhōng .</p>
+<p>xi&agrave;n z&agrave;i bā diǎn</p>
+</td>
+<td width="125">
+<p>8 heures</p>
+</td>
+<td width="137">
+<p>中午十二点半.</p>
+</td>
+<td width="84">
+<p>zhōng wǔ sh&iacute; &egrave;r diǎn b&agrave;n .</p>
+</td>
+<td width="101">
+<p>midi, 12 heures et demi</p>
+</td>
+</tr>
+<tr>
+<td width="143">现在九点四十六.现在九点四十六分.九点四十六分.现在是九点四十六.&nbsp;</td>
+<td width="123">
+<p>xi&agrave;n z&agrave;i jiǔ diǎn s&igrave; sh&iacute; li&ugrave; .</p>
+<p>xi&agrave;n z&agrave;i jiǔ diǎn s&igrave; sh&iacute; li&ugrave; f&egrave;n .</p>
+<p>jiǔ diǎn s&igrave; sh&iacute; li&ugrave; f&egrave;n .</p>
+<p>xi&agrave;n z&agrave;i sh&igrave; jiǔ diǎn s&igrave; sh&iacute; li&ugrave; .</p>
+</td>
+<td width="125">
+<p>9 heures 46</p>
+</td>
+<td width="137">九点半.九点三十分.是九点三十分.现在九点半.现在九点三十分.现在九点三十.
+<p>现在是九点三十分.</p>
+</td>
+<td width="84">
+<p>jiǔ diǎn b&agrave;n .</p>
+<p>jiǔ diǎn sān sh&iacute; f&egrave;n .</p>
+<p>sh&igrave; jiǔ diǎn sān sh&iacute; f&egrave;n .</p>
+<p>xi&agrave;n z&agrave;i jiǔ diǎn b&agrave;n .</p>
+<p>xi&agrave;n z&agrave;i jiǔ diǎn sān sh&iacute; f&egrave;n .</p>
+<p>xi&agrave;n z&agrave;i jiǔ diǎn sān sh&iacute; .</p>
+<p>xi&agrave;n z&agrave;i sh&igrave; jiǔ diǎn sān sh&iacute; f&egrave;n .</p>
+</td>
+<td width="101">
+<p>9 heures et demie (dernier = version litt&eacute;raire)</p>
+</td>
+</tr>
+<tr>
+<td width="143">
+<p>今天是二零一六年十一月三十号.</p>
+</td>
+<td width="123">
+<p>jīn tiān sh&igrave; &egrave;r l&iacute;ng yī li&ugrave; ni&aacute;n sh&iacute; yī yu&egrave; sān sh&iacute; h&agrave;o .</p>
+</td>
+<td width="125">
+<p>aujourd&rsquo;hui nous sommes le 30 novembre 2016</p>
+</td>
+<td width="137">我两点半回来.
+<p>&nbsp;</p>
+</td>
+<td width="84">
+<p>wǒ liǎng diǎn b&agrave;n hu&iacute; l&aacute;i .</p>
+</td>
+<td width="101">
+<p>je rentre &agrave; 2 heures et demie</p>
+</td>
+</tr>
+<tr>
+<td width="143">我过两个半小时回来.我两个半小时以后回来.</td>
+<td width="123">
+<p>wǒ gu&ograve; liǎng g&egrave; b&agrave;n xiǎo sh&iacute; hu&iacute; l&aacute;i .</p>
+<p>wǒ liǎng g&egrave; b&agrave;n xiǎo sh&iacute; yǐ h&ograve;u hu&iacute; l&aacute;i</p>
+</td>
+<td width="125">
+<p>je rentre dans 2 heures et demie</p>
+</td>
+<td width="137">
+<p>我出生于一九九零年一月九号</p>
+</td>
+<td width="84">
+<p>wǒ chū shēng y&uacute; yī jiǔ jiǔ l&iacute;ng ni&aacute;n yī yu&egrave; jiǔ h&agrave;o</p>
+</td>
+<td width="101">
+<p>je suis n&eacute; le 9 janvier 1990</p>
+</td>
+</tr>
+<tr>
+<td width="143">头两次</td>
+<td width="123">
+<p>t&oacute;u liǎng c&igrave;</p>
+</td>
+<td width="125">
+<p>les 2 premi&egrave;res fois</p>
+</td>
+<td width="137">三小时五十分.他等了三小时五十分.</td>
+<td width="84">
+<p>sān xiǎo sh&iacute; wǔ sh&iacute; f&egrave;n .</p>
+<p>tā děng le sān xiǎo sh&iacute; wǔ sh&iacute; f&egrave;n .</p>
+</td>
+<td width="101">
+<p>il attend depuis 3 heures 50</p>
+</td>
+</tr>
+<tr>
+<td width="143">一秒钟</td>
+<td width="123">
+<p>yī miǎo zhōng</p>
+</td>
+<td width="125">
+<p>1 seconde</p>
+</td>
+<td width="137">头五个月</td>
+<td width="84">
+<p>t&oacute;u wǔ g&egrave; yu&egrave;</p>
+</td>
+<td width="101">
+<p>les 5 premiers mois</p>
+</td>
+</tr>
+<tr>
+<td width="143">去年</td>
+<td width="123">
+<p>q&ugrave; ni&aacute;n</p>
+</td>
+<td width="125">
+<p>l&rsquo;ann&eacute;e derni&egrave;re</p>
+</td>
+<td width="137">头几本书</td>
+<td width="84">
+<p>t&oacute;u jǐ běn shū</p>
+</td>
+<td width="101">
+<p>les premiers livres (ind&eacute;termin&eacute; combien)</p>
+</td>
+</tr>
+<tr>
+<td width="143">&nbsp;</td>
+<td width="123">
+<p>&nbsp;</p>
+</td>
+<td width="125">
+<p>&nbsp;</p>
+</td>
+<td width="137">半年</td>
+<td width="84">
+<p>b&agrave;n ni&aacute;n</p>
+</td>
+<td width="101">
+<p>6 mois, la moiti&eacute; d&rsquo;une ann&eacute;e</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+														</div>
+															    
+
+		</div>										
+		</div>									
+		<div id="footer">
+				<div id="boutontop"><a href="#" target="_top" title="Retour en haut de page"><img src="files/boutontop.png"/></a></div>
+		</div>
+	</body>
+</html>
