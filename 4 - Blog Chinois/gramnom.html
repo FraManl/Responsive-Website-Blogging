@@ -1,0 +1,1718 @@
+<html>
+	<head>
+			<title>Apprentissage du chinois</title>
+			<meta http-equiv="Content-Type" content="text/html; meta-charset=UTF-8" />
+			<link href="style.css" rel="stylesheet" type="text/css" />
+			<script src="./js/d3.v4.min.js"></script>
+			<link rel="stylesheet" href="stylebouton.css">
+
+			<script src="jquery-3.2.0.min.js"></script>
+			
+			<script type="text/javascript">
+				$(function() {
+						var $colgauche   = $("#colgauche"), 
+							$window    = $(window),
+							offset     = $colgauche.offset(),
+							topPadding = 2;
+
+						$window.scroll(function() {
+							if ($window.scrollTop() > offset.top) {
+								$colgauche.stop().animate({
+									marginTop: $window.scrollTop() - offset.top + topPadding
+								});
+							} else {
+								$colgauche.stop().animate({
+									marginTop: 0
+								});
+							}
+						});
+					});
+			</script>
+			
+			<script type="text/javascript">
+				$(function() {
+						var $coldroite   = $("#coldroite"), 
+							$window    = $(window),
+							offset     = $coldroite.offset(),
+							topPadding = 2;
+
+						$window.scroll(function() {
+							if ($window.scrollTop() > offset.top) {
+								$coldroite.stop().animate({
+									marginTop: $window.scrollTop() - offset.top + topPadding
+								});
+							} else {
+								$coldroite.stop().animate({
+									marginTop: 0
+								});
+							}
+						});
+					});
+			</script>
+			
+		<div id="header">
+			<link href="style.css" rel="stylesheet" type="text/css" />
+			<div id="logocontain">
+                <a href="http://www.chine-nouvelle.com/" target="_blank" title=""><div id="logo"></div></a>
+			</div>
+
+			<div id="topicons">
+                <div class="topico">
+					<a href="http://www.chine-nouvelle.com/outils/editeur.html" target="_blank" title="Editeur de texte"><img src="files/editeur.png"/></a>
+				</div>
+				<div class="topico">
+					<a href="https://www.ifreesite.com/pinyin/" target="_blank" title="Convertisseur Pinyin"><img src="files/ifreesite.png"/></a>
+				</div>
+				<div class="topico">
+					<a href="" target="_blank" title=""><img src="files/bonhomme.png"/></a>
+				</div>
+			</div>
+		</div>
+	</head>
+	<body>	
+		<div id="colgauche">
+				<div class="menu">
+
+					<div class="boutontop"><a href="accueil.html" target="_top" style="text-decoration:none">Accueil</a></div>
+					<div class="title" style="font-size:1.4vw;margin-bottom:8.5px"><b>Lexique</b></div>
+					<div class="bouton1">
+							<a href="hanzi1.html" target="_top" style="text-decoration:none">Finales et consonnes</a>
+					</div>
+					<div class="bouton1">
+							<a href="hanzi2.html" target="_top" style="text-decoration:none">Chiffres et nombres</a>
+					</div>
+					<div class="bouton1">
+							<a href="hanzi3.html" target="_top" style="text-decoration:none">Date, heure, temps</a>
+					</div>
+					<div class="bouton1">
+							<a href="hanzi4.html" target="_top" style="text-decoration:none">Pronoms & locatifs</a>
+					</div>
+					<div class="bouton1">
+							<a href="hanzi5.html" target="_top" style="text-decoration:none">xxx</a>
+					</div>
+					<div class="bouton1">
+							<a href="<expressions.html" target="_top" style="text-decoration:none">Expressions courantes</a>
+					</div>
+					<div class="bouton1">
+							<a href="<vocab.html" target="_top" style="text-decoration:none">Vocabulaire à apprendre</a>
+					</div>
+                    </br>
+					</br>
+					<div class="title" style="font-size:1.4vw;margin-bottom:8.5px"><b>Grammaire chinoise</b></div>
+					<div class="bouton1">
+							<a href="gramnom.html" target="_top" style="text-decoration:none">Autour du noms</a>
+					</div>
+					<div class="bouton1">
+							<a href="gramverbe.html" target="_top" style="text-decoration:none">Autour du verbe</a>
+					</div>
+                    <div class="bouton1">
+							<a href="gramphrase.html" target="_top" style="text-decoration:none">Autour de la phrase</a>
+					</div>
+					<div class="bouton1">
+							<a href="type.html" target="_top" style="text-decoration:none">Phrases types</a>
+					</div>
+					</br>
+                    </br>
+					<div class="title" style="font-size:1.4vw;margin-bottom:8.5px"><b>Exercices oraux</b></div>
+					<div class="bouton1">
+							<a href="dialapp.html" target="_top" style="text-decoration:none">Dialogues libres</a>
+					</div>
+					<div class="bouton1">
+							<a href="diallivre.html" target="_top" style="text-decoration:none">Dialogues ouvrages</a>
+					</div>
+				</div>
+		</div>
+		<div id="coldroite">
+            <div class="title" style="font-size:1.18vw;font-size:100%;font-weight:bold;margin-top:55px;text-align:center;margin-auto">Ressources</div></br>
+						<div class="listcoldroite">
+                            <p style="font-size:1.18vw;font-size:80%;margin:auto;margin-left:10px;color:lightred;font-weight:bold">Exports au format...</p>
+							<div class="container"><a href="#" class="button button-pink">.DOCX</a><a href="#" class="button button-blue">.PDF</a></br></div>
+						</div>
+							
+		</div>
+		<div id="centre">
+            <h1 class="h1" style="text-align:center;margin-top:50px">Apprentissage du chinois</h1></br>
+						<h2 class="h1" style="text-align:center;color:darkblue">Rappel de règles de prononciation : finales et consonnes</h2>
+												</br>
+												</br>
+												<h2 class="h1" style="text-align:left;color:darkblue;margin-left:45px">Descriptif</h2>
+												</br>
+												<p align="justify" style="margin-left:80px">Le support web suivant est un espace destiné à favoriser l'apprentissage et la capitalisation des connaissances en chinois mandarin.</br>Il fait état de lexiques et leçons réalisés à partir de deux ouvrages principaux :
+												
+													<ul align="justify" style="margin-left:100px">
+																<li>Niveau A2 CECRL - <strong>Méthode d'initiation à la langue et à l'écriture chinoises</strong> (Joël Bellassen, édition LaCompagnie).</li>
+																<li>Niveau A2-B1 CECR - <strong>Bescherelle, le chinois pour tous</strong> (édition Hatier).</li>
+													</ul>
+												</p>
+												<br>
+                                                <h2 class="h1" style="text-align:left;color:darkblue;margin-left:45px">Objectif</h2>
+												</br>
+												<p align="justify" style="margin-left:80px">Favoriser l'assimilation des caractères, la pratique d'exercices courant et la mémorisation essentiels des sinogrammes et expressions; produire un accès rapide et au moindre clique à l'ensemble des règles de grammaire.</p>
+												<div style='clear:both'></div>
+												</p>
+												</br>
+                                                <div class="nomwrapper">
+                                                	<h3 class="h3" style="text-align:center;color:darkblue;margin-left:45px">Les noms</h3></br></br>
+														<div align="center" style="border:0px solid yellow">
+																
+																<h2 class="h1" style="text-align:center;color:darkblue;margin-left:45px">Caractéristique des noms</h2></br></br>
+
+																<p>&laquo;&nbsp;Les noms chinois, propres ou communs s&rsquo;emploient sans article, sont invariables en genre et nombre.&nbsp;Ils d&eacute;crivent un individu, objet comme une mati&egrave;re brute.&nbsp;&raquo;</p>
+																	
+																	<table width="90%">
+																	<tbody7
+																	<tr>
+																	<td width="90%">
+																	<p><strong>Les noms chinois sont invariables en genre et nombre.</strong></p>
+																	</td>
+																	</tr>
+																	<tr>
+																	<td width="90%">
+																	<p>他是大学生.</p>
+																	</td>
+																	</tr>
+																	<tr>
+																	<td width="90%">
+																	<p>Il est &eacute;tudiant.</p>
+																	</td>
+																	</tr>
+																	<tr>
+																	<td width="90%">
+																	<p>她门都是大学生.</p>
+																	</td>
+																	</tr>
+																	<tr>
+																	<td width="90%">
+																	<p>Elles sont toutes &eacute;tudiantes.</p>
+																	</td>
+																	</tr>
+																	</tbody>
+																	</table>
+																	<p>&nbsp;</p>
+
+																	<table width="90%">
+																	<tbody>
+																	<tr>
+																	<td width="90%">
+																	<p><strong>Les noms propres ne se distinguent pas des noms communs, les majuscules n&rsquo;existent pas</strong></p>
+																	</td>
+																	</tr>
+																	<tr>
+																	<td width="90%">
+																	<p>去找王总吧</p>
+																	</td>
+																	</tr>
+																	<tr>
+																	<td width="90%">
+																	<p>Allons voir le directeur Wang.</p>
+																	</td>
+																	</tr>
+																	</tbody>
+																	</table>
+																	<p>&nbsp;</p>
+																	<table width="90%">
+																	<tbody>
+																	<tr>
+																	<td width="90%">
+																	<p><strong>Les mots modernes se composent d&rsquo;un voire plusieurs caract&egrave;res</strong></p>
+																	</td>
+																	</tr>
+																	<tr>
+																	<td width="90%">
+																	<p>教师.</p>
+																	</td>
+																	</tr>
+																	<tr>
+																	<td width="90%">
+																	<p>Enseignant.</p>
+																	</td>
+																	</tr>
+																	<tr>
+																	<td width="90%">
+																	<p>银行.</p>
+																	</td>
+																	</tr>
+																	<tr>
+																	<td width="90%">
+																	<p>Banque.</p>
+																	</td>
+																	</tr>
+																	<tr>
+																	<td width="90%">
+																	<p>工程师.</p>
+																	</td>
+																	</tr>
+																	<tr>
+																	<td width="90%">
+																	<p>Ing&eacute;nieur.</p>
+																	</td>
+																	</tr>
+																	</tbody>
+																	</table>
+																	<p>&nbsp;</p>
+																	<table width="90%">
+																	<tbody>
+																	<tr>
+																	<td width="90%">
+																	<p><strong>Lorsqu&rsquo;un nom est pr&eacute;c&eacute;d&eacute; par un d&eacute;monstratif ou un nombre, un classificateur s&rsquo;intercale entre eux.</strong></p>
+																	</td>
+																	</tr>
+																	<tr>
+																	<td width="90%">
+																	<p>这个人 / 三个人.</p>
+																	</td>
+																	</tr>
+																	<tr>
+																	<td width="90%">
+																	<p>Cette personne / 3 personnes.</p>
+																	</td>
+																	</tr>
+																	</tbody>
+																	</table>
+																	<p>&nbsp;</p>
+																	<table width="90%">
+																	<tbody>
+																	<tr>
+																	<td width="90%">
+																	<p><strong>Un nom peut &ecirc;tre employ&eacute; comme un commentaire, une expression, une remarque, <u>m&ecirc;me dans une phrase sans verbe</u>.</strong><strong> &gt;&gt; Ces structures sont tr&egrave;s r&eacute;pandus en chinois et constituent le duo th&egrave;me / commentaire.</strong></p>
+																	</td>
+																	</tr>
+																	<tr>
+																	<td width="90%">
+																	<p>哦 / 啊 /我，老王.</p>
+																	</td>
+																	</tr>
+																	<tr>
+																	<td width="90%">
+																	<p>O&nbsp;! / ah&hellip; / Moi [th&egrave;me], Lao Wang [commentaire].</p>
+																	</td>
+																	</tr>
+																	<tr>
+																	<td width="90%">
+																	<p>老李, &nbsp;四川人.</p>
+																	</td>
+																	</tr>
+																	<tr>
+																	<td width="90%">
+																	<p>Lao Li [th&egrave;le] est Sichuanais [commentaire].</p>
+																	</td>
+																	</tr>
+																	<tr>
+																	<td width="90%">
+																	<p>今天三号.</p>
+																	</td>
+																	</tr>
+																	<tr>
+																	<td width="90%">
+																	<p>Aujourd&rsquo;hui [th&egrave;me], nous sommes le 3 [commentaire].</p>
+																	</td>
+																	</tr>
+																	</tbody>
+																	</table>
+																	<p>&nbsp;</p>
+										
+																	<h2 class="h1" style="text-align:center;color:darkblue;margin-left:45px">Structure des noms</h2>			
+																	<p><strong>&nbsp;</strong></p>
+																	<table width="90%">
+																	<tbody>
+																	<tr>
+																	<td width="90%">
+																	<p><strong>Il existe des noms monosyllabiques.</strong></p>
+																	</td>
+																	</tr>
+																	<tr>
+																	<td width="90%">
+																	<p>书 / 肉.</p>
+																	</td>
+																	</tr>
+																	<tr>
+																	<td width="90%">
+																	<p>Livre / Viande.</p>
+																	</td>
+																	</tr>
+																	</tbody>
+																	</table>
+																	<p>&nbsp;</p>
+																	<table width="90%">
+																	<tbody>
+																	<tr>
+																	<td width="90%">
+																	<p><strong>Il existe des noms pluri syllabiques</strong><strong>, avec un d&eacute;terminant (1<sup>er</sup>) un d&eacute;termin&eacute; (suit).</strong></p>
+																	</td>
+																	</tr>
+																	<tr>
+																	<td width="90%">
+																	<p>牛肉 (b&oelig;uf - Viande). &gt;viande de b&oelig;uf</p>
+																	</td>
+																	</tr>
+																	<tr>
+																	<td width="90%">
+																	<p>电脑 (&eacute;clair, &eacute;lectrique &ndash; cerveau). &gt;ordinateur</p>
+																	</td>
+																	</tr>
+																	</tbody>
+																	</table>
+																	<p>&nbsp;</p>
+																	<table width="90%">
+																	<tbody>
+																	<tr>
+																	<td width="90%">
+																	<p><strong>&hellip;</strong><strong>, avec une juxtaposition.</strong></p>
+																	</td>
+																	</tr>
+																	<tr>
+																	<td width="90%">
+																	<p>山水 (montagne - eau). &gt;paysage</p>
+																	</td>
+																	</tr>
+																	</tbody>
+																	</table>
+																	<p>&nbsp;</p>
+																	<table width="90%">
+																	<tbody>
+																	<tr>
+																	<td width="90%">
+																	<p><strong>&hellip;</strong><strong>, avec une opposition.</strong></p>
+																	</td>
+																	</tr>
+																	<tr>
+																	<td width="90%">
+																	<p>大小 (petit &ndash; grand). &gt;taille</p>
+																	</td>
+																	</tr>
+																	<tr>
+																	<td width="90%">
+																	<p>动静 (mouvement &ndash; tranquillit&eacute;). &gt;signe de vie, activit&eacute;</p>
+																	</td>
+																	</tr>
+																	<tr>
+																	<td width="90%">
+																	<p>熊猫 (ours &ndash; chat). &gt;panda</p>
+																	</td>
+																	</tr>
+																	<tr>
+																	<td width="90%">
+																	<p>买卖 (acheter &ndash; vendre). &gt;commerce</p>
+																	</td>
+																	</tr>
+																	</tbody>
+																	</table>
+																	<p>&nbsp;</p>
+																	<table width="90%">
+																	<tbody>
+																	<tr>
+																	<td width="90%">
+																	<p><strong>&hellip;</strong><strong>, avec une duplication.</strong></p>
+																	</td>
+																	</tr>
+																	<tr>
+																	<td width="90%">
+																	<p>哥哥 &gt; fr&egrave;re ain&eacute;.</p>
+																	</td>
+																	</tr>
+																	<tr>
+																	<td width="90%">
+																	<p>姐姐 &gt; s&oelig;ur.</p>
+																	</td>
+																	</tr>
+																	<tr>
+																	<td width="90%">
+																	<p>弟弟 &gt; fr&egrave;re cadet.</p>
+																	</td>
+																	</tr>
+																	<tr>
+																	<td width="90%">
+																	<p>天天 &gt; chaque jour, tous les jours.</p>
+																	</td>
+																	</tr>
+																	<tr>
+																	<td width="90%">
+																	<p>太太 &gt; &eacute;pouse (mari&eacute;e).</p>
+																	</td>
+																	</tr>
+																	<tr>
+																	<td width="90%">
+																	<p>星星 &gt; &eacute;toiles.</p>
+																	</td>
+																	</tr>
+																	</tbody>
+																	</table>
+																	<p>&nbsp;</p>
+																	<table width="90%">
+																	<tbody>
+																	<tr>
+																	<td width="90%">
+																	<p><strong>L&rsquo;omission de </strong><strong>人</strong><strong>ou </strong><strong>东西</strong><strong> apr&egrave;s le groupe verbal +</strong><strong>的</strong><strong> permet de cr&eacute;er des noms dans certains cas.</strong></p>
+																	</td>
+																	</tr>
+																	<tr>
+																	<td width="90%">
+																	<p>开车的 &gt; le chauffeur (celui qui conduit).</p>
+																	</td>
+																	</tr>
+																	<tr>
+																	<td width="90%">
+																	<p>教书的 &gt; l&rsquo;enseignant.</p>
+																	</td>
+																	</tr>
+																	<tr>
+																	<td width="90%">
+																	<p>吃的 &gt; nourriture (ce qui se mange).</p>
+																	</td>
+																	</tr>
+																	<tr>
+																	<td width="90%">
+																	<p>用的 &gt; objet d&rsquo;usage quotidien (ce dont on se sert)</p>
+																	</td>
+																	</tr>
+																	</tbody>
+																	</table>
+																	<p>&nbsp;</p>
+
+																	<table width="90%">
+																	<tbody>
+																	<tr>
+																	<td width="90%">
+																	<p><strong>Les abr&eacute;viations se forment souvent &agrave; partir du premier caract&egrave;re de chaque mot.</strong></p>
+																	</td>
+																	</tr>
+																	<tr>
+																	<td width="90%">
+																	<p>地下铁道 = 地铁 &gt; le m&eacute;tro.</p>
+																	</td>
+																	</tr>
+																	<tr>
+																	<td width="90%">
+																	<p>北京大学 = 北大 &gt; l&rsquo;universit&eacute; de Beijing.</p>
+																	</td>
+																	</tr>
+																	<tr>
+																	<td width="90%">
+																	<p>环境保护 = 环保 &gt; protection de l&rsquo;environnement.</p>
+																	</td>
+																	</tr>
+																	</tbody>
+																	</table>
+																	<p>&nbsp;</p>	
+
+																	<h2 class="h1" style="text-align:center;color:darkblue;margin-left:45px">Préfixes et suffixes</h2>	
+
+																	<p><strong>&nbsp;</strong></p>
+																	<table width="90%">
+																	<tbody>
+																	<tr>
+																	<td width="90%">
+																	<p><strong>Certains caract&egrave;res se retrouvent fr&eacute;quemment en d&eacute;but ou en fin de noms et sont alors assimil&eacute;s &agrave; des pr&eacute;fixes ou suffixes.</strong></p>
+																	</td>
+																	</tr>
+																	<tr>
+																	<td width="90%">
+																	<p>Pr&eacute;fixes vides de sens&nbsp;老 : 老虎, 老鼠, 老大, 老二</p>
+																	</td>
+																	</tr>
+																	<tr>
+																	<td width="90%">
+																	<p>Pr&eacute;fixe pr&eacute;cisant le genre animal&nbsp;公&nbsp;(m&acirc;le) /母 (femelle) :</p>
+																	<p>公鸡, 母鸡, 公牛, 母牛</p>
+																	</td>
+																	</tr>
+																	<tr>
+																	<td width="90%">
+																	<p>Pr&eacute;fixe ordinal&nbsp;头 (1<sup>er</sup>)&nbsp;: 头两次, 头五个月, 头两天, 头几本书 (几 approximatif ici)</p>
+																	</td>
+																	</tr>
+																	<tr>
+																	<td width="90%">
+																	<p>Pr&eacute;fixe n&eacute;gatif 非 (non)&nbsp;: 非会员, 非正常情况, 非饮用水</p>
+																	</td>
+																	</tr>
+																	<tr>
+																	<td width="90%">
+																	<p>Suffixes vides de sens 子, 头 (sont juste l&agrave; pour &eacute;viter confusions et homophonie)&nbsp;: 较子, 筷子, 木头, 势头</p>
+																	</td>
+																	</tr>
+																	<tr>
+																	<td width="90%">
+																	<p>Suffixes produisant des s&eacute;ries</p>
+																	<p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 所 (notion de local): 厕所, 派出所</p>
+																	<p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 家 (notion de sp&eacute;cialiste): 作家, 画家, 思想家</p>
+																	<p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 化 (notion de changement): 老化, 绿化</p>
+																	<p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 员 (notion d&rsquo;appartenance &agrave; un groupe social): 教员, 服务员, 演员</p>
+																	<p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 者 (notion de personne): 作者, 读者, 记者</p>
+																	</td>
+																	</tr>
+																	</tbody>
+																	</table>
+																	<p>&nbsp;</p>
+																	<table width="90%">
+																	<tbody>
+																	<tr>
+																	<td width="90%">
+																	<p><strong>Cas particulier du suffixe </strong><strong>儿</strong><strong>. Qui a plusieurs emplois</strong></p>
+																	</td>
+																	</tr>
+																	<tr>
+																	<td width="90%">
+																	<p>Il peut &ecirc;tre porteur d&rsquo;une coloration affective ou famili&egrave;re&nbsp;: 小孩儿, 蛐蛐儿</p>
+																	</td>
+																	</tr>
+																	<tr>
+																	<td width="90%">
+																	<p>Il peut servir comme marqueur vide pour lever l&rsquo;ambigu&iuml;t&eacute; ou la nature de mots proches&nbsp;: 画, 画儿,活, 活儿</p>
+																	</td>
+																	</tr>
+																	<tr>
+																	<td width="90%">
+																	<p>Il peut servir pour &lsquo;&eacute;crire&rsquo; l&rsquo;accent p&eacute;kinois&nbsp;: 门儿,地儿</p>
+																	</td>
+																	</tr>
+																	</tbody>
+																	</table>
+																	<p>&nbsp;</p>
+																	<table width="90%">
+																	<tbody>
+																	<tr>
+																	<td width="90%">
+																	<p><strong>Cas particulier du suffixe </strong>门<strong>.</strong></p>
+																	</td>
+																	</tr>
+																	<tr>
+																	<td width="90%">
+																	<p>Il est un suffixe totalisant des groupes humains, utilis&eacute;s quand on s&rsquo;adresse &agrave; des personnes constituant une totalit&eacute; (un groupe).</p>
+																	<p>女士门，先生们</p>
+																	</td>
+																	</tr>
+																	</tbody>
+																	</table>
+																	<p>&nbsp;</p>
+																	<h2 class="h1" style="text-align:center;color:darkblue;margin-left:45px">Coordination des noms</h2>	
+
+																	<p><strong>&nbsp;</strong></p>
+																	<table width="90%">
+																	<tbody>
+																	<tr>
+																	<td width="90%">
+																	<p><strong>Le suffixe </strong>和<strong> coordonne deux noms mais ne peut coordonner deux propositions.</strong></p>
+																	</td>
+																	</tr>
+																	<tr>
+																	<td width="90%">
+																	<p>老师和学生: le professeur et les &eacute;l&egrave;ves.</p>
+																	</td>
+																	</tr>
+																	</tbody>
+																	</table>
+																	<p>&nbsp;</p>
+																	<table width="90%">
+																	<tbody>
+																	<tr>
+																	<td width="90%">
+																	<p><strong>Le suffixe </strong>及<strong> coordonne deux noms avec l&rsquo;id&eacute;e d&rsquo;une extension (&ccedil;a et &ccedil;a&hellip; [pas enti&egrave;rement cit&eacute;].</strong></p>
+																	</td>
+																	</tr>
+																	<tr>
+																	<td width="90%">
+																	<p>中文及其它语言: le chinois et les autres langues [&hellip;].</p>
+																	</td>
+																	</tr>
+																	<tr>
+																	<td width="90%">
+																	<p>Variante 及其 qui permet d&rsquo;introduire un possessif&nbsp;- 中国作家及其代表作&nbsp;: les &eacute;crivains chinois et leurs &oelig;uvres repr&eacute;sentatives.</p>
+																	</td>
+																	</tr>
+																	</tbody>
+																	</table>
+																	<p>&nbsp;</p>
+																	<table width="90%">
+																	<tbody>
+																	<tr>
+																	<td width="90%">
+																	<p><strong>Le suffixe</strong>与<strong>.</strong></p>
+																	</td>
+																	</tr>
+																	<tr>
+																	<td width="90%">
+																	<p>红与黑 &ndash; style &eacute;crit</p>
+																	</td>
+																	</tr>
+																	</tbody>
+																	</table>
+																	<p>&nbsp;</p>
+																	<p>&nbsp;</p>
+																	<p>&nbsp;</p>							
+
+														</div>
+														
+
+
+														<h3 class="h3" style="text-align:center;color:darkblue;margin-left:45px">Les classificateurs nominaux</h3></br></br>
+														<div align="center" style="border:0px solid yellow">
+																
+																<h2 class="h1" style="text-align:center;color:darkblue;margin-left:45px">Quelques classificateurs fréquents</h2></br></br>
+																<table width="90%">
+																<tbody>
+																<tr>
+																<td width="90%">
+																<p>把 (tout ce qui mobilise la main): 一把椅子, 一把米</p>
+																</td>
+																</tr>
+																<tr>
+																<td width="90%">
+																<p>本 (tout ce qui est reli&eacute;): 两本书</p>
+																</td>
+																</tr>
+																<tr>
+																<td width="90%">
+																<p>部 (tout ce qui est film, roman): 这部电影</p>
+																</td>
+																</tr>
+																<tr>
+																<td width="90%">
+																<p>次 (tout ce qui est &eacute;v&egrave;nement ponctuel): 这次会议</p>
+																</td>
+																</tr>
+																<tr>
+																<td width="90%">
+																<p>份儿 / 份&nbsp; (tout ce qui est une part, partiel, un exemplaire)&nbsp;: 两分儿古老肉, 一份儿报纸, 一份报纸 -儿 n&rsquo;est pas obligatoire.</p>
+																</td>
+																</tr>
+																<tr>
+																<td width="90%">
+																<p>个 (tout ce qui est individus, g&eacute;n&eacute;ral)&nbsp;: 三个人</p>
+																</td>
+																</tr>
+																<tr>
+																<td width="90%">
+																<p>口 (tout ce qui est personnes sous l&rsquo;angle famille [bouche &agrave; nourrir]&nbsp;: 五口人, 几口人&nbsp;?</p>
+																</td>
+																</tr>
+																<tr>
+																<td width="90%">
+																<p>路 (tout ce qui est ligne d&rsquo;autobus&hellip;)&nbsp;: 一路车</p>
+																</td>
+																</tr>
+																<tr>
+																<td width="90%">
+																<p>位 (tout ce qui est individus avec respect)&nbsp;: 这位老师</p>
+																</td>
+																</tr>
+																<tr>
+																<td width="90%">
+																<p>张 (tout ce qui est plat, surface ou ayant une &eacute;tendue): 这张床, 这张纸, 两张桌子</p>
+																</td>
+																</tr>
+																<tr>
+																<td width="90%">
+																<p>&nbsp;</p>
+																</td>
+																</tr>
+																</tbody>
+																</table>
+																<p>&nbsp;</p>
+																<p>Note : utilisations classificateurs avec ou sans chiffres (le chiffre permet de compter&nbsp;; sans pr&eacute;cision, pas besoin de l&rsquo;utiliser). Les classificateurs permettent de compter, mais aussi d&rsquo;&ecirc;tre utilis&eacute; dans des noms compos&eacute;s, des expressions, des questions. <strong></br></br>Ce sont des mots &agrave; part enti&egrave;re</strong>. 这次会议 = cette r&eacute;union-ci / 重复一次 = r&eacute;p&eacute;ter encore une fois / 头两次 = les 2 premi&egrave;res fois. Ex&nbsp;: 这部电影，头两次,一把椅子，两本书，那个国, 哪个国&nbsp;? , 几口人&nbsp;?</p>
+																<p>&nbsp;</p>
+																<p>Note pour plus tard, 把 permet aussi de construire des phrase d&rsquo;action &laquo;&nbsp;je te donne ce livre&nbsp;&raquo; =我把书给你</p>
+																<p>&nbsp;</p>
+																<table width="90%">
+																<tbody>
+																<tr>
+																<td width="90%">
+																<p><strong>Le classificateur </strong>个<strong>.</strong></p>
+																</td>
+																</tr>
+																<tr>
+																<td width="90%">
+																<p>Il peut parfois se substituer &agrave; des classificateurs plus sp&eacute;cifiques</p>
+																<p>这部电影不错，这个电影不错</p>
+																<p>&nbsp;</p>
+																<p>Noter aussi que ce classificateur peut s&rsquo;intercaler entre le verbe et son compl&eacute;ment, mais parfois aussi entre le verbe et son r&eacute;sultatif, <strong><u>pour donner du rythme &agrave; l&rsquo;action</u></strong>.</p>
+																<p>打个电话 /我打你的电话</p>
+																</td>
+																</tr>
+																</tbody>
+																</table>
+																<p>&nbsp;</p>
+																<table width="90%">
+																<tbody>
+																<tr>
+																<td width="90%">
+																<p><strong>Un m&ecirc;me nom peut &ecirc;tre class&eacute; dans diff&eacute;rente &laquo;&nbsp;cat&eacute;gorie&nbsp;&raquo;.</strong><strong> Ces cat&eacute;gories sont par exemple des quantit&eacute;s, des formats.</strong></p>
+																</td>
+																</tr>
+																<tr>
+																<td width="90%">
+																<p>一个人&gt; une personne</p>
+																<p>一对人&gt; un couple de personnes</p>
+																<p>一帮人&gt; une bande de personnes</p>
+																<p>一群人&gt; un groupe de personnes</p>
+																</td>
+																</tr>
+																</tbody>
+																</table>
+																<p>&nbsp;</p>
+
+
+																<h2 class="h1" style="text-align:center;color:darkblue;margin-left:45px">Emploi des classificateurs</h2></br></br>
+
+																<table width="90%">
+																<tbody>
+																<tr>
+																<td width="90%">
+																<p><strong>Emplois des classificateurs</strong><strong> &ndash; Un classificateur doit &ecirc;tre employ&eacute; dans deux cas</strong></p>
+																</td>
+																</tr>
+																<tr>
+																<td width="90%">
+																<p>Entre un adjectif d&eacute;monstratif ou interrogatif correspondant 哪, et un nom (cet homme / quel homme&nbsp;? / lequel&nbsp;?)</p>
+																<p>这个同事你认识吗&nbsp;?</p>
+																<p>你说的是哪个同事&nbsp;?</p>
+																</td>
+																</tr>
+																<tr>
+																<td width="90%">
+																<p>Entre un adjectif num&eacute;ral et un nom (trois personnes, cinq films&hellip;)</p>
+																<p>Ainsi qu&rsquo;avec l&rsquo;interrogatif correspondant 几</p>
+																<p>他门几个人&nbsp;? 他们三个人</p>
+																<p>我昨天看了五部电影</p>
+																</td>
+																</tr>
+																<tr>
+																<td width="90%">
+																<p>Le nom plac&eacute; apr&egrave;s le classificateur peut &ecirc;tre sous-entendu</p>
+																<p>这里的光盘，我没有。要这个!</p>
+																</td>
+																</tr>
+																</tbody>
+																</table>
+																<p>&nbsp;</p>
+
+
+																<table width="90%">
+																<tbody>
+																<tr>
+																<td width="90%">
+																<p><strong>La quantit&eacute; ind&eacute;termin&eacute;e </strong><strong>些</strong><strong> = le pluriel des d&eacute;monstratifs</strong></p>
+																</td>
+																</tr>
+																<tr>
+																<td width="90%">
+																<p>*Ce classificateur 些 permet de voir les choses sous l&rsquo;angle de quantit&eacute; ind&eacute;termin&eacute;e.</p>
+																<p>昨天来了一些朋友</p>
+																<p>&nbsp;</p>
+																<p>*Ce classificateur peut &ecirc;tre combin&eacute; avec les d&eacute;monstratifs 这 那 哪 (question) ou avec 一 de fa&ccedil;on &laquo;&nbsp;fig&eacute;e&nbsp;&raquo;</p>
+																<p>你买了一些什么？ 我买了一些水果</p>
+																<p>这些照片都是谁的&nbsp;?</p>
+																<p>&nbsp;</p>
+																<p>*Le chinois est une langue sans pluriel. 些 correspond au pluriel des d&eacute;monstratif, tr&egrave;s souvent.</p>
+																<p>这些同事</p>
+																<p>&nbsp;</p>
+																<p>*En position de sujet, le nom modifi&eacute;/affect&eacute; par 一些 est pr&eacute;c&eacute;d&eacute; de 有</p>
+																<p>有一些书，别的地方找不到</p>
+																<p>&nbsp;</p>
+																<p>NOTE&nbsp;: &agrave; la diff&eacute;rence de 一点 qui est non d&eacute;nombrable en toute circonstance, 一些 peut-&ecirc;tre une quantit&eacute; d&eacute;nombrable</p>
+																<p>路边有一些人散步 (on ne sait pas combien, mais peut-&ecirc;tre 2 ou 3)</p>
+																<p>&nbsp;</p>
+																<p>瓶子里有一点儿水 (ce sera ind&eacute;nombrable comme ici de l&rsquo;eau)</p>
+																</td>
+																</tr>
+																</tbody>
+																</table>
+																<p>&nbsp;</p>
+																<table width="90%">
+																<tbody>
+																<tr>
+																<td width="90%">
+																<p><strong>Les mots de mesure</strong></p>
+																</td>
+																</tr>
+																<tr>
+																<td width="90%">
+																<p>Toute mesure au sens stricte (un m&egrave;tre de, un litre de, un kilo de&hellip;) ou au sens large (une bouteille de, un groupe de, un verre de&hellip;) joue le r&ocirc;le de classificateur</p>
+																<p>两斤苹果 &gt; deux livres de pommes</p>
+																<p>五杯水&gt; cinq verre/tasse/contenant d&rsquo;eau</p>
+																<p>两瓶啤酒&gt; deux bouteilles de bi&egrave;re</p>
+																<p>三杯茶&gt; trois tasses de th&eacute;</p>
+																</td>
+																</tr>
+																<tr>
+																<td width="90%">
+																<p>Mesure du temps</p>
+																<p>一分钟&gt; une minute</p>
+																<p>一秒钟&gt; une seconde</p>
+																<p>Note&nbsp;: 天年 sont tous deux noms et classificateurs en m&ecirc;me tps</p>
+																<p>(double emploi).</p>
+																<p>两天, fonctionne. pas besoin de dire两天天</p>
+																<p>三年</p>
+																</td>
+																</tr>
+																<tr>
+																<td width="90%">
+																<p>Le&ccedil;ons (en tant qu&rsquo;unit&eacute; de mesure d&rsquo;un manuel par ex)</p>
+																<p>我们学了三课书&gt; nous avons &eacute;tudi&eacute; 3 le&ccedil;ons de ce livre</p>
+																</td>
+																</tr>
+																<tr>
+																<td width="90%">
+																<p>Monnaie</p>
+																<p>块， 毛， 分 sont les classificateurs relatifs &agrave; la monnaie. Ils renvoient respectivement&nbsp;&agrave;&nbsp;:</p>
+																<p>块&ndash; le Yuan (unit&eacute; principale)</p>
+																<p>毛 &ndash; son dixi&egrave;me</p>
+																<p>分 &ndash; son centi&egrave;me</p>
+																<p>&nbsp;</p>
+																<p>快 est aussi utilis&eacute; comme classificateur de &laquo;&nbsp;morceaux&nbsp;&raquo; (chunks, tas de)</p>
+																<p>一分钱 &ndash; un centime</p>
+																<p>一毛钱 &ndash; un d&eacute;cime</p>
+																<p>两块钱 &ndash; deux yuans</p>
+																</td>
+																</tr>
+																<tr>
+																<td width="90%">
+																<p>Distance (entre deux stations par ex)</p>
+																<p>到东方商场还有三站 &ndash; pour atteindre la station march&eacute; de l&rsquo;orient, il faut encore 3 stations</p>
+																</td>
+																</tr>
+																</tbody>
+																</table>
+																<p>&nbsp;</p>
+																<p>&nbsp;</p>
+
+
+																</div>
+
+														<h3 class="h3" style="text-align:center;color:darkblue;margin-left:45px">Interrogatifs et indéfinis</h3></br></br>
+														<div align="center" style="border:0px solid yellow"></br>
+
+														<p>&laquo;&nbsp;En chinois, les m&ecirc;mes mots peuvent servir d&rsquo;interrogatifs et d&rsquo;ind&eacute;finis (qui&nbsp;? n&rsquo;importe qui, quoi&nbsp;? n&rsquo;importe quoi&nbsp;?...). Les interrogatifs occupent dans la question <strong><u>la m&ecirc;me place que l&rsquo;&eacute;l&eacute;ment de r&eacute;ponse</u></strong> &gt;&gt; les phrases sont d&rsquo;une grande stabilit&eacute;. &raquo;</p>
+															<p>&nbsp;</p>
+															<table width="90%">
+															<tbody>
+															<tr>
+															<td width="90%">
+															<p><strong>Principaux interrogatifs</strong></p>
+															</td>
+															</tr>
+															<tr>
+															<td width="90%">
+															<p>谁 &gt; <strong>qui</strong>?</p>
+															<p>谁去&nbsp;?</p>
+															</td>
+															</tr>
+															<tr>
+															<td width="90%">
+															<p>什么 &gt; <strong>quoi / quel</strong>?</p>
+															<p>这是什么&nbsp;? 他做什么工作?</p>
+															</td>
+															</tr>
+															<tr>
+															<td width="90%">
+															<p>什么时候&gt; <strong>quand?</strong></p>
+															<p>你什么时候去?</p>
+															</td>
+															</tr>
+															<tr>
+															<td width="90%">
+															<p>多少 / 几&gt; <strong>combien&nbsp;?</strong>&nbsp;(<em>au sens quantifie r&eacute;ponse, mais on la conna&icirc;t pas, reste assez proche de </em><em>几</em><em>).</em></p>
+															<p>这个手迹多少钱? 你买了几本书？</p>
+															</td>
+															</tr>
+															<tr>
+															<td width="90%">
+															<p>多长时间 / 多久&gt; <strong>combien de temps</strong>?</p>
+															<p>你在法国多长时间&nbsp;?</p>
+															</td>
+															</tr>
+															<tr>
+															<td width="90%">
+															<p>多大&gt; <strong>combien grand</strong>&nbsp;<em>(&acirc;ge ou surface).</em></p>
+															<p>你多大了? 这个房间(有)多大&nbsp;?</p>
+															</td>
+															</tr>
+															<tr>
+															<td width="90%">
+															<p>多重 &gt; <strong>combien lourd&nbsp;?</strong></p>
+															<p>这台刚琴(有)多重&nbsp;?</p>
+															</td>
+															</tr>
+															<tr>
+															<td width="90%">
+															<p>多远 &gt; <strong>combien loin&nbsp;?</strong></p>
+															<p>到地铁站还有多远&nbsp;?</p>
+															</td>
+															</tr>
+															<tr>
+															<td width="90%">
+															<p>多长 &gt; <strong>combien long&nbsp;?</strong></p>
+															<p>黄河有多长&nbsp;?</p>
+															</td>
+															</tr>
+															<tr>
+															<td width="90%">
+															<p>多宽 &gt; <strong>combien large&nbsp;?</strong></p>
+															<p>楼道有多宽？有一米宽吗？</p>
+															</td>
+															</tr>
+															<tr>
+															<td width="90%">
+															<p>哪 &gt; <strong>lequel&nbsp;?</strong></p>
+															<p>你要哪一个？</p>
+															</td>
+															</tr>
+															<tr>
+															<td width="90%">
+															<p>哪儿 /哪里&gt; <strong>o&ugrave;&nbsp;?</strong></p>
+															<p>你去哪儿？你在哪里？</p>
+															</td>
+															</tr>
+															<tr>
+															<td width="90%">
+															<p>怎么&gt; <strong>comment (moyen)?</strong></p>
+															<p>你怎么去？他怎么还没到呢？</p>
+															</td>
+															</tr>
+															<tr>
+															<td width="90%">
+															<p>怎么样 &gt; <strong>comment (mani&egrave;re)?</strong></p>
+															<p>这个电影怎么样？他汉语说得怎么样？</p>
+															</td>
+															</tr>
+															<tr>
+															<td width="90%">
+															<p>为什么&gt; <strong>pourquoi&nbsp;?</strong></p>
+															<p>他为什么不在？</p>
+															</td>
+															</tr>
+															<tr>
+															<td width="90%">
+															<p>干吗 &gt;<strong>&nbsp;pourquoi faire&nbsp;?</strong></p>
+															<p>去找他干吗？</p>
+															</td>
+															</tr>
+															<tr>
+															<td width="90%">
+															<p>还是&gt; <strong>o&ugrave; bien&nbsp;?</strong></p>
+															<p>你今天上班还是休息&nbsp;?</p>
+															</td>
+															</tr>
+															</tbody>
+															</table>
+															<p>&nbsp;</p>
+															<p>Note&nbsp;: pour porter sur une action inattendue, on peut utiliser 怎么了&nbsp;: 你最近怎么了？</p>
+															<p>Note&nbsp;: 什么 interroge sur la nature de la chose et peut aussi &ecirc;tre pronom interrogatif.</p>
+															<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 他做什么工作 / 你星期天喜欢做什么？</p>
+															<p>&nbsp;</p>
+															<p>Note&nbsp;:&nbsp;&nbsp; 哪 interroge sur un choix &agrave; faire&nbsp;; il entraine alors l&rsquo;emploie d&rsquo;un classificateur et il ne peut pas &ecirc;tre employ&eacute; comme pronom interrogatif</p>
+															<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 这三个相机，你喜欢哪一个？</p>
+															<p>&nbsp;</p>
+															<p>Note&nbsp;:&nbsp;&nbsp; 怎么样 porte sur la qualit&eacute; ou l&rsquo;&eacute;tat (comment est-il&nbsp;?) alors que 怎么 interroge sur le moyen (comment s&rsquo;y prendre).</p>
+															<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 他写得怎么样？</p>
+															<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 这个字怎么写？</p>
+															<p>&nbsp;</p>
+															<p>Note&nbsp;: 几 s&rsquo;emploie pour des quantit&eacute;s n&rsquo;exc&eacute;dant pas 10. 多少 s&rsquo;emploie lui quel que soit la quantit&eacute;.</p>
+															<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 你门家有几个孩子&nbsp;?</p>
+															<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 这家公司有多少职员&nbsp;?</p>
+															<p>&nbsp;</p>
+
+															<p>Les pronoms interrogatifs peuvent aussi servir de pronoms ind&eacute;finis dans deux cas&nbsp;: avec 都 et 也</p>
+															<p>(avec 也&nbsp; dans phrases n&eacute;gatives)&nbsp;:</p>
+															<p>&nbsp;</p>
+															<table width="90%">
+															<tbody>
+															<tr>
+															<td width="90%">
+															<p><strong>Pronoms ind&eacute;finis</strong><strong>, en reprise</strong></p>
+															</td>
+															</tr>
+															<tr>
+															<td width="90%">
+															<p>什么都／也 &gt; <strong>n&rsquo;importe quoi</strong></p>
+															</td>
+															</tr>
+															<tr>
+															<td width="90%">
+															<p>谁都／也 &gt; <strong>tout le monde, personne</strong></p>
+															</td>
+															</tr>
+															<tr>
+															<td width="90%">
+															<p>哪儿都／也 &gt; <strong>n&rsquo;importe o&ugrave;</strong></p>
+															</td>
+															</tr>
+															<tr>
+															<td width="90%">
+															<p>哪个都／也 &gt; <strong>n&rsquo;importe lequel</strong></p>
+															</td>
+															</tr>
+															<tr>
+															<td width="90%">
+															<p>&nbsp;</p>
+															</td>
+															</tr>
+															</tbody>
+															</table>
+
+															<ul style="text-align:left">
+															<li>谁都知道这件事</li></br>
+															<li>他哪儿都没去</li></br>
+															<li>到现在，谁也不能回答这个问题</li></br>
+															<li>广东人什么都吃</li>
+															</ul>
+															<p>&nbsp;</p>
+															<p>Les pronoms interrogatifs peuvent aussi servir de pronoms ind&eacute;finis avec <strong>就 </strong>(&laquo;&nbsp;alors dans ce cas&nbsp;&raquo;).</p>
+															<p>&nbsp;</p>
+															<table width="90%">
+															<tbody>
+															<tr>
+															<td width="90%">
+															<p><strong>Pronoms ind&eacute;finis</strong><strong>, avec la reprise du m&ecirc;me ind&eacute;fini dans une seconde proposition ponctu&eacute;e par </strong><strong>就</strong></p>
+															</td>
+															</tr>
+															<tr>
+															<td width="90%">
+															<p>想去哪儿，就去哪儿 &gt; <strong>Allez o&ugrave; vous voulez&nbsp;!</strong></p>
+															</td>
+															</tr>
+															<tr>
+															<td width="90%">
+															<p>你什么时候需要，你就什么时候找我 &gt; <strong>Viens me voir quand tu en auras besoin</strong></p>
+															</td>
+															</tr>
+															<tr>
+															<td width="90%">
+															<p>他怎么做，你就怎么做 &gt; <strong>Fais comme lui&nbsp;!</strong></p>
+															<p>他做什么，你就做什么 &gt; <strong>Fais ce qu&rsquo;il fait&nbsp;!</strong></p>
+															</td>
+															</tr>
+															<tr>
+															<td width="90%">
+															<p>谁去过那个地方，谁就带路 &gt; <strong>Que celui qui y est all&eacute; montrer le chemin</strong></p>
+															</td>
+															</tr>
+															</tbody>
+															</table>
+															<p>&nbsp;</p>
+															<p>&nbsp;</p>
+
+															</div>
+
+													<h3 class="h3" style="text-align:center;color:darkblue;margin-left:45px">La particule 的 </h3></br></br>
+														<div align="center" style="border:0px solid yellow"></br>
+
+
+														<p>&laquo;&nbsp;的 est la particule la plus utilise en chinois. C&rsquo;est une particule de d&eacute;termination qui sert de lien entre le d&eacute;terminant et le nom. &raquo;</p>
+														<p>&nbsp;</p>
+														<p>Le chinois emploie la particule 的 &agrave; chaque fois qu&rsquo;une information particuli&egrave;re ou ponctuelle vient impacter le nom. Cette particule rattache l&rsquo;information situe avant, au nom situe apr&egrave;s.</p>
+														<p>D&eacute;terminant + 的 + d&eacute;termin&eacute; &lt;nom&gt;</p>
+														<p>&nbsp;</p>
+														<p>王先生的车 = la voiture de monsieur wang</p>
+														<p>&nbsp;</p>
+														<p>Attention du coup le nom de la phrase, son sujet, est &agrave; la fin du coup.</p>
+														<p>&nbsp;</p>
+														<p>菲的宝贝 = le ch&eacute;rie de fei</p>
+														<p>&nbsp;</p>
+														<p>L&rsquo;information d&eacute;terminant peut &ecirc;tre un nom, un pronom, un qualificatif, ou une opposition toute enti&egrave;re. Ainsi a un possessif {mon stylo}, un adjectif qualificatif {une belle chanson}, ou une proposition relative {le plat que Jaime manger}, correspond en chinois une relation en 的。</p>
+														<p>&nbsp;</p>
+														<p>我坐过他的车.</p>
+														<p>这是一辆很漂亮的车.</p>
+														<p>是他去年买的车。</p>
+														<p>&nbsp;</p>
+														<p>L&rsquo;information, le d&eacute;terminant peut aussi &ecirc;tre un pronom de toute autre sorte comme un interrogatif.</p>
+														<p>&nbsp;</p>
+														<p>是谁的车</p>
+														<p>&nbsp;</p>
+														<p>Note = parfois le d&eacute;termin&eacute; {le nom} peut &ecirc;tre sous-entendu, dans ce cas-l&agrave;, la place apr&egrave;s 的 reste vide. Ce sera notamment le cas lorsque le sujet est explicite ailleurs dans la phrase, g&eacute;n&eacute;ralement en amont de la phrase ou ailleurs dans la discussion ou enfin tout simplement implicite.</p>
+														<p>&nbsp;</p>
+														<p>这个酒店的房间，有便宜的， 有贵的。</p>
+														<p>这个背包是我的</p>
+														<p>&nbsp;</p>
+														<p>Une des plus grandes difficult&eacute;s consiste a rep&eacute;rer le noyau nominal de la phrase surtout lorsque l&rsquo;information qui lui est rattach&eacute;e en amont est longue et comporte plusieurs 的. Le noyau doit en g&eacute;n&eacute;ral &ecirc;tre recherche apr&egrave;s le dernier 的.</p>
+														<p>&nbsp;</p>
+														<p>我哥哥的邻居昨天送我的那套文芳四宝。。。</p>
+														<p>&nbsp;</p>
+														<p>Il y a des cas ou 的 ne s&rsquo;emploie pas =</p>
+														<p>&nbsp;</p>
+														<table width="90%">
+														<tbody>
+														<tr>
+														<td width="90%">
+														<p><strong>Cas ou </strong><strong>的</strong><strong> ne s&rsquo;emploie pas</strong><strong>．</strong></p>
+														</td>
+														</tr>
+														<tr>
+														<td width="90%">
+														<p>老实人 / 很老实的人 {cat&eacute;gorie de personne VS jugement ponctuel}</p>
+														</td>
+														</tr>
+														<tr>
+														<td width="90%">
+														<p>伟大领袖 / 很伟大的领袖 {il rel&egrave;ve de cette cat&eacute;gorie VS un dirigeant pr&eacute;cis que l&rsquo;on consid&egrave;re comme grand}</p>
+														</td>
+														</tr>
+														<tr>
+														<td width="90%">
+														<p>写信人 / 写信的人　｛exp&eacute;diteur vs celui qui &eacute;crit la lettre)</p>
+														</td>
+														</tr>
+														<tr>
+														<td width="90%">
+														<p><strong>Autres exemples</strong></p>
+														<p>法国人　／　英文报</p>
+														<p>好学生　＝ cat&eacute;gorie　／　好人和坏人　＝　les bons et les m&eacute;chants</p>
+														<p>新书</p>
+														<p>漂亮话</p>
+														</td>
+														</tr>
+														</tbody>
+														</table>
+														<p>&nbsp;</p>
+
+														<table width="90%">
+														<tbody>
+														<tr>
+														<td width="90%">
+														<p><strong>Cas o&ugrave; </strong><strong>的</strong><strong> est souvent omis dans les expressions &lt; cas d&rsquo;un proche &gt;</strong></p>
+														</td>
+														</tr>
+														<tr>
+														<td width="90%">
+														<p>我太太</p>
+														<p>我孩子</p>
+														<p>我弟弟</p>
+														<p>他妈妈</p>
+														<p>王大明家</p>
+														<p>我朋友</p>
+														<p>&nbsp;</p>
+														<p>Note&nbsp;: il arrive m&ecirc;me que l&rsquo;on emploie qu&rsquo;une fois 的　</p>
+														<p>&nbsp;</p>
+														<p>是我朋友哥哥的同学＝　ici, on a deux d&eacute;terminant pour un d&eacute;termin&eacute;.</p>
+														<p>Note&nbsp;: 的est aussi omis lorsqu&rsquo;on indique l&rsquo;appartenance &agrave; une institution.</p>
+														<p>他们学校</p>
+														<p>我们单位</p>
+														<p>&nbsp;</p>
+														<p>Attention&nbsp;: ne pas voir l&rsquo;absence de 的　syst&eacute;matiquement comme s&rsquo;il &eacute;tait sous-entendu&nbsp;; une m&ecirc;me expression peut avoir des th&egrave;mes diff&eacute;rents.</p>
+														<p>&nbsp;</p>
+														<p>你身体好吗？＝ la sant&eacute; pour toi, cava&nbsp;?</p>
+														<p>你的身体好吗？　＝ta sant&eacute;, cava&nbsp;?</p>
+														<p>&nbsp;</p>
+														<p>On a bien deux constructions.</p>
+														</td>
+														</tr>
+														</tbody>
+														</table>
+														<p>&nbsp;</p>
+														<p>&nbsp;</p>
+														</div>
+
+														<h3 class="h3" style="text-align:center;color:darkblue;margin-left:45px">Les démonstratifs</h3></br></br>
+														<div align="center" style="border:0px solid yellow"></br>
+
+														<p>&laquo; Les d&eacute;monstratifs, adjectifs ou pronoms d&eacute;signent soit ce qui est proche, soit ce qui est &eacute;loign&eacute;. Attention&nbsp;: les adjectifs d&eacute;monstratifs sont suivis d'un classificateur.&nbsp;&raquo;</p>
+														<p><strong>&nbsp;</strong></p>
+														<p>** Les adjectifs d&eacute;monstratifs sont 这 pour les objets et les personnes proches -these, this- et 那 pour les objets et les personnes &eacute;loignes -those, that-.</p>
+														<p>&nbsp;</p>
+														<p>** Entre l&rsquo;adjectif d&eacute;monstratif et le nom -qui peut &ecirc;tre sous-entendu-, on emploie toujours un classificateur.</p>
+														<p>这个背包是我的，那个呢？</p>
+														<p>&nbsp;</p>
+														<p>** Lorsque le nom est pr&eacute;c&egrave;de d&rsquo;un compl&eacute;ment, 这 et 那 ont une fonction de reprise et de focalisation sur l&rsquo;objet.</p>
+														<p>你上次给我看的那本书不错。。。</p>
+														<p>&nbsp;</p>
+														<p>** On peut chercher ses mots en utilisant &agrave; l&rsquo; infini 这个。。那个。。</p>
+														<p>&nbsp;</p>
+														<p>此 est un d&eacute;monstratif relevant du style &eacute;crit.</p>
+														<p>此地禁止吸烟。</p>
+														<p><strong>&nbsp;</strong></p>
+														<p>&nbsp;</p>
+														<p>** Les pronoms d&eacute;monstratifs sont 这, 那。 Ils peuvent &ecirc;tre sous-entendus,</p>
+														<p>-这-是什么？</p>
+														<p>** Les pronoms d&eacute;monstratifs locatifs sont 这儿 ou 这里 pour les lieux proches， 那儿， 哪里 pour les lieux &eacute;loignes. 那儿 ou 那里 pr&eacute;c&egrave;des d&rsquo;un nom de personne peuvent signifier -chez- au sens propre et figure.</p>
+														<p>我朋友那儿。</p>
+														<p>&nbsp;</p>
+														<p>** Les pronoms d&eacute;monstratifs 这样 et 那样 -de la sorte, ainsi- expriment la mani&egrave;re.</p>
+														<p>他不应该那样问你。</p>
+														<p>这样拿笔不对。</p>
+														<p>&nbsp;</p>
+														<p>** Les pronoms d&eacute;monstratifs 这么 et 那么 -si, tellement- expriment le degr&eacute; d&rsquo;une appr&eacute;ciation devant un verbe qualificatif ou un verbe de sentiment.</p>
+														<p>我买了这么大的西瓜。</p>
+														<p>那么大的房间，一定很贵巴。</p>
+														<p>我儿子已经有我这么高了。</p>
+														<p>&nbsp;</p>
+														<p>** La forme n&eacute;gative de ces structures juste cites pr&eacute;c&eacute;demment est 不那么。</p>
+														<p>这儿的东西怎么这么/那么贵？</p>
+														<p>我的儿子不那么爱看书。</p>
+														<p>&nbsp;</p>
+														<p>Note ： 这么 et 那么 peuvent aussi &ecirc;tre employ&eacute;s devant un verbe d&rsquo;action pour exprimer la mani&egrave;re.</p>
+														<p>那就这么办巴。</p>
+														<p>&nbsp;</p>
+														<p>&nbsp;</p>
+
+														</div>
+
+														<h3 class="h3" style="text-align:center;color:darkblue;margin-left:45px">Les locatifs</h3></br></br>
+														<div align="center" style="border:0px solid yellow"></br>
+
+														<p>&laquo;&nbsp;Les locatifs servent &agrave; localiser dans l&rsquo;espace et dans le temps&nbsp;; certains sont polyvalents. Ils correspondent en fran&ccedil;ais &agrave; des adverbes de temps et de lieu (devant, apr&egrave;s, avant&hellip;) o&ugrave; &agrave; des locutions pr&eacute;positionnelles (au-dessus de, &agrave; l&rsquo;int&eacute;rieur de).&nbsp;&raquo;</p>
+														<p>&nbsp;</p>
+														<p><strong>&nbsp;</strong></p>
+														<table width="90%">
+														<tbody>
+														<tr>
+														<td width="90%"><strong><br /> </strong>
+														<p><strong>Caract&eacute;ristiques des locatifs</strong></p>
+														</td>
+														</tr>
+														<tr>
+														<td width="90%">
+														<p>&nbsp;Les locatifs peuvent &ecirc;tre monosyllabiques.</p>
+														<p>桌子上 / 五年前</p>
+														<p>&nbsp;</p>
+														<p>Ou dissyllabiques</p>
+														<p>桌子上边 / 五年以前</p>
+														<p>&nbsp;</p>
+														<p>Les locatifs dissyllabiques peuvent s&rsquo;employer seuls, en t&ecirc;te de phrase</p>
+														<p>外面很冷</p>
+														<p>&nbsp;</p>
+														<p><strong>Employ&eacute;s avec un nom</strong>, les locatifs se placent apr&egrave;s lui</p>
+														<p>动物园东边就是三三路车站</p>
+														<p>&nbsp;</p>
+														<p>Les locatifs peuvent former une circonstance autonome ou un th&egrave;me de phrase</p>
+														<p>Circonstance&nbsp;: 我以前没去过哪儿</p>
+														<p>Th&egrave;me&nbsp;: 以前，交通不方便</p>
+														<p>&nbsp;</p>
+														<p>Ils peuvent former un d&eacute;terminant du nom</p>
+														<p>以前的电脑太重</p>
+														<p>&nbsp;</p>
+														<p>Les locatifs temporels peuvent &eacute;galement former une proposition de temps</p>
+														<p>上班以前，我们去茶馆喝茶</p>
+														</td>
+														</tr>
+														</tbody>
+														</table>
+														<p><strong>&nbsp;</strong></p>
+														<p><strong><br /> </strong></p>
+														<p><strong>&nbsp;</strong></p>
+														<table width="90%">
+														<tbody>
+														<tr>
+														<td width="90%"><strong><br /> </strong>
+														<p><strong>Locatifs spatiaux</strong></p>
+														</td>
+														</tr>
+														<tr>
+														<td width="90%">
+														<p>&nbsp;Les locatifs spatiaux dissyllabiques se forment avec les locatifs monosyllabiques, pr&eacute;c&eacute;d&eacute;s de 以 ou 之 ou suivis de 边 (litt. &laquo;&nbsp;c&ocirc;t&eacute;&nbsp;&raquo;), 面 (litt. &laquo;&nbsp;face&nbsp;&raquo;) ou 头 (plus oral)</p>
+														<p>&nbsp;</p>
+														</td>
+														</tr>
+														</tbody>
+														</table>
+														<p><strong>&nbsp;</strong></p>
+														<table>
+														<tbody>
+														<tr>
+														<td width="110"><strong><br /> </strong>
+														<p><strong>&nbsp;</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>边</strong><strong> (suff.)</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>面</strong><strong> (suff.)</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>头</strong><strong> (suff.)</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>以</strong><strong> (pre.)</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>之</strong><strong> (pre.)</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>&nbsp;</strong></p>
+														</td>
+														</tr>
+														<tr>
+														<td width="110">
+														<p><strong>上</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>上</strong><strong>边</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>上</strong><strong>面</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>上</strong><strong>头</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>以</strong><strong>上</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>之</strong><strong>上</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>Au-dessus de</strong></p>
+														</td>
+														</tr>
+														<tr>
+														<td width="110">
+														<p><strong>下</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>下</strong><strong>边</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>下</strong><strong>面</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>下</strong><strong>头</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>以</strong><strong>下</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>之</strong><strong>下</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>Au-dessous de</strong></p>
+														</td>
+														</tr>
+														<tr>
+														<td width="110">
+														<p><strong>前</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>前</strong><strong>边</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>前</strong><strong>面</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>前</strong><strong>头</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>&nbsp;</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>之</strong><strong>前</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>devant</strong></p>
+														</td>
+														</tr>
+														<tr>
+														<td width="110">
+														<p><strong>后</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>后</strong><strong>边</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>后</strong><strong>面</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>后</strong><strong>头</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>&nbsp;</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>之</strong><strong>后</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>derri&egrave;re</strong></p>
+														</td>
+														</tr>
+														<tr>
+														<td width="110">
+														<p><strong>左</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>左</strong><strong>边</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>左</strong><strong>面</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>&nbsp;</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>&nbsp;</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>&nbsp;</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>A gauche de</strong></p>
+														</td>
+														</tr>
+														<tr>
+														<td width="110">
+														<p><strong>右</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>右</strong><strong>边</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>右</strong><strong>面</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>&nbsp;</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>&nbsp;</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>&nbsp;</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>A droite de </strong></p>
+														</td>
+														</tr>
+														<tr>
+														<td width="110">
+														<p><strong>旁</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>旁</strong><strong>边</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>&nbsp;</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>&nbsp;</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>&nbsp;</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>&nbsp;</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>A c&ocirc;t&eacute; de </strong></p>
+														</td>
+														</tr>
+														<tr>
+														<td width="110">
+														<p><strong>里</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>里</strong><strong>边</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>里</strong><strong>面</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>里</strong><strong>头</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>&nbsp;</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>&nbsp;</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>A l&rsquo;int&eacute;rieur de</strong></p>
+														</td>
+														</tr>
+														<tr>
+														<td width="110">
+														<p><strong>内</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>&nbsp;</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>&nbsp;</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>&nbsp;</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>以</strong><strong>内</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>之</strong><strong>内</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>En de&ccedil;&agrave; de</strong></p>
+														</td>
+														</tr>
+														<tr>
+														<td width="110">
+														<p><strong>外</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>外</strong><strong>边</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>外</strong><strong>面</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>外</strong><strong>头</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>以</strong><strong>外</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>之</strong><strong>外</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>A l&rsquo;ext&eacute;rieur de / au-del&agrave; de</strong></p>
+														</td>
+														</tr>
+														<tr>
+														<td width="110">
+														<p><strong>北</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>北</strong><strong>边</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>北</strong><strong>面</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>北</strong><strong>头</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>&nbsp;</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>&nbsp;</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>Au nord de</strong></p>
+														</td>
+														</tr>
+														<tr>
+														<td width="110">
+														<p><strong>南</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>南</strong><strong>边</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>南</strong><strong>面</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>南</strong><strong>头</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>&nbsp;</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>&nbsp;</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>Au sud de</strong></p>
+														</td>
+														</tr>
+														<tr>
+														<td width="110">
+														<p><strong>东</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>东</strong><strong>边</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>东</strong><strong>面</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>东</strong><strong>头</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>&nbsp;</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>&nbsp;</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>A l&rsquo;est de</strong></p>
+														</td>
+														</tr>
+														<tr>
+														<td width="110">
+														<p><strong>西</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>西</strong><strong>边</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>西</strong><strong>面</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>西</strong><strong>头</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>&nbsp;</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>&nbsp;</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>A l&rsquo;ouest de</strong></p>
+														</td>
+														</tr>
+														</tbody>
+														</table>
+														<p><strong>&nbsp;</strong></p>
+														<table>
+														<tbody>
+														<tr>
+														<td width="110"><strong><br /> </strong>
+														<p><strong>中</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>中间</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>当中</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>其中</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>之中</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>&nbsp;</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>Au milieu de, parmi, entre</strong></p>
+														</td>
+														</tr>
+														<tr>
+														<td width="110">
+														<p><strong>间</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>&nbsp;</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>&nbsp;</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>&nbsp;</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>之间</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>&nbsp;</strong></p>
+														</td>
+														<td width="110">
+														<p><strong>&nbsp;</strong></p>
+														</td>
+														</tr>
+														</tbody>
+														</table>
+														<p>&nbsp;</p>
+														<p>&nbsp;</p>
+														</div>
+
+		</div>										
+		</div>									
+		<div id="footer">
+				<div id="boutontop"><a href="#" target="_top" title="Retour en haut de page"><img src="files/boutontop.png"/></a></div>
+		</div>
+	</body>
+</html>

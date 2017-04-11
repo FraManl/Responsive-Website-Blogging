@@ -292,6 +292,21 @@ h2
 	/ Grand titre dans la colonne du centre /
 }
 
+h3
+{ 
+	font-size: 26px; 
+	color:darkblue;
+	font-weight:bold;
+	margin-top:5px;
+	margin-bottom:5px;
+	padding-top:10px;
+	padding-bottom:10px;
+	text-align:center;
+	text-decoration:none;
+	border:solid 2px black;
+	/ Grand titre dans la colonne du centre /
+}
+
 
 
 .titres {
@@ -383,7 +398,7 @@ img {
     max-width:100%;
     padding:10px;
     font-size:1.5vw;
-	border:3px dashed orange; 
+	border:0px dashed orange; 
 }
 
 .datewrapper {
@@ -395,7 +410,19 @@ img {
     max-width:100%;
     padding:10px;
     font-size:1.5vw;
-	border:3px dashed orange; 
+	border:0px dashed orange; 
+}
+
+.nomwrapper {
+	height:auto;
+	max-height:100%;
+	margin-left:5%;
+    margin-right:5%;
+    width:90%;
+    max-width:100%;
+    padding:10px;
+    font-size:1.5vw;
+	border:0px dashed orange; 
 }
 
 
