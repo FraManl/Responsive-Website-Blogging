@@ -16,16 +16,10 @@
 	position:absolute;
 	right:75px;
 	top:18px;	
-	transition-property: transform;
-    transition-duration: 1s;
-    transition-timing-function: ease; /* Transition de type ease */ 
-    animation-name: example;
-    animation-duration: 4s;
-    animation-iteration-count: 3;
 	/ Mise en page logos de droite /
 }
 #topicons:hover {
-	transform: translateY(-20px);
+	
 }
 
 a img {
@@ -34,12 +28,57 @@ a img {
 }
 
 
-.topico {
+.topico1 {
 	float:left;
 	margin:8px 10px;
 	padding:0 0 0 0;
+	transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease; /* Transition de type ease */ 
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
 	/ Mise en page logos de menus de droite dans le header /
 }
+
+.topico1:hover {
+	transform: translateY(-20px);
+}
+
+.topico2 {
+	float:left;
+	margin:8px 10px;
+	padding:0 0 0 0;
+	transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease; /* Transition de type ease */ 
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+	/ Mise en page logos de menus de droite dans le header /
+}
+
+.topico2:hover {
+	transform: translateY(-20px);
+}
+
+.topico3 {
+	float:left;
+	margin:8px 10px;
+	padding:0 0 0 0;
+	transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease; /* Transition de type ease */ 
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+	/ Mise en page logos de menus de droite dans le header /
+}
+
+.topico3:hover {
+	transform: translateY(-20px);
+}
+
 
 #logocontain {
 	float:left;
@@ -80,6 +119,53 @@ html, body
 	/** Mise en page globale pour tout le body **/
 }
 
+.boutondl {
+  font-size:1.4vw;
+  padding:7px;
+  padding-left:15px;
+  padding-right:15px;
+  text-align:center;
+  font-weight:bold;
+  width:78%;
+  display: inline-block;
+  vertical-align: center;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  background: #f9f9f9;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  border:4px solid cyan;
+}
+
+.boutondl:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #2098D1;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.boutondl:hover, .boutondl:focus, .hboutond:active {
+  color: white;
+}
+.boutondl:hover:before, .boutondl:focus:before, .boutondl:active:before {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
 /** Mise en page de l'espace des menus et sous menus colonne de gauche **/
 .menu {
 	margin-top:35px;
@@ -216,14 +302,15 @@ html, body
 .listcoldroite {
 	margin-top:10px;
 	text-decoration:none;
-	margin-left:0px;
+	width:88%;
 	font-family:Corbel;
-	font-size:100%;
+	font-size:auto;
 	font-weight:bold;
 	text-align:left;
 	padding-left:8px;
 	padding-top:2px;
 	color:#52a7a7;
+	border:0px solid black;
 
 }
 
@@ -246,11 +333,11 @@ html, body
 	height:auto;
 	top:105px;
 	float: right;
-	width: 14%;
-	margin-top:0px;
-	margin-left: 1%;
-	margin-right:1%;
-	border: 0px solid orange;
+	width: auto;
+	margin-top:20px;
+	margin-left: 9px;
+	margin-right:9px;
+	border:0px solid orange;
 	/ Colonne droite /
 }
 

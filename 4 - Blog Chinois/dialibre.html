@@ -1,0 +1,514 @@
+<html>
+	<head>
+			<title>Apprentissage du chinois</title>
+			<meta http-equiv="Content-Type" content="text/html; meta-charset=UTF-8" />
+			<link href="style.css" rel="stylesheet" type="text/css" />
+			<script src="./js/d3.v4.min.js"></script>
+			<link rel="stylesheet" href="stylebouton.css">
+
+			<script src="jquery-3.2.0.min.js"></script>
+			
+			<script type="text/javascript">
+				$(function() {
+						var $colgauche   = $("#colgauche"), 
+							$window    = $(window),
+							offset     = $colgauche.offset(),
+							topPadding = 2;
+
+						$window.scroll(function() {
+							if ($window.scrollTop() > offset.top) {
+								$colgauche.stop().animate({
+									marginTop: $window.scrollTop() - offset.top + topPadding
+								});
+							} else {
+								$colgauche.stop().animate({
+									marginTop: 0
+								});
+							}
+						});
+					});
+			</script>
+			
+			<script type="text/javascript">
+				$(function() {
+						var $coldroite   = $("#coldroite"), 
+							$window    = $(window),
+							offset     = $coldroite.offset(),
+							topPadding = 2;
+
+						$window.scroll(function() {
+							if ($window.scrollTop() > offset.top) {
+								$coldroite.stop().animate({
+									marginTop: $window.scrollTop() - offset.top + topPadding
+								});
+							} else {
+								$coldroite.stop().animate({
+									marginTop: 0
+								});
+							}
+						});
+					});
+			</script>
+			
+		<div id="header">
+			<link href="style.css" rel="stylesheet" type="text/css" />
+			<div id="logocontain">
+                <a href="http://www.chine-nouvelle.com/" target="_blank" title=""><div id="logo"></div></a>
+			</div>
+
+			<div id="topicons">
+                <div class="topico1">
+					<a href="http://www.chine-nouvelle.com/outils/editeur.html" target="_blank" title="Editeur de texte"><img src="files/editeur.png"/></a>
+				</div>
+				<div class="topico2">
+					<a href="https://www.ifreesite.com/pinyin/" target="_blank" title="Convertisseur Pinyin"><img src="files/ifreesite.png"/></a>
+				</div>
+				<div class="topico3">
+					<a href="" target="_blank" title=""><img src="files/bonhomme.png"/></a>
+				</div>
+			</div>
+		</div>
+	</head>
+	<body>	
+		<div id="colgauche">
+				<div class="menu">
+
+					<div class="boutontop"><a href="accueil.html" target="_top" style="text-decoration:none">Accueil</a></div>
+					<div class="title" style="font-size:1.4vw;margin-bottom:8.5px"><b>Lexique</b></div>
+					<div class="bouton1">
+							<a href="hanzi1.html" target="_top" style="text-decoration:none">Finales et consonnes</a>
+					</div>
+					<div class="bouton1">
+							<a href="hanzi2.html" target="_top" style="text-decoration:none">Chiffres et nombres</a>
+					</div>
+					<div class="bouton1">
+							<a href="hanzi3.html" target="_top" style="text-decoration:none">Date, heure, temps</a>
+					</div>
+					<div class="bouton1">
+							<a href="hanzi4.html" target="_top" style="text-decoration:none">Pronoms & locatifs</a>
+					</div>
+					<div class="bouton1">
+							<a href="hanzi5.html" target="_top" style="text-decoration:none">xxx</a>
+					</div>
+					<div class="bouton1">
+							<a href="<expressions.html" target="_top" style="text-decoration:none">Expressions courantes</a>
+					</div>
+					<div class="bouton1">
+							<a href="<vocab.html" target="_top" style="text-decoration:none">Vocabulaire à apprendre</a>
+					</div>
+                    </br>
+					</br>
+					<div class="title" style="font-size:1.4vw;margin-bottom:8.5px"><b>Grammaire chinoise</b></div>
+					<div class="bouton1">
+							<a href="gramnom.html" target="_top" style="text-decoration:none">Autour du noms</a>
+					</div>
+					<div class="bouton1">
+							<a href="gramverbe.html" target="_top" style="text-decoration:none">Autour du verbe</a>
+					</div>
+                    <div class="bouton1">
+							<a href="gramphrase.html" target="_top" style="text-decoration:none">Autour de la phrase</a>
+					</div>
+					<div class="bouton1">
+							<a href="type.html" target="_top" style="text-decoration:none">Phrases types</a>
+					</div>
+					</br>
+                    </br>
+					<div class="title" style="font-size:1.4vw;margin-bottom:8.5px"><b>Exercices oraux</b></div>
+					<div class="bouton1">
+							<a href="dialibre.html" target="_top" style="text-decoration:none">Dialogues libres</a>
+					</div>
+					<div class="bouton1">
+							<a href="dialivre.html" target="_top" style="text-decoration:none">Dialogues ouvrages</a>
+					</div>
+				</div>
+		</div>
+		<div id="coldroite">
+					<div class="boutondl" style="margin-top:40px"><a target="_top" style="text-decoration:none">Ressources .pdf</a></div>
+						<div class="listcoldroite">
+							<div class="container"><a href="https://www.python.org/downloads/" target="_blank" title="www.python.org/downloads/" class="button button-blue">Télécharger x</a></br></div>
+							<div class="container"><a href="https://www.continuum.io/Downloads" target="_blank" title="www.continuum.io/Downloads" class="button button-pink">Télécharger y</a></br></div>
+						</div>
+					<div class="boutondl" style="margin-top:40px"><a target="_top" style="text-decoration:none">Ressources .docx</a></div>
+						<div class="listcoldroite">
+							<div class="container"><a href="https://cran.r-project.org/bin/windows/base/" target="_blank" title="https://cran.r-project.org/bin/windows/base/" class="button button-purple">Télécharger z</a></br></div>
+						</div>
+							
+		</div>
+		<div id="centre">
+            <h1 class="h1" style="text-align:center;margin-top:50px">Apprentissage du chinois</h1></br>
+						<h2 class="h1" style="text-align:center;color:darkblue">Dialogue libres</h2>
+												</br>
+												</br>
+												<h2 class="h1" style="text-align:left;color:darkblue;margin-left:45px">Descriptif</h2>
+												</br>
+												<p align="justify" style="margin-left:80px">Le support web suivant est un espace destiné à favoriser l'apprentissage et la capitalisation des connaissances en chinois mandarin.</br>Il fait état de lexiques et leçons réalisés à partir de deux ouvrages principaux :
+												
+													<ul align="justify" style="margin-left:100px">
+																<li>Niveau A2 CECRL - <strong>Méthode d'initiation à la langue et à l'écriture chinoises</strong> (Joël Bellassen, édition LaCompagnie).</li>
+																<li>Niveau A2-B1 CECR - <strong>Bescherelle, le chinois pour tous</strong> (édition Hatier).</li>
+													</ul>
+												</p>
+												<br>
+                                                <h2 class="h1" style="text-align:left;color:darkblue;margin-left:45px">Objectif</h2>
+												</br>
+												<p align="justify" style="margin-left:80px">Favoriser l'assimilation des caractères, la pratique d'exercices courant et la mémorisation essentiels des sinogrammes et expressions; produire un accès rapide et au moindre clique à l'ensemble des règles de grammaire.</p>
+												<div style='clear:both'></div>
+												</p>
+												</br>
+                                                <div class="datewrapper">
+                                                	<h2 class="h1" style="text-align:center;color:darkblue;margin-left:45px">Exemples de dialogues du quotidien</h2></br></br>
+														<div align="center">
+
+															<div class="divsquarehisto" style="text-align:left;border:2px dashed purple;height:auto;font-size:85%;width:48%">
+																<p style="font-size:120%"><strong>第一会话</strong></p>
+																<p>田-你好, 你贵姓, 你去那儿&nbsp;?</p>
+																<p>王-我很好, 谢谢, 我姓王，我去日本, 你呢？</p>
+																<p>田-我也很好, 我姓田, 也去日本.</p>
+																<p>王-能不能重复一次&nbsp;?</p>
+																<p>田-我姓田, 也去日本.</p>
+																<p>王-我了解日本.</p>
+																<p>田-我不了解日本. 你要一起去日本吗&nbsp;?</p>
+																<p>王-好的. 我是中国人，你是那国人？</p>
+																<p>田-我是法国人，我自己学中文，沒有学日文。</p>
+															</div>
+
+															<div class="divsquarehisto" style="text-align:left;border:2px dashed purple;height:auto;font-size:85%;width:48%">
+																<p style="font-size:120%"><strong>第二会话</strong></p>
+																<p>小狐狸 &ndash; 你好 !</p>
+																<p>小熊 - 你好吗？</p>
+																<p>小狐狸 &ndash; 我很好，谢谢，你呢？</p>
+																<p>小熊 - 我也很好，谢谢</p>
+																<p>小狐狸 &ndash;你叫什么名字？</p>
+																<p>小熊 - 我的名字是小熊, 你叫什么名字？</p>
+																<p>小狐狸 &ndash;我叫小狐狸</p>
+																<p>小熊 -再见小狐狸</p>
+																<p>小狐狸&ndash;再见</p>
+																<p>&nbsp;(你叫什么名字. 名字 inclus &laquo;&nbsp;nom + pr&eacute;nom&nbsp;&raquo;. 什 pr&eacute;cise &laquo;&nbsp;last name&nbsp;&raquo;)( 你姓什么？ &laquo;&nbsp;quelle est ton nom&nbsp;&raquo;)</p>
+															</div>
+															<div style='clear:both'></div></br></br>
+															<div class="divsquarehisto" style="text-align:left;border:2px dashed purple;height:auto;font-size:85%;width:48%">
+																<p style="font-size:120%"><strong>第三会话</strong></p>
+																<p>田-你是谁 ?</p>
+																<p>王-我是王老师</p>
+																<p>田-我们很高兴认识我们的老师</p>
+																<p>王-我也高兴认识我的学生</p>
+																<p>田-谢谢王老师</p>
+																<p>王-你们请坐, 这星期我们会很忙</p>
+															</div>
+
+															<div class="divsquarehisto" style="text-align:left;border:2px dashed purple;height:auto;font-size:85%;width:48%">
+																<p style="font-size:120%"><strong>第四会话</strong></p>
+																<p>王-你好田, 你在干嘛?</p>
+																<p>田-我在自学法文, 我会很忙。</p>
+																<p>王-你要我帮你吗? 你要吃一点什么?</p>
+																<p>田-我不需要帮忙, 但是我想吃点东西&nbsp;! 你也学法文吗?</p>
+																<p>王-是，我跟我的姐姐学法语. 我的姐姐了解法国.</p>
+																<p>田-你现在会说了吗?</p>
+																<p>王-是, 我准备要去法国了</p>
+																<p>田-你喜欢去法国旅行吗？王-是, 我希望会说法文</p>
+															</div>
+															<div style='clear:both'></div></br></br>
+															<div class="divsquarehisto" style="text-align:left;border:2px dashed purple;height:auto;font-size:85%;width:48%">
+																<p style="font-size:120%"><strong>第五会话</strong></p>
+																<p>王-你好田。你去哪儿？&nbsp;</p>
+																<p>田-我跟我的姐姐去美国.&nbsp;</p>
+																<p>王-我哪儿也不去。我可以跟你们一起去美国吗？&nbsp;</p>
+																<p>田-好的. 你了解美国吗 ?&nbsp;</p>
+																<p>王-我还不会说英文，但是我正在自学英文.&nbsp;</p>
+																<p>田-好的，那你现在去准备行李.</p>
+															</div>
+
+															<div class="divsquarehisto" style="text-align:left;border:2px dashed purple;height:auto;font-size:85%;width:48%">
+																<p style="font-size:120%"><strong>第六会话</strong></p>
+																<p>王-田, 你希望去哪儿旅行？</p>
+																<p>田-我要去中国旅行，你呢？</p>
+																<p>王-我也要去中国旅行，但是我也要去日本。</p>
+																<p>田-你现在会说中文吗？</p>
+																<p>王-我还不会说，但是我可以说日文。</p>
+																<p>田-好的, 我很想去中国旅行，为了认识中国人。</p>
+																
+															</div>
+															<div style='clear:both'></div></br></br>
+
+															<div class="divsquarehisto" style="text-align:left;border:2px dashed purple;height:auto;font-size:85%;width:48%">
+																<p style="font-size:120%"><strong>第七会话</strong></p>
+																<p>王-田，你在干吗？</p>
+																<p>田-我正在吃点东西。(sans 点 possible)</p>
+																<p>王-你正在吃什么&nbsp;?</p>
+																<p>田-我正在吃鸡肉。你也喜欢吃鸡肉吗？</p>
+																<p>王-我不喜欢吃鸡肉。我比较喜欢吃牛肉。</p>
+																<p>田-你昨天在做什么？</p>
+																<p>王-我昨天在自学中文。</p>
+																<p>田-我昨天也学中文，但是我跟我的姐姐学中文。</p>
+																<p>王-你今天晚上要吃什么？</p>
+																<p>田-我今天想再吃鸡肉.</br>再 plac&eacute; devant n&rsquo;importe quel verbe veut dire &laquo;&nbsp;encore&nbsp;&raquo;.</p>
+															</div>
+															<div class="divsquarehisto" style="text-align:left;border:2px dashed purple;height:auto;font-size:85%;width:48%">
+																<p style="font-size:120%"><strong>第八会话</strong></p>
+																<p>王-你好, 你是谁 ? 你叫什么名字 (first name only 你貴姓 = last name only) ?</p>
+																<p>田-我姓田. 你姓什么 ?</p>
+																<p>王-我姓王. 我是法国人, 你是那国人 ?</p>
+																<p>田-我是中国人. 你去过中国吗 ?</p>
+																<p>王-我没去过中国. 你想要去哪个国家 ?</p>
+																<p>田-我想要去美国.</p>
+															</div>
+															<div style='clear:both'></div></br></br>
+															<div class="divsquarehisto" style="text-align:left;border:2px dashed purple;height:auto;font-size:85%;width:48%">
+																<p style="font-size:120%"><strong>第九会话</strong></p>
+																<p>你叫什么 ? = what is your first and last name (same age).&nbsp;</p>
+																<p>你叫什么名字 = what is your first name&nbsp;?&nbsp;</p>
+																<p>你貴姓 = what is your last name&nbsp;?&nbsp;If not same age, First ask family name (&nbsp; ) then first name</p>
+																<p>你貴姓&nbsp;? 1st, 你叫什么名字 ? 2nd</p>
+																
+															</div>
+															<div class="divsquarehisto" style="text-align:left;border:2px dashed purple;height:auto;font-size:85%;width:48%">
+																<p style="font-size:120%"><strong>第十会话</strong></p>
+																<p>王-你好田，你昨天上午在做什么？</p>
+																<p>田-我昨天上午在帮我的女朋友.</p>
+																<p>王-你的女朋友是谁？</p>
+																<p>田-我的女朋友姓谭. OR&nbsp; 我的女朋友叫谭菲.</p>
+																<p>王-你的女朋友是那个国家的人？</p>
+																<p>田-我的女朋友是中国人，她很了解法国人，她会说法语.</p>
+																<p>王-她去过日本？</p>
+																<p>田-菲没去过日本，但是她去过美国，她想要再去美国。</p>
+																<p>王-是的，我也去过美国，也想再去那儿。</p>
+																
+															</div>
+															<div style='clear:both'></div></br></br>
+															<div class="divsquarehisto" style="text-align:left;border:2px dashed purple;height:auto;font-size:85%;width:48%">
+																<p style="font-size:120%"><strong>第十一会话</strong></p>
+																<p>王-你好田，今天几月几号？</p>
+																<p>田-你好王，今天十一月七号。</p>
+																<p>王-明天星期几&nbsp;?</p>
+																<p>田-明天星期二.</p>
+																<p>王-你星期四在做什么？</p>
+																<p>田-星期四我很忙，你星期四上午要去派对吗？</p>
+																<p>王-是的, 我跟你星期四上午去派对。</p>
+																<p>田-十一月二十号星期几&nbsp;?</p>
+																<p>王-十一月二十号是星期六.</p>
+																<p>田-我下星期一要吃很多鸡肉，你呢 ？</p>
+																<p>王-下星期我不要吃很多鸡肉，要吃很多牛肉.</p>
+																<p>田-我不要吃肉，我想减肥.</p>
+																<p>孟子华 = traduction pour Manlay Fran&ccedil;ois.</p>
+
+															</div>
+															<div class="divsquarehisto" style="text-align:left;border:2px dashed purple;height:auto;font-size:85%;width:48%">
+																<p style="font-size:120%"><strong>第十二会话</strong></p>
+																<p>田-小王，这是谁的书？</p>
+																<p>王-这是我的书.</p>
+																<p>田-那是老师的书吗&nbsp;?</p>
+																<p>王-不是老师的，是马冬的.</p>
+																<p>田-哦，马冬学中文吗&nbsp;?</p>
+																<p>王-是的，他学中文.</p>
+																<p>田-他是谁的学生&nbsp;?</p>
+																<p>王-王老师的学生.</p>
+																<p>田-你学什么.</p>
+																<p>王-我学法文.&gt;马冬是王老师的学生，他学中文，这是他的书。我不学中文，我学法文。</p>
+
+															</div>
+															<div style='clear:both'></div></br></br>
+															<div class="divsquarehisto" style="text-align:left;border:2px dashed purple;height:auto;font-size:85%;width:48%">
+																<p style="font-size:120%"><strong>第十三会话</strong></p>
+																<p>A-你好，你贵姓？Bonjour, Quel est ton nom de famille&nbsp;?</p>
+																<p>B-我很好，谢谢。我姓。。。Je vais bien, mon nom de famille est&hellip;</p>
+																<p>A-你叫什么名字&nbsp;?</p>
+																<p>B-我的名字是。。。</p>
+																<p>A-你今年几岁？</p>
+																<p>B-今年我二十八岁。你呢</p>
+																<p>A-我今年也二十八岁。</p>
+																<p>B-你的朋友是谁？</p>
+																<p>A-我朋友叫王。</p>
+																
+
+															</div>
+															<div class="divsquarehisto" style="text-align:left;border:2px dashed purple;height:auto;font-size:85%;width:48%">
+																<p style="font-size:120%"><strong>第十四会话</strong></p>
+																<p>田-小王，这是谁的书？</p>
+																<p>王-这是我的书.</p>
+																<p>田-那是老师的书吗?</p>
+																<p>王-不是老师的，是马冬的.</p>
+																<p>田-哦，马冬学中文吗&nbsp;?</p>
+																<p>王-是的，他学中文.</p>
+																<p>田-他是谁的学生&nbsp;?</p>
+																<p>王-王老师的学生.</p>
+																<p>田-你学什么？</p>
+																<p>王-我学法文.</p>
+																
+
+															</div>
+															<div style='clear:both'></div></br></br>
+															<div class="divsquarehisto" style="text-align:left;border:2px dashed purple;height:auto;font-size:85%;width:48%">
+																<p style="font-size:120%"><strong>第十五会话</strong></p>
+																<p>田-你学外语吗？</p>
+																<p>王-我学外语，我说汉语.</p>
+																<p>田-他说汉语吗&nbsp;?</p>
+																<p>王-他也说汉语，我们都说汉语.</p>
+																<p>田-他汉语说得怎么样？</p>
+																<p>王-说得很好.</p>
+																<p>田-你呢？</p>
+																<p>王-我说得不好.</p>
+																<p>田-你汉字写得好不好?</p>
+																<p>王-写得很好.</p>
+																<p>我们都学外语。我学汉语，他学法语。我汉语说得很好，汉字写得不好。他法语说得很好，法文写得也很好。</p>
+																
+
+															</div>
+															<div class="divsquarehisto" style="text-align:left;border:2px dashed purple;height:auto;font-size:85%;width:48%">
+																<p style="font-size:120%"><strong>第十六会话</strong></p>
+																<p>田-你说，中国大不大&nbsp;?</p>
+																<p>王-很大.</p>
+																<p>田-法国呢&nbsp;?</p>
+																<p>王-法国不大也不小. 你看，这是中国地图.</p>
+																<p>田-日本在哪儿？</p>
+																<p>王-中国在这儿，日本在那儿。</p>
+																<p>田-你去过中国吗？</p>
+																<p>王-没去过.</p>
+																<p>田-你想去吗&nbsp;?</p>
+																<p>王-我很想去中国.</p>
+																<p>田-我想去北京，南京，山东，山西。&nbsp;中国很大，法国不大也不小。我没去过中国。我很想去中国。我想去北京。这是中国地图。北京在这儿。山东在那儿。&nbsp;</p>
+																<p>&laquo;&nbsp;Il est 8 heures&nbsp;&raquo; &gt;&gt;&gt;-&nbsp;&nbsp;</p>
+																<p>八点钟 / 八点 / 现在八点钟 / 现在八点.&nbsp;&nbsp;</p>
+																<p>&laquo;&nbsp;Il est 8 heures 34&nbsp;&raquo; &gt;&gt;&gt;-&nbsp;&nbsp;</p>
+																<p>八点三十四 / 八点三十四分 / 现在八点三十四分&nbsp;&nbsp;</p>
+																<p>&laquo;&nbsp;Il est 9 heures et demi&nbsp;&raquo; &gt;&gt;&gt;-&nbsp;&nbsp;</p>
+																<p>现在九点半 / 现在九点三十分 / 现在九点三十 / 现在是九点三十分. (version litt&eacute;raire)&nbsp;</p>
+																<p>&laquo;&nbsp;Il est 9 heures 46&nbsp;&raquo; &gt;&gt;&gt;-&nbsp;&nbsp;</p>
+																<p>现在九点四十六.&nbsp;</p>
+																<p>&laquo;&nbsp;Je rentre &agrave; 2 heures et demi&nbsp;&raquo;-&nbsp;&nbsp;</p>
+																<p>我两点半回来.&nbsp;</p>
+																<p>&laquo;&nbsp;Aujourd&rsquo;hui nous sommes le 30 novembre 2016&nbsp;&raquo;-&nbsp;&nbsp;</p>
+																<p>今天是二零一六年十一月三十号.&nbsp;</p>
+																<p>&laquo;&nbsp;Je suis n&eacute; le 9 janvier 1990&nbsp;&raquo; &gt;&gt;&gt;-&nbsp;&nbsp;</p>
+																<p>我出生于一九九零年一月九号.-&nbsp;&nbsp; &nbsp;</p>
+																<p>&laquo;&nbsp;Je rentre dans 2 heures et demi&nbsp;&raquo; &gt;&gt;&gt;-&nbsp;&nbsp;</p>
+																<p>我过两个半小时回来 / 我两个半小时以后回来.&nbsp;</p>
+																<p>&laquo;&nbsp;Il est assis depuis 3 heures 50&nbsp;&raquo;&gt;&gt;&gt;-&nbsp;&nbsp;</p>
+																<p>三小时五十分.-&nbsp;&nbsp; 他等了三小时五十分. &nbsp;</p>
+																<p>1/3= 三分之一，&frac14;= 四分之一2/4 =四分之二</p>
+															</div>
+															<div style='clear:both'></div></br></br>
+															<div class="divsquarehisto" style="text-align:left;border:2px dashed purple;height:auto;font-size:85%;width:48%">
+																<p style="font-size:120%"><strong>第十七会话</strong></p>
+																<p>田-你去哪儿&nbsp;?</p>
+																<p>王-我回家。</p>
+																<p>田-你家在北京吗&nbsp;?</p>
+																<p>王-不在北京，在南方，上海。</p>
+																<p>田-你家有几口人？</p>
+																<p>王-四口人。</p>
+																<p>田-有没有孩子&nbsp;?</p>
+																<p>王-有。两个，一个男孩儿, 一个女孩儿。</p>
+																<p>田-你爱人在哪儿工作&nbsp;?</p>
+																<p>王-她在中学工作。(cette r&eacute;ponse est bizarre dans vraie vie)</p>
+																<p>王-她当老师 (can answer like this too better)</p>
+																<p>王-在中学(this better too)</p>
+																<p>王-她在中学当老师 (with this, no need rest of dialogue)</p>
+																<p>田-她作什么&nbsp;?</p>
+																<p>田-做什么&nbsp;? (works as well)</p>
+																<p>田-她做什么工作 ? (even clearer)</p>
+																<p>王-她是老师。&nbsp;&nbsp;</p>
+																<p>田-你去哪儿 ?</p>
+																<p>王-我回家。</p>
+																<p>田-你家在北京吗 ?</p>
+																<p>王-不在北京，在南方，上海。<br /> 田-你家有几口人？<br /> 王-四口人。</p>
+																<p>田-有没有孩子 ?</p>
+																<p>王-有。两个，一个男孩儿, 一个女孩儿。</p>
+																<p>田-你太太在哪儿工作 ?</p>
+																<p>王-她在中学当老师 (this sentence is direct and avoid last 3).&nbsp;</p>
+																<p>Muscle practice words.苦、(bitter).咖啡、(caf&eacute;).可靠 (dependable).&nbsp;儿子 (son) 狗儿子(puppy)七天(7 days) 欺负 (bullet)&nbsp;&nbsp;朋友 (friend) 酱油 (soy sauce) 有沒有 (avoir ou pas) 黄山 (yellow mountain) 大山 (big mountain)</p>
+															</div>
+															<div class="divsquarehisto" style="text-align:left;border:2px dashed purple;height:auto;font-size:85%;width:48%">
+																<p style="font-size:120%"><strong>第十八会话</strong></p>
+																<p>王-你好吗 ?</p>
+																<p>田-很好，你呢 ?</p>
+																<p>王-我也很好.</p>
+																<p>田-请问现在几点了<span style="text-decoration: line-through;">吗</span> ? sous cette forme pas besoin 吗</p>
+																<p>田-你知道（现在）几点了吗 ? sous cette forme avec 吗</p>
+																<p>王-现在七点(钟). 七点(钟). Suffit m&ecirc;me</p>
+																<p>田-今天几号 ? 今天是星期几. (ask like this to answer the following) = need conherence between question and answer, use same wordgroup).</p>
+																<p>王-今天星期四，十二月十五号.田-明天你（要/会）做什么？在 pas 在 ici, remplacer par 会 ou 要 ou m&ecirc;me rien suffit.</p>
+																<p>王-明天我要去上班, 明天我必须要去上班. (emphasize on 必须). 必须 seul est tr&egrave;s fort (je suis &ldquo;force&rdquo;).</p>
+																<p>田-你的朋友几月几号回来 ? 吗 unecessary here. Or ask like this 你知道你的朋友几月几号回来吗.</p>
+																<p>王-我的朋友下周五中午会回来. (会回来 Is insistence form)</p>
+																<p>田-是的，我必须走了. Cette phrase grammaire oral correct mais culturellement pas &ldquo;gentle&rdquo;, plut&ocirc;t dire 哦，好，我知道了, 那我先走了.(mais amis seront d&eacute;&ccedil;us de pas avoir un diner)</p>
+																<p>王-好，四个半小时以后见. Correct mais le 2&egrave;me est plus smooth. 四个半小时之后见.&nbsp;</p>
+																<p>王-你好吗 ?</p>
+																<p>田-很好，你呢 ?</p>
+																<p>王-我也很好.</p>
+																<p>田-请问现在几点了</p>
+																<p>王-现在七点钟</p>
+																<p>田-今天几号 ? 今天是星期几?</p>
+																<p>王-今天星期四，十二月十五号.</p>
+																<p>田-明天你要做什么？</p>
+																<p>王-明天我要去上班 (明天我必须上班)</p>
+																<p>田-你的朋友几月几号回来 ?</p>
+																<p>王-我的朋友下周五中午会回来</p>
+																<p>田-哦，好，我知道了, 那我先走了</p>
+																<p>王-好，四个半小时以后见</p>
+																
+															</div>
+															<div style='clear:both'></div></br></br>
+															<div class="divsquarehisto" style="text-align:left;border:2px dashed purple;height:auto;font-size:85%;width:48%">
+																<p style="font-size:120%"><strong>第十九会话</strong></p>
+																<p>王-你是那个国家的人?</p>
+																<p>田-我是美国人.</p>
+																<p>王-你去过法国吗?</p>
+																<p>田-没去过，但是我去过中国了.</p>
+																<p>王-我跟我的爸爸一起去过中国.</p>
+																<p>田-你家有几口人? (or 几个人 because 口 also for animal implicitly, in city rather use 个)</p>
+																<p>王-我家有六口人，有两个男孩儿.</p>
+																<p>田-你今年几岁 ?</p>
+																<p>王-今年我二十六岁.</p>
+																<p>田-你的生日什么时候 ?</p>
+																<p>王-我的生日两天之后. Or 我的生日在两天之后 or 再两天后是我的生日.&nbsp;</p>
+																<p>田-那你的生日什么时候 ?</p>
+																<p>王-我的生日三个星期之后.</p>
+																<p>田-你什么时候开始学习法语?</p>
+																<p>王-学习法语三年了.</p>
+																
+															</div>
+															<div class="divsquarehisto" style="text-align:left;border:2px dashed purple;height:auto;font-size:85%;width:48%">
+																<p style="font-size:120%"><strong>第二十会话</strong></p>
+																<p>王-你好田.田-你好.</p>
+																<p>王-今天几月几号&nbsp;?</p>
+																<p>田-今天十二月二十号.</p>
+																<p>王-他是谁&nbsp;?</p>
+																<p>田-他是菲的男朋友.</p>
+																<p>王-他多少岁&nbsp;? (他几岁 more common)</p>
+																<p>田-他二十七岁.</p>
+																<p>王-你已经去见他吗&nbsp;? (你见过他吗).</p>
+																<p>田-不去见. (没有见过 / 没见过)</p>
+																<p>王-你知道他做什么工作&nbsp;?</p>
+																<p>田-他是医生.</p>
+																<p>王-他来北京多长时间了&nbsp;?</p>
+																<p>田-已经半个多月了.</p>
+																<p>王-那儿的生活他习惯了吗&nbsp;?</p>
+																<p>田-他还没习惯呢</p>
+																
+																
+															</div>
+															<div style='clear:both'></div></br></br>
+															<div class="divsquarehisto" style="text-align:left;border:2px dashed purple;height:auto;font-size:85%;width:48%">
+																<p style="font-size:120%"><strong>第二十一会话</strong></p>
+																
+																
+															</div>
+															<div class="divsquarehisto" style="text-align:left;border:2px dashed purple;height:auto;font-size:85%;width:48%">
+																<p style="font-size:120%"><strong>第二十二会话</strong></p>
+																
+																
+																
+															</div>
+
+
+
+
+														</div>
+															    
+
+		</div>										
+		</div>									
+		<div id="footer">
+				<div id="boutontop"><a href="#" target="_top" title="Retour en haut de page"><img src="files/boutontop.png"/></a></div>
+		</div>
+	</body>
+</html>
